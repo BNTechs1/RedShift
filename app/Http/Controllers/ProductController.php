@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 //Common Resource Routes 
 //index - show all products 
 //show - show single product
-//create - 
+//create - show create form
 //store -  store new product 
-//edit -
+//edit -    
 //update - update product
 //destroy - delete product
 class ProductController extends Controller
@@ -21,7 +21,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return Product::all();
+        return Product::latest()->filter(request(['tag','search']))->paginate(5);
     }
 
     public function show(Product $product)
@@ -29,22 +29,32 @@ class ProductController extends Controller
         return Product::find($product);
     }
    
+    //show create form 
     public function create()
     {
-        //
+        return 'Creating form';
     } 
 
    
     public function store(Request $request)
     {
-        //
+        $formFields = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'price' => 'required',
+            'tag' => 'required',   
+        ]);
+
+        if($request->hasFile('image')){
+            $formFields['image'] = $request->file('image')->store('images','public');
+        }
+
+        
+
+        Product::create($formFields);
+
+        return 'Hello World'; 
     }
-
-    
-     
-   
-
-   
     public function edit(Product $product)
     {
         //
