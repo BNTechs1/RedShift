@@ -145,150 +145,156 @@
 
 		</section><!--/.about-part-->
 		<!--about-part end-->
-
-		
-    <!--about-us start -->
-    <section class="about-us">
-		<div class="container">
-		  <div class="about-us-content">
-			<div class="row">
-			  <div class="col-sm-6">
-				<div class="single-about-us">
-				  <div class="about-us-img">
-					<img
-					  src="assets/images/about/about-part.jpg"
-					  alt="about images"
-					/>
-				  </div>
-				  <!--/.about-us-img-->
-				</div>
-				<!--/.single-about-us-->
-			  </div>
-			  <!--/.col-->
-			  <div class="col-sm-6">
-				<div class="single-about-us">
-				  <div class="about-us-txt">
-					<h2>about us</h2>
-					<p>
-					  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-					  sed do eiusmod tempor incididunt ut labore et dolore magna
-					  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					  Duis aute irure dolor in reprehenderit in voluptate velit
-					  esse.
-					</p>
-					<div class="project-btn">
-					  <a href="#" class="project-view">learn more </a>
+		<!--about-us start -->
+		<section class="about-us">
+			<div class="container">
+				<div class="about-us-content">
+				<div class="row">
+					<div class="col-sm-6">
+					<div class="single-about-us">
+						<div class="about-us-img">
+						<img
+							src="assets/images/about/about-part.jpg"
+							alt="about images"
+						/>
+						</div>
+						<!--/.about-us-img-->
 					</div>
-					<!--/.project-btn-->
-				  </div>
-				  <!--/.about-us-txt-->
+					<!--/.single-about-us-->
+					</div>
+					<!--/.col-->
+					<div class="col-sm-6">
+					<div class="single-about-us">
+						<div class="about-us-txt">
+						<h2>about us</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit
+							esse.
+						</p>
+						<div class="project-btn">
+							<a href="#" class="project-view">learn more </a>
+						</div>
+						<!--/.project-btn-->
+						</div>
+						<!--/.about-us-txt-->
+					</div>
+					<!--/.single-about-us-->
+					</div>
+					
 				</div>
-				<!--/.single-about-us-->
-			  </div>
-			 
+				<!--/.row-->
+				</div>
+				<!--/.about-us-content-->
 			</div>
-			<!--/.row-->
+			<!--/.container-->
+		</section>
+		<!--/.about-us-->
+		<!--about-us end -->
+
+		<!--project start-->
+	<section id="project" class="project">
+		<div class="container">
+		  <div class="project-details">
+			<div class="project-header text-center">
+			   <h2>What we do</h2> 
+			  <!-- <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p> --> 
+			</div>
+			<!--/.project-header-->
+			<div class="project-content">
+			  <div class="gallery-content">
+          <div class="isotope">
+            <div class="row">
+              <!-- /.col -->
+              <div class="col-md-12 col-sm-12">
+                <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="item">
+                  <img
+                    src="assets/images/project/project2.jpg"
+                    alt="portfolio image"
+                  />
+                  <div class="isotope-overlay">
+                    <a href="project.html">
+                    <span class="lnr lnr-link"></span>
+                    </a>
+                    <h3>
+                    <a href="project.html"> aquisition plan </a>
+                    </h3>
+                    <p>busisness planning</p>
+                  </div>
+                  <!-- /.isotope-overlay -->
+                  </div>
+                  <!-- /.item -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-6 col-xs-12">
+                  <div class="item">
+                  <img
+                    src="assets/images/project/project3.jpg"
+                    alt="portfolio image"
+                  />
+                  <div class="isotope-overlay">
+                    <a href="project.html">
+                    <span class="lnr lnr-link"></span>
+                    </a>
+                    <h3>
+                    <a href="project.html"> aquisition plan </a>
+                    </h3>
+                    <p>busisness planning</p>
+                  </div>
+                  <!-- /.isotope-overlay -->
+                  </div>
+                  <!-- /.item -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-6 col-xs-12">
+                  <div class="item">
+                  <img
+                    src="assets/images/project/project3.jpg"
+                    alt="portfolio image"
+                  />
+                  <div class="isotope-overlay">
+                    <a href="project.html">
+                    <span class="lnr lnr-link"></span>
+                    </a>
+                    <h3>
+                    <a href="project.html"> aquisition plan </a>
+                    </h3>
+                    <p>busisness planning</p>
+                  </div>
+                  <!-- /.isotope-overlay -->
+                  </div>
+                  <!-- /.item -->
+                </div>
+                <!-- /.col -->
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!--/.isotope-->
+			  </div>
+			  <!--/.gallery-content-->
+			</div>
+			<!--/.project-content-->
 		  </div>
-		  <!--/.about-us-content-->
+		  <!--/.project-details-->
+		  <div class="project-btn text-center">
+			<a href="project.html" class="project-view">view all </a>
+		  </div>
+		  <!--/.project-btn-->
 		</div>
 		<!--/.container-->
-	  </section>
-	  <!--/.about-us-->
-	  <!--about-us end -->
-		
-	
-		
-		<!--we-do start -->
-		<section  class="we-do">
-			<div class="container">
-				<div class="we-do-details">
-					<div class="section-header text-center">
-						<h2>what we do</h2>
-						<p>
-							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-						</p>
-					</div><!--/.section-header-->
-					<div class="we-do-carousel">
-						<div class="row">
-							<div class="col-sm-4 col-xs-12">
-								<div class="single-we-do-box text-center">
-									<div class="we-do-description">
-										<div class="we-do-info">
-											<div class="we-do-img">
-												<img src="assets/images/home/consultency.png" alt="image of consultency" />
-											</div><!--/.we-do-img-->
-											<div class="we-do-topics">
-												<h2>
-													<a href="#">
-														Business Consultancy
-													</a>
-												</h2>
-											</div><!--/.we-do-topics-->
-										</div><!--/.we-do-info-->
-										<div class="we-do-comment">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-											</p>
-										</div><!--/.we-do-comment-->
-									</div><!--/.we-do-description-->
-								</div><!--/.single-we-do-box-->
-							</div><!--/.col-->
-							<div class="col-sm-4 col-xs-12">
-								<div class="single-we-do-box text-center">
-									<div class="we-do-description">
-										<div class="we-do-info">
-											<div class="we-do-img">
-												<img src="assets/images/home/busisness_grow.png" alt="image of business" />
-											</div><!--/.we-do-img-->
-											<div class="we-do-topics">
-												<h2>
-													<a href="#">
-														help to grow Business
-													</a>
-												</h2>
-											</div><!--/.we-do-topics-->
-										</div><!--/.we-do-info-->
-										<div class="we-do-comment">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-											</p>
-										</div><!--/.we-do-comment-->
-									</div><!--/.we-do-description-->
-								</div><!--/.single-we-do-box-->
-							</div><!--/.col-->
-							<div class="col-sm-4 col-xs-12">
-								<div class="single-we-do-box text-center">
-									<div class="we-do-description">
-										<div class="we-do-info">
-											<div class="we-do-img">
-												<img src="assets/images/home/support-logo.png" alt="image of support" />
-											</div><!--/.we-do-img-->
-											<div class="we-do-topics">
-												<h2>
-													<a href="#">
-														great support
-													</a>
+	</section>
+	  <!--/.project-->
+	  <!--project end-->
 
-												</h2>
-											</div><!--/.we-do-topics-->
-										</div><!--/.we-do-info-->
-										<div class="we-do-comment">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-											</p>
-										</div><!--/.we-do-comment-->
-									</div><!--/.we-do-description-->
-								</div><!--/.single-we-do-box-->
-							</div><!--/.col-->
-						</div><!--/.row-->
-					</div><!--/.we-do-carousel-->
-				</div><!--/.we-do-details-->
-			</div><!--/.container-->
-
-		</section><!--/.we-do-->
-		<!--we-do end-->
-		
+			
 		<!--about-history start-->
 		<div class="about-history">
 			<div class="container">
@@ -481,250 +487,249 @@
 
 		</div><!--/.about-history-->
 		<!--about-history end-->
+			
+		<!--clients start-->
+		<section class="clients">
+			<div class="container">
+				<div class="clients-area">
+				<div class="owl-carousel owl-theme" id="client">
+					<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client1.png" alt="brand-image" />
+					</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client2.png" alt="brand-image" />
+					</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client3.png" alt="brand-image" />
+					</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client4.png" alt="brand-image" />
+					</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client5.png" alt="brand-image" />
+					</a>
+					</div>
+					<!--/.item-->
+				</div>
+				<!--/.owl-carousel-->
+				</div>
+				<!--/.clients-area-->
+			</div>
+			<!--/.container-->
+			</section>
+			<!--/.clients-->
+			<!--clients end-->
 
-		
-	<!--clients start-->
-	<section class="clients">
-		<div class="container">
-			<div class="clients-area">
-			<div class="owl-carousel owl-theme" id="client">
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client1.png" alt="brand-image" />
-				</a>
+		<!--contact start-->
+		<section class="contact">
+			<div class="container">
+			<div class="contact-details">
+				<div class="section-header contact-head text-center">
+				<h2>contact us</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+					aute irure dolor in reprehenderit in voluptate velit esse cillum
+					dolore eu fugiat nulla pariatur.
+				</p>
 				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client2.png" alt="brand-image" />
-				</a>
+				<!--/.section-header-->
+				<div class="contact-content">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-5">
+					<div class="single-contact-box">
+						<div class="contact-right">
+						<div class="contact-adress">
+							<div class="contact-office-address">
+							<h3>contact info</h3>
+							<p>125, Park street avenue, Brocklyn, Newyork.</p>
+							<div class="contact-online-address">
+								<div class="single-online-address">
+								<i class="fa fa-phone"></i>
+								+11253678958
+								</div>
+								<!--/.single-online-address-->
+
+								<div class="single-online-address">
+								<i class="fa fa-envelope-o"></i>
+								<span>info@mail.com</span>
+								</div>
+								<!--/.single-online-address-->
+							</div>
+							<!--/.contact-online-address-->
+							</div>
+							<!--/.contact-office-address-->
+							<div class="contact-office-address">
+							<h3>social partner</h3>
+							<div class="contact-icon">
+								<ul>
+								<li>
+									<a href="#"
+									><i
+										class="fa fa-facebook"
+										aria-hidden="true"
+									></i
+									></a>
+								</li>
+								<!--/li-->
+								<li>
+									<a href="#"
+									><i
+										class="fa fa-google-plus"
+										aria-hidden="true"
+									></i
+									></a>
+								</li>
+								<!--/li-->
+								<li>
+									<a href="#"
+									><i
+										class="fa fa-linkedin"
+										aria-hidden="true"
+									></i
+									></a>
+								</li>
+								<!--/li-->
+								<li>
+									<a href="#"
+									><i class="fa fa-twitter" aria-hidden="true"></i
+									></a>
+								</li>
+								<!--/li-->
+								</ul>
+								<!--/ul-->
+							</div>
+							<!--/.contact-icon-->
+							</div>
+							<!--/.contact-office-address-->
+						</div>
+						<!--/.contact-address-->
+						</div>
+						<!--/.contact-right-->
+					</div>
+					<!--/.single-contact-box-->
+					</div>
+					<!--/.col-->
+					<div class="col-sm-5">
+					<div class="single-contact-box">
+						<div class="contact-form">
+						<h3>Leave us a Massage Here</h3>
+						<form>
+							<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<div class="form-group">
+								<input
+									type="text"
+									class="form-control"
+									id="firstname"
+									placeholder="First Name"
+									name="firstname"
+								/>
+								</div>
+								<!--/.form-group-->
+							</div>
+							<!--/.col-->
+							<div class="col-sm-6 col-xs-12">
+								<div class="form-group">
+								<input
+									type="text"
+									class="form-control"
+									id="lastname"
+									placeholder="Last Name"
+									name="laststname"
+								/>
+								</div>
+								<!--/.form-group-->
+							</div>
+							<!--/.col-->
+							</div>
+							<!--/.row-->
+							<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<div class="form-group">
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									placeholder="Email"
+									name="email"
+								/>
+								</div>
+								<!--/.form-group-->
+							</div>
+							<!--/.col-->
+							<div class="col-sm-6 col-xs-12">
+								<div class="form-group">
+								<input
+									type="text"
+									class="form-control"
+									id="phone"
+									placeholder="Phone"
+									name="phone"
+								/>
+								</div>
+								<!--/.form-group-->
+							</div>
+							<!--/.col-->
+							</div>
+							<!--/.row-->
+							<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+								<textarea
+									class="form-control"
+									rows="7"
+									id="comment"
+									placeholder="Message"
+								></textarea>
+								</div>
+								<!--/.form-group-->
+							</div>
+							<!--/.col-->
+							</div>
+							<!--/.row-->
+							<div class="row">
+							<div class="col-sm-12">
+								<div class="single-contact-btn pull-right">
+								<button class="contact-btn" type="button">
+									send message
+								</button>
+								</div>
+								<!--/.single-single-contact-btn-->
+							</div>
+							<!--/.col-->
+							</div>
+							<!--/.row-->
+						</form>
+						<!--/form-->
+						</div>
+						<!--/.contact-form-->
+					</div>
+					<!--/.single-contact-box-->
+					</div>
+					<!--/.col-->
 				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client3.png" alt="brand-image" />
-				</a>
+				<!--/.row-->
 				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client4.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client5.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
+				<!--/.contact-content-->
 			</div>
-			<!--/.owl-carousel-->
+			<!--/.contact-details-->
 			</div>
-			<!--/.clients-area-->
-		</div>
-		<!--/.container-->
+			<!--/.container-->
 		</section>
-		<!--/.clients-->
-		<!--clients end-->
-
-    <!--contact start-->
-    <section class="contact">
-      <div class="container">
-        <div class="contact-details">
-          <div class="section-header contact-head text-center">
-            <h2>contact us</h2>
-            <p>
-              Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <!--/.section-header-->
-          <div class="contact-content">
-            <div class="row">
-              <div class="col-sm-offset-1 col-sm-5">
-                <div class="single-contact-box">
-                  <div class="contact-right">
-                    <div class="contact-adress">
-                      <div class="contact-office-address">
-                        <h3>contact info</h3>
-                        <p>125, Park street avenue, Brocklyn, Newyork.</p>
-                        <div class="contact-online-address">
-                          <div class="single-online-address">
-                            <i class="fa fa-phone"></i>
-                            +11253678958
-                          </div>
-                          <!--/.single-online-address-->
-
-                          <div class="single-online-address">
-                            <i class="fa fa-envelope-o"></i>
-                            <span>info@mail.com</span>
-                          </div>
-                          <!--/.single-online-address-->
-                        </div>
-                        <!--/.contact-online-address-->
-                      </div>
-                      <!--/.contact-office-address-->
-                      <div class="contact-office-address">
-                        <h3>social partner</h3>
-                        <div class="contact-icon">
-                          <ul>
-                            <li>
-                              <a href="#"
-                                ><i
-                                  class="fa fa-facebook"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </li>
-                            <!--/li-->
-                            <li>
-                              <a href="#"
-                                ><i
-                                  class="fa fa-google-plus"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </li>
-                            <!--/li-->
-                            <li>
-                              <a href="#"
-                                ><i
-                                  class="fa fa-linkedin"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </li>
-                            <!--/li-->
-                            <li>
-                              <a href="#"
-                                ><i class="fa fa-twitter" aria-hidden="true"></i
-                              ></a>
-                            </li>
-                            <!--/li-->
-                          </ul>
-                          <!--/ul-->
-                        </div>
-                        <!--/.contact-icon-->
-                      </div>
-                      <!--/.contact-office-address-->
-                    </div>
-                    <!--/.contact-address-->
-                  </div>
-                  <!--/.contact-right-->
-                </div>
-                <!--/.single-contact-box-->
-              </div>
-              <!--/.col-->
-              <div class="col-sm-5">
-                <div class="single-contact-box">
-                  <div class="contact-form">
-                    <h3>Leave us a Massage Here</h3>
-                    <form>
-                      <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="firstname"
-                              placeholder="First Name"
-                              name="firstname"
-                            />
-                          </div>
-                          <!--/.form-group-->
-                        </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastname"
-                              placeholder="Last Name"
-                              name="laststname"
-                            />
-                          </div>
-                          <!--/.form-group-->
-                        </div>
-                        <!--/.col-->
-                      </div>
-                      <!--/.row-->
-                      <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="email"
-                              placeholder="Email"
-                              name="email"
-                            />
-                          </div>
-                          <!--/.form-group-->
-                        </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="phone"
-                              placeholder="Phone"
-                              name="phone"
-                            />
-                          </div>
-                          <!--/.form-group-->
-                        </div>
-                        <!--/.col-->
-                      </div>
-                      <!--/.row-->
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="form-group">
-                            <textarea
-                              class="form-control"
-                              rows="7"
-                              id="comment"
-                              placeholder="Message"
-                            ></textarea>
-                          </div>
-                          <!--/.form-group-->
-                        </div>
-                        <!--/.col-->
-                      </div>
-                      <!--/.row-->
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="single-contact-btn pull-right">
-                            <button class="contact-btn" type="button">
-                              send message
-                            </button>
-                          </div>
-                          <!--/.single-single-contact-btn-->
-                        </div>
-                        <!--/.col-->
-                      </div>
-                      <!--/.row-->
-                    </form>
-                    <!--/form-->
-                  </div>
-                  <!--/.contact-form-->
-                </div>
-                <!--/.single-contact-box-->
-              </div>
-              <!--/.col-->
-            </div>
-            <!--/.row-->
-          </div>
-          <!--/.contact-content-->
-        </div>
-        <!--/.contact-details-->
-      </div>
-      <!--/.container-->
-    </section>
-    <!--/.contact-->
+		<!--/.contact-->
 
 
 		<!-- jaquery link -->

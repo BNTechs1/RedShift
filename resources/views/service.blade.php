@@ -146,167 +146,137 @@
 		</section><!--/.about-part-->
 		<!--about-part end-->
 
-			<!--we-do start -->
-			<section  class="we-do">
+			<!--service start-->
+		<section  class="service">
 				<div class="container">
-					<div class="we-do-details">
+					<div class="service-details">
 						<div class="section-header text-center">
-							<h2>what we do</h2>
+							<h2>our services</h2>
 							<p>
 								Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 							</p>
 						</div><!--/.section-header-->
-						<div class="we-do-carousel">
+						<div class="service-content-one">
 							<div class="row">
 								<div class="col-sm-4 col-xs-12">
-									<div class="single-we-do-box text-center">
-										<div class="we-do-description">
-											<div class="we-do-info">
-												<div class="we-do-img">
-													<img src="assets/images/home/consultency.png" alt="image of consultency" />
-												</div><!--/.we-do-img-->
-												<div class="we-do-topics">
-													<h2>
-														<a href="#">
-															Business Consultancy
-														</a>
-													</h2>
-												</div><!--/.we-do-topics-->
-											</div><!--/.we-do-info-->
-											<div class="we-do-comment">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-												</p>
-											</div><!--/.we-do-comment-->
-										</div><!--/.we-do-description-->
-									</div><!--/.single-we-do-box-->
+									<div class="service-single text-center">
+										<div class="service-img">
+											<img src="assets/images/service/service1.png" alt="image of service" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">busisness planning</a>
+											</h2>
+											<p>
+												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
+											</p>
+											<a href="#" class="service-btn">
+												learn more
+											</a>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
 								</div><!--/.col-->
 								<div class="col-sm-4 col-xs-12">
-									<div class="single-we-do-box text-center">
-										<div class="we-do-description">
-											<div class="we-do-info">
-												<div class="we-do-img">
-													<img src="assets/images/home/busisness_grow.png" alt="image of business" />
-												</div><!--/.we-do-img-->
-												<div class="we-do-topics">
-													<h2>
-														<a href="#">
-															help to grow Business
-														</a>
-													</h2>
-												</div><!--/.we-do-topics-->
-											</div><!--/.we-do-info-->
-											<div class="we-do-comment">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-												</p>
-											</div><!--/.we-do-comment-->
-										</div><!--/.we-do-description-->
-									</div><!--/.single-we-do-box-->
+									<div class="service-single text-center">
+										<div class="service-img">
+											<img src="assets/images/service/service2.png" alt="image of service" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">busisness consultency</a>
+											</h2>
+											<p>
+												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
+											</p>
+											<a href="#" class="service-btn">
+												learn more
+											</a>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
 								</div><!--/.col-->
 								<div class="col-sm-4 col-xs-12">
-									<div class="single-we-do-box text-center">
-										<div class="we-do-description">
-											<div class="we-do-info">
-												<div class="we-do-img">
-													<img src="assets/images/home/support-logo.png" alt="image of support" />
-												</div><!--/.we-do-img-->
-												<div class="we-do-topics">
-													<h2>
-														<a href="#">
-															great support
-														</a>
-	
-													</h2>
-												</div><!--/.we-do-topics-->
-											</div><!--/.we-do-info-->
-											<div class="we-do-comment">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-												</p>
-											</div><!--/.we-do-comment-->
-										</div><!--/.we-do-description-->
-									</div><!--/.single-we-do-box-->
+									<div class="service-single text-center">
+										<div class="service-img">
+											<img src="assets/images/service/service3.png" alt="image of service" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">financial services</a>
+											</h2>
+											<p>
+												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
+											</p>
+											<a href="#" class="service-btn">
+												learn more
+											</a>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
 								</div><!--/.col-->
 							</div><!--/.row-->
+						</div><!--/.service-content-one-->
+						<div class="service-content-two">
 							<div class="row">
 								<div class="col-sm-4 col-xs-12">
-									<div class="single-we-do-box text-center">
-										<div class="we-do-description">
-											<div class="we-do-info">
-												<div class="we-do-img">
-													<img src="assets/images/home/consultency.png" alt="image of consultency" />
-												</div><!--/.we-do-img-->
-												<div class="we-do-topics">
-													<h2>
-														<a href="#">
-															Business Consultancy
-														</a>
-													</h2>
-												</div><!--/.we-do-topics-->
-											</div><!--/.we-do-info-->
-											<div class="we-do-comment">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-												</p>
-											</div><!--/.we-do-comment-->
-										</div><!--/.we-do-description-->
-									</div><!--/.single-we-do-box-->
+									<div class="service-single text-center">
+										<div class="service-img">
+											<img src="assets/images/service/service4.png" alt="image of service" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">risk management</a>
+											</h2>
+											<p>
+												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
+											</p>
+											<a href="#" class="service-btn">
+												learn more
+											</a>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
 								</div><!--/.col-->
 								<div class="col-sm-4 col-xs-12">
-									<div class="single-we-do-box text-center">
-										<div class="we-do-description">
-											<div class="we-do-info">
-												<div class="we-do-img">
-													<img src="assets/images/home/busisness_grow.png" alt="image of business" />
-												</div><!--/.we-do-img-->
-												<div class="we-do-topics">
-													<h2>
-														<a href="#">
-															help to grow Business
-														</a>
-													</h2>
-												</div><!--/.we-do-topics-->
-											</div><!--/.we-do-info-->
-											<div class="we-do-comment">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-												</p>
-											</div><!--/.we-do-comment-->
-										</div><!--/.we-do-description-->
-									</div><!--/.single-we-do-box-->
+									<div class="service-single text-center">
+										<div class="service-img">
+											<img src="assets/images/service/service5.png" alt="image of service" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">expert advisers</a>
+											</h2>
+											<p>
+												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
+											</p>
+											<a href="#" class="service-btn">
+												learn more
+											</a>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
 								</div><!--/.col-->
 								<div class="col-sm-4 col-xs-12">
-									<div class="single-we-do-box text-center">
-										<div class="we-do-description">
-											<div class="we-do-info">
-												<div class="we-do-img">
-													<img src="assets/images/home/support-logo.png" alt="image of support" />
-												</div><!--/.we-do-img-->
-												<div class="we-do-topics">
-													<h2>
-														<a href="#">
-															great support
-														</a>
-	
-													</h2>
-												</div><!--/.we-do-topics-->
-											</div><!--/.we-do-info-->
-											<div class="we-do-comment">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
-												</p>
-											</div><!--/.we-do-comment-->
-										</div><!--/.we-do-description-->
-									</div><!--/.single-we-do-box-->
+									<div class="service-single text-center">
+										<div class="service-img">
+											<img src="assets/images/service/service6.png" alt="image of service" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">24/7 customer support</a>
+											</h2>
+											<p>
+												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
+											</p>
+											<a href="#" class="service-btn">
+												learn more
+											</a>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
 								</div><!--/.col-->
 							</div><!--/.row-->
-						</div><!--/.we-do-carousel-->
-					</div><!--/.we-do-details-->
+						</div><!--/.service-content-two-->
+					</div><!--/.service-details-->
 				</div><!--/.container-->
-	
-			</section><!--/.we-do-->
-			<!--we-do end-->
+
+		</section><!--/.service-->
+		<!--service end-->
 
 			<!--about-history start-->
 			<div class="about-history">

@@ -613,127 +613,177 @@
     <!--/.we-do-->
     <!--we-do end-->
 
-    <!--project start-->
-    <section id="project" class="project">
-      <div class="container">
-        <div class="project-details">
-          <!-- <div class="project-header text-left">
-            <h2>Our Finished Projects</h2>
-            <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div> -->
-          <!--/.project-header-->
-          <div class="project-content">
-            <div class="gallery-content">
-              <div class="isotope">
-                <div class="row">
-                  <!-- /.col -->
-                  <div class="col-md-12 col-sm-12">
-                    <div class="row">
+   	<!--project start-->
+		<section id="project"  class="project">
+			<div class="container">
+				<div class="project-details">
+					<div class="project-header text-left">
+						<h2>Gallery Of Products</h2>
+						<p>
+							Pallamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div><!--/.project-header-->
+					<div class="project-content">
+						<div class="gallery-content">
+							<div class="isotope">
+								<div class="row">
+									<div class="col-md-12 col-sm-12">
+										<div class="row">
+											<div class="col-sm-3 col-xs-12">
+												<div class="item">
+													<img src="assets/images/project/project2.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!-- /.item -->
+											</div><!-- /.col -->
+											<div class="col-sm-3 col-xs-12">
+												<div class="item">
+													<img src="assets/images/project/project3.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!-- /.item -->
+											</div><!-- /.col -->
                       <div class="col-sm-3 col-xs-12">
-                        <div class="item">
-                          <img
-                            src="assets/images/project/project2.jpg"
-                            alt="portfolio image"
-                          />
-                          <div class="isotope-overlay">
-                            <a href="project.html">
-                              <span class="lnr lnr-link"></span>
-                            </a>
-                            <h3>
-                              <a href="project.html"> aquisition plan </a>
-                            </h3>
-                            <p>busisness planning</p>
-                          </div>
-                          <!-- /.isotope-overlay -->
-                        </div>
-                        <!-- /.item -->
-                      </div>
-                      <!-- /.col -->
+												<div class="item">
+													<img src="assets/images/project/project3.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!-- /.item -->
+											</div><!-- /.col -->
                       <div class="col-sm-3 col-xs-12">
-                        <div class="item">
-                          <img
-                            src="assets/images/project/project3.jpg"
-                            alt="portfolio image"
-                          />
-                          <div class="isotope-overlay">
-                            <a href="project.html">
-                              <span class="lnr lnr-link"></span>
-                            </a>
-                            <h3>
-                              <a href="project.html"> aquisition plan </a>
-                            </h3>
-                            <p>busisness planning</p>
-                          </div>
-                          <!-- /.isotope-overlay -->
-                        </div>
-                        <!-- /.item -->
-                      </div>
-                      <!-- /.col -->
+												<div class="item">
+													<img src="assets/images/project/project3.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!-- /.item -->
+											</div><!-- /.col -->
+										</div><!-- /.row-->
+										<div class="row">
+											<div class="col-sm-3 col-xs-12">
+												<div class="item">
+													<img src="assets/images/project/project4.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning
+														</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!-- /.item -->
+											</div><!-- /.col -->
+											<div class="col-sm-3 col-xs-12">
+												<div class="item">
+													<img src="assets/images/project/project5.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning
+														</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!--/.item -->
+											</div><!-- /.col -->
                       <div class="col-sm-3 col-xs-12">
-                        <div class="item">
-                          <img
-                            src="assets/images/project/project3.jpg"
-                            alt="portfolio image"
-                          />
-                          <div class="isotope-overlay">
-                            <a href="project.html">
-                              <span class="lnr lnr-link"></span>
-                            </a>
-                            <h3>
-                              <a href="project.html"> aquisition plan </a>
-                            </h3>
-                            <p>busisness planning</p>
-                          </div>
-                          <!-- /.isotope-overlay -->
-                        </div>
-                        <!-- /.item -->
-                      </div>
-                      <!-- /.col -->
+												<div class="item">
+													<img src="assets/images/project/project5.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning
+														</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!--/.item -->
+											</div><!-- /.col -->
                       <div class="col-sm-3 col-xs-12">
-                        <div class="item">
-                          <img
-                            src="assets/images/project/project3.jpg"
-                            alt="portfolio image"
-                          />
-                          <div class="isotope-overlay">
-                            <a href="project.html">
-                              <span class="lnr lnr-link"></span>
-                            </a>
-                            <h3>
-                              <a href="project.html"> aquisition plan </a>
-                            </h3>
-                            <p>busisness planning</p>
-                          </div>
-                          <!-- /.isotope-overlay -->
-                        </div>
-                        <!-- /.item -->
-                      </div>
-                      <!-- /.col -->
-                    </div>
-                    <!-- /.row-->
-                   
-                    <!-- /.row-->
-                  </div>
-                  <!-- /.col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!--/.isotope-->
-            </div>
-            <!--/.gallery-content-->
-          </div>
-          <!--/.project-content-->
-        </div>
-        <!--/.project-details-->
-        <!-- <div class="project-btn text-center">
-          <a href="project.html" class="project-view">view all </a>
-        </div> -->
-        <!--/.project-btn-->
-      </div>
-      <!--/.container-->
-    </section>
-    <!--/.project-->
-    <!--project end-->
+												<div class="item">
+													<img src="assets/images/project/project5.jpg" alt="portfolio image"/>
+													<div class="isotope-overlay">
+														<a href="project.html">
+															<span class="lnr lnr-link"></span>
+															
+														</a>
+														<h3>
+															<a href="project.html">
+																aquisition plan
+															</a>
+														</h3>
+														<p>busisness planning
+														</p>
+													</div><!-- /.isotope-overlay -->
+												</div><!--/.item -->
+											</div><!-- /.col -->
+										</div><!-- /.row-->
+
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								
+							</div><!--/.isotope-->
+						</div><!--/.gallery-content-->
+					</div><!--/.project-content-->
+				</div><!--/.project-details-->
+			</div><!--/.container-->
+
+		</section><!--/.project-->
+		<!--project end-->
 
 	  <!--project start-->
 	<section id="project" class="project">
