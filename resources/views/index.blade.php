@@ -442,12 +442,50 @@
         <div class="news-card news-card-pb-25">
           <div class="row">
             <div class="col-md-6 col-sm-6">
-              <div class="single-news-box">
+              <div class="we-do-box">
                 <div class="news-box-bg">
                   <div class="row">
                     <div class="col-sm-6 col-md-6">
                       <div class="we-do-img img">
-                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+                        <img src="assets/images/dtegku1i@2x.png" alt="blog image" />
+                        <div class="isotope-overlay">
+                        <a href="blog_single.html">
+                              <span class="lnr lnr-link"></span>
+                            </a>
+                          </div>
+                        </div>    
+                    </div>
+                    <div class="col-sm-6 col-md-6" >
+                      <div id="info">
+                      <div id="p">Registered 2016</div>
+                        <div id="h3">Volkswagen</div>
+                        <div id="row_">
+                          <div id="btn">
+                            <div id="price">$50/Day</div>
+                          </div>
+                        </div>
+                        <div id="row">
+                          <span> 2.3K CC</span>
+                          <span> Petrol</span>
+                          <span> Mannual</span>
+                        </div>
+                      </div>
+                       
+                      <!--/.news-box-inner-->
+                    </div>
+                  </div>
+                </div>            
+              </div>
+              <!--/.single-news-box-->
+            </div>
+            <!--.col-->
+            <div class="col-md-6 col-sm-6">
+             <div class="we-do-box">
+                <div class="news-box-bg">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="we-do-img img">
+                      <img src="assets/images/d5c8ps0u@2x.png" alt="blog image" />
                       <div class="isotope-overlay">
                       <a href="blog_single.html">
                             <span class="lnr lnr-link"></span>
@@ -482,12 +520,12 @@
             </div>
             <!--.col-->
             <div class="col-md-6 col-sm-6">
-              <div class="single-news-box">
+              <div class="we-do-box">
                 <div class="news-box-bg">
                   <div class="row">
                     <div class="col-sm-6 col-md-6">
                       <div class="we-do-img img">
-                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+                      <img src="assets/images/cnjpktwo@2x.png" alt="blog image" />
                       <div class="isotope-overlay">
                       <a href="blog_single.html">
                             <span class="lnr lnr-link"></span>
@@ -522,52 +560,12 @@
             </div>
             <!--.col-->
             <div class="col-md-6 col-sm-6">
-              <div class="single-news-box">
+              <div class="we-do-box">
                 <div class="news-box-bg">
                   <div class="row">
                     <div class="col-sm-6 col-md-6">
                       <div class="we-do-img img">
-                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
-                      <div class="isotope-overlay">
-                      <a href="blog_single.html">
-                            <span class="lnr lnr-link"></span>
-                          </a>
-                        </div>
-                      </div>
-                     
-                         
-                    </div>
-                    <div class="col-sm-6 col-md-6" >
-                      <div id="info">
-                      <div id="p">Registered 2016</div>
-                        <div id="h3">Volkswagen</div>
-                        <div id="row_">
-                          <div id="btn">
-                            <div id="price">$50/Day</div>
-                          </div>
-                        </div>
-                        <div id="row">
-                          <span> 2.3K CC</span>
-                          <span> Petrol</span>
-                          <span> Mannual</span>
-                        </div>
-                      </div>
-                       
-                      <!--/.news-box-inner-->
-                    </div>
-                  </div>
-                </div>            
-              </div>
-              <!--/.single-news-box-->
-            </div>
-            <!--.col-->
-            <div class="col-md-6 col-sm-6">
-              <div class="single-news-box">
-                <div class="news-box-bg">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6">
-                      <div class="we-do-img img">
-                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+                      <img src="assets/images/lyw3su1t@2x.png" alt="blog image" />
                       <div class="isotope-overlay">
                       <a href="blog_single.html">
                             <span class="lnr lnr-link"></span>

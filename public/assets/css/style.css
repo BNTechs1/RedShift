@@ -564,7 +564,7 @@ html,body{
     width: 100%;
     /* height: 221px; */
     overflow: visible;
-    padding: 16px 0 16px 0;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -660,6 +660,17 @@ html,body{
 	-moz-transition:.5s; 
 	-ms-transition:.5s; 
 	-o-transition:.5s;
+    transition: .5s;
+} 
+
+.we-do-box{
+	box-shadow:0 5px 30px 0px rgba(115,112,215,.2);
+	/* min-height: 504px; */
+	margin-bottom: 13px;
+	-webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
