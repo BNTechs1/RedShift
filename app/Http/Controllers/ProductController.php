@@ -30,10 +30,10 @@ class ProductController extends Controller
     }
    
     //show create form 
-    public function create()
-    {
-        return 'Creating form';
-    } 
+    // public function create()
+    // {
+    //     return view('products.create');
+    // } 
 
    
     public function store(Request $request)
@@ -48,12 +48,10 @@ class ProductController extends Controller
         if($request->hasFile('image')){
             $formFields['image'] = $request->file('image')->store('images','public');
         }
-
-        
-
         Product::create($formFields);
 
-        return 'Hello World'; 
+        // session::flash('message', 'Product created Successfully');
+        return redirect('/')->with('message', 'Product created Successfully'); 
     }
     public function edit(Product $product)
     {
@@ -63,12 +61,26 @@ class ProductController extends Controller
   
     public function update(Request $request, Product $product)
     {
-        //
+        $formFields = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'price' => 'required',
+            'tag' => 'required',   
+        ]);
+
+        if($request->hasFile('image')){
+            $formFields['image'] = $request->file('image')->store('images','public');
+        }
+
+        $product->update($formFields);
+
+        return 'Product updated successfully'; 
     }
 
     
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+        return 'Deleted succsfully';
     }
 }
