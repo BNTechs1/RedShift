@@ -167,7 +167,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-sm-12">
-                    <div class="single-slide-item-content">
+                    <div class="single-slide-item-content d-flex flex-col ailgn-items-end">
                       <h2>
                         Red Shift
                       </h2>
@@ -177,7 +177,7 @@
                         your business problems.
                       </p>
                       <button type="button" class="slide-btn">
-                        explore more
+                        View more
                       </button>
                     </div>
                     <!-- /.single-slide-item-content-->
@@ -198,8 +198,7 @@
                   <div class="col-sm-12">
                     <div class="single-slide-item-content">
                       <h2>
-                        Consult Your <br />
-                        Business
+                        Consult Your Business
                       </h2>
                       <p>
                         We are the unique Consultancy Farm for your business
@@ -208,7 +207,7 @@
                       </p>
                      
                       <button type="button" class="slide-btn">
-                        explore more
+                        view more
                       </button>
                     </div>
                     <!-- /.single-slide-item-content-->
@@ -436,197 +435,180 @@
       <div class="container">
         <div class="we-do-details">
           <div class="section-header text-center">
-            <h2>what we do</h2>
-            <p>
-              Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.
-            </p>
+            <p>Pallamco laboris nisi ut aliquip</p>
+            <h2>Available Products</h2>
           </div>
           <!--/.section-header-->
-          <div class="we-do-carousel">
-            <div class="row">
-              <div class="col-sm-6 col-xs-12">
-                <div class="single-we-do-box text-center">
-                  <div class="we-do-description">
-                   <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                      <div class="we-do-img">
-                        <img
-                          src="assets/images/dtegku1i@2x.png"
-                          alt="image of consultency"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-8">
-                      <div class="we-do-info">
-                      
-                        <div class="we-do-topics">
-                          <h2>
-                            <a href="#"> Business Consultancy </a>
-                          </h2>
+        <div class="news-card news-card-pb-25">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="single-news-box">
+                <div class="news-box-bg">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="we-do-img img">
+                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+                      <div class="isotope-overlay">
+                      <a href="blog_single.html">
+                            <span class="lnr lnr-link"></span>
+                          </a>
                         </div>
-                        <!--/.we-do-topics-->
-                         <!--/.we-do-info-->
-                      <div class="we-do-comment">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ul.
-                        </p>
                       </div>
-                      <!--/.we-do-comment-->
-  
-                      </div>
+                     
+                         
                     </div>
-                   </div>
-                    
-                    <!--/.we-do-img-->
-                    
-                   
-                  </div>
-                  <!--/.we-do-description-->
-                </div>
-                <!--/.single-we-do-box-->
-              </div>
-              <!--/.col-->
-              <div class="col-sm-6 col-xs-12">
-                <div class="single-we-do-box text-center">
-                  <div class="we-do-description">
-                   <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                      <div class="we-do-img">
-                        <img
-                          src="assets/images/d5c8ps0u@2x.png"
-                          alt="image of consultency"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-8">
-                      <div class="we-do-info">
-                      
-                        <div class="we-do-topics">
-                          <h2>
-                            <a href="#"> Business Consultancy </a>
-                          </h2>
+                    <div class="col-sm-6 col-md-6" >
+                      <div id="info">
+                      <div id="p">Registered 2016</div>
+                        <div id="h3">Volkswagen</div>
+                        <div id="row_">
+                          <div id="btn">
+                            <div id="price">$50/Day</div>
+                          </div>
                         </div>
-                        <!--/.we-do-topics-->
-                         <!--/.we-do-info-->
-                      <div class="we-do-comment">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ul.
-                        </p>
-                      </div>
-                      <!--/.we-do-comment-->
-  
-                      </div>
-                    </div>
-                   </div>
-                    
-                    <!--/.we-do-img-->
-                    
-                   
-                  </div>
-                  <!--/.we-do-description-->
-                </div>
-                <!--/.single-we-do-box-->
-              </div>
-              <!--/.col-->
-              <div class="col-sm-6 col-xs-12">
-                <div class="single-we-do-box text-center">
-                  <div class="we-do-description">
-                   <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                      <div class="we-do-img">
-                        <img
-                          src="assets/images/cnjpktwo@2x.png"
-                          alt="image of consultency"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-8">
-                      <div class="we-do-info">
-                      
-                        <div class="we-do-topics">
-                          <h2>
-                            <a href="#"> Business Consultancy </a>
-                          </h2>
+                        <div id="row">
+                          <span> 2.3K CC</span>
+                          <span> Petrol</span>
+                          <span> Mannual</span>
                         </div>
-                        <!--/.we-do-topics-->
-                         <!--/.we-do-info-->
-                      <div class="we-do-comment">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ul.
-                        </p>
                       </div>
-                      <!--/.we-do-comment-->
-  
-                      </div>
+                       
+                      <!--/.news-box-inner-->
                     </div>
-                   </div>
-                    
-                    <!--/.we-do-img-->
-                    
-                   
                   </div>
-                  <!--/.we-do-description-->
-                </div>
-                <!--/.single-we-do-box-->
+                </div>            
               </div>
-              <!--/.col-->
-              <div class="col-sm-6 col-xs-12">
-                <div class="single-we-do-box text-center">
-                  <div class="we-do-description">
-                   <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                      <div class="we-do-img">
-                        <img
-                          src="assets/images/lyw3su1t@2x.png"
-                          alt="image of consultency"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-8">
-                      <div class="we-do-info">
-                      
-                        <div class="we-do-topics">
-                          <h2>
-                            <a href="#"> Business Consultancy </a>
-                          </h2>
-                        </div>
-                        <!--/.we-do-topics-->
-                         <!--/.we-do-info-->
-                      <div class="we-do-comment">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ul.
-                        </p>
-                      </div>
-                      <!--/.we-do-comment-->
-  
-                      </div>
-                    </div>
-                   </div>
-                    
-                    <!--/.we-do-img-->
-                    
-                   
-                  </div>
-                  <!--/.we-do-description-->
-                </div>
-                <!--/.single-we-do-box-->
-              </div>
-              <!--/.col-->
+              <!--/.single-news-box-->
             </div>
-            <!--/.row-->
+            <!--.col-->
+            <div class="col-md-6 col-sm-6">
+              <div class="single-news-box">
+                <div class="news-box-bg">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="we-do-img img">
+                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+                      <div class="isotope-overlay">
+                      <a href="blog_single.html">
+                            <span class="lnr lnr-link"></span>
+                          </a>
+                        </div>
+                      </div>
+                     
+                         
+                    </div>
+                    <div class="col-sm-6 col-md-6" >
+                      <div id="info">
+                      <div id="p">Registered 2016</div>
+                        <div id="h3">Volkswagen</div>
+                        <div id="row_">
+                          <div id="btn">
+                            <div id="price">$50/Day</div>
+                          </div>
+                        </div>
+                        <div id="row">
+                          <span> 2.3K CC</span>
+                          <span> Petrol</span>
+                          <span> Mannual</span>
+                        </div>
+                      </div>
+                       
+                      <!--/.news-box-inner-->
+                    </div>
+                  </div>
+                </div>            
+              </div>
+              <!--/.single-news-box-->
+            </div>
+            <!--.col-->
+            <div class="col-md-6 col-sm-6">
+              <div class="single-news-box">
+                <div class="news-box-bg">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="we-do-img img">
+                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+                      <div class="isotope-overlay">
+                      <a href="blog_single.html">
+                            <span class="lnr lnr-link"></span>
+                          </a>
+                        </div>
+                      </div>
+                     
+                         
+                    </div>
+                    <div class="col-sm-6 col-md-6" >
+                      <div id="info">
+                      <div id="p">Registered 2016</div>
+                        <div id="h3">Volkswagen</div>
+                        <div id="row_">
+                          <div id="btn">
+                            <div id="price">$50/Day</div>
+                          </div>
+                        </div>
+                        <div id="row">
+                          <span> 2.3K CC</span>
+                          <span> Petrol</span>
+                          <span> Mannual</span>
+                        </div>
+                      </div>
+                       
+                      <!--/.news-box-inner-->
+                    </div>
+                  </div>
+                </div>            
+              </div>
+              <!--/.single-news-box-->
+            </div>
+            <!--.col-->
+            <div class="col-md-6 col-sm-6">
+              <div class="single-news-box">
+                <div class="news-box-bg">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="we-do-img img">
+                      <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+                      <div class="isotope-overlay">
+                      <a href="blog_single.html">
+                            <span class="lnr lnr-link"></span>
+                          </a>
+                        </div>
+                      </div>
+                     
+                         
+                    </div>
+                    <div class="col-sm-6 col-md-6" >
+                      <div id="info">
+                      <div id="p">Registered 2016</div>
+                        <div id="h3">Volkswagen</div>
+                        <div id="row_">
+                          <div id="btn">
+                            <div id="price">$50/Day</div>
+                          </div>
+                        </div>
+                        <div id="row">
+                          <span> 2.3K CC</span>
+                          <span> Petrol</span>
+                          <span> Mannual</span>
+                        </div>
+                      </div>
+                       
+                      <!--/.news-box-inner-->
+                    </div>
+                  </div>
+                </div>            
+              </div>
+              <!--/.single-news-box-->
+            </div>
+            <!--.col-->
           </div>
-          <!--/.we-do-carousel-->
+          <!--/.row-->
+			</div>
         </div>
-        <!--/.we-do-details-->
         <div class="project-btn text-center">
           <a href="project.html" class="project-view">view all </a>
-        </div>
+        </div>    
+        <!--/.we-do-details-->
       </div>
       <!--/.container-->
     </section>
