@@ -113,9 +113,7 @@
               @auth
               <li><a> Welcome {{auth()->user()->name}}</a></li>
               <li class="active"><a href="/">Home</a></li>
-              <li><a href="/service">Manage Service</a></li>
-              <li><a href="/portfolio">Manage Portfolio</a></li>
-              <li><a href="/products">Manage Products</a></li>
+              <li><a href="/dashborad">Dashboard</a></li>
               <li>
                 <a>
                   <form action="/logout" method="POST"> 

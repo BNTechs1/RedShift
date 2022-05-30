@@ -49,6 +49,11 @@ Route::get('/creatproduct',function(){
     return view('products.create');
 });
 
+Route::get('/dashborad',function(){
+    return view('Admin.dashboard');
+});
+
+
 //route to submit registration 
 Route::post('/users', [UserController::Class, 'store']);
 
