@@ -12,7 +12,7 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">NiceAdmin</span>
+                  <span class="d-none d-lg-block">REDSHIFT</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -25,13 +25,11 @@
                     <p class="text-center small">Enter your personal details to create account</p>
                   </div>
 
-                  <form action="/users" method="/POST"class="row g-3 needs-validation" novalidate>
+                  <form action="/users" method="POST" class="row g-3 needs-validation" novalidate>
                     @csrf 
-
                   <div class="col-12">
                       <label for="yourName" class="form-label">Your Name</label>
-                      <input type="text" name="name" class="form-control" id="yourName" required>
-                      <div class="invalid-feedback">Please, enter your name!</div>
+                      <input value="{{old('name')}}" type="text" name="name" class="form-control" id="yourName" required>
 
                       @error('name') 
                         <p>{{$message}}</p>
@@ -40,51 +38,35 @@
 
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Your Email</label>
-                      <input type="email" name="email" class="form-control" id="yourEmail" required>
-                      <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                      <input type="email" value="{{old('email')}}"  name="email" class="form-control" id="yourEmail" required>
+                       @error('email') 
+                        <p>{{$message}}</p>
+                      @enderror
                     </div>
-
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Username</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Please choose a username.</div>
-                      </div>
-                    </div>
-
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Please enter your password!</div>
+                      <input type="password" value="{{old('password')}}"  name="password" class="form-control" id="yourPassword" required>
+                      @error('password') 
+                        <p>{{$message}}</p>
+                      @enderror
                     </div>
-
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
-                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
-                        <div class="invalid-feedback">You must agree before submitting.</div>
-                      </div>
+                     <div class="col-12">
+                      <label for="yourCPassword" class="form-label">Confirm Password</label>
+                      <input type="password" value="{{old('password_confirmation')}}" name="password_confirmation" class="form-control" id="yourCPassword" required>
+                      @error('password_confirmation') 
+                        <p>{{$message}}</p>
+                      @enderror
                     </div>
                     <div class="col-12">
                       <button class="btn btn-primary w-100"  type="submit">Create Account</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Already have an account? <a href="/products/create">Log in</a></p>
+                      <p class="small mb-0">Already have an account? <a href="/createproduct">Log in</a></p>
                     </div>
                   </form>
 
                 </div>
               </div>
-
-              <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
-
             </div>
           </div>
         </div>
