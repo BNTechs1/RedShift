@@ -12,9 +12,35 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/',function(){
+    return view('index');
+});
+
+Route::get('/about',function(){
+    return view('about');
+});
+
+Route::get('/service',function(){
+    return view('service');
+});
+
+Route::get('/products',function(){
+    return view('products');
+});
+
+Route::get('/portfolio',function(){
+    return view('portfolio');
+});
+
+Route::get('/contact',function(){
+    return view('contact');
+});
 
 
-Route::get('/products', [ProductController::class, 'index']);
+
+
+// To be moved to api.php or api endpoint for testing 
+Route::get('/product', [ProductController::class, 'index']);
 Route::get('/products/create', [ProductController::class, 'create']);
 Route::post('/products', [ProductController::class, 'store']);
 Route::get('/products/{product}', [ProductController::class, 'show']);
