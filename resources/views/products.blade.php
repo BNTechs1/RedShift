@@ -149,144 +149,111 @@
 		</section><!--/.about-part-->
 		<!--about-part end-->
       
-          <!--news start -->
-            <section class="news">
-          <div class="container">
-            <div class="news-details">
-            <div class="section-header text-center">
-              <h2>our services</h2>
-              <p>
-              Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-            <!--/.section-header-->
-            <div class="news-card news-card-pb-25">
-              <div class="row">
-                <div class="col-sm-4">
-                  
-                </div>
-                <div class="col-sm-8">
-                  <div class="col-md-4 col-sm-6">
-                    <div class="single-news-box">
-                    <div class="news-box-bg">
-                      <img src="assets/images/blog/bl1.jpg" alt="blog image" />
-                      <div class="isotope-overlay">
-                      <a href="blog_single.html">
-                        <span class="lnr lnr-link"></span>
-                      </a>
-                      </div>
-                    </div>
-                    <!--/.team-box-bg-->
-                    <div class="news-box-inner">
-                      <h3>
-                      <a href="blog_single.html">
-                        The Pros and Cons of Starting an Online Consulting
-                        Business
-                      </a>
-                      </h3>
-                      <p class="news-meta">
-                      Posted By: <span>Mick Steven</span> // On
-                      <span>12th June, 2017</span>
-                      </p>
-                      <div class="project-btn text-center">
-                        <a href="blog.html" class="service-view">read more </a>
-                        </div>
-                      <!-- <a href="#" class="learn-btn">
-                                    learn more
-                                  </a> -->
-                    </div>
-                    <!--/.news-box-inner-->
-                    </div>
-                    <!--/.single-news-box-->
-                  </div>
-                  <!--.col-->
-                  <div class="col-md-4 col-sm-6">
-                    <div class="single-news-box">
-                    <div class="news-box-bg">
-                      <img src="assets/images/blog/bl2.jpg" alt="blog image" />
-                      <div class="isotope-overlay">
-                      <a href="blog_single.html">
-                        <span class="lnr lnr-link"></span>
-                      </a>
-                      </div>
-                    </div>
-                    <!--/.team-box-bg-->
-                    <div class="news-box-inner">
-                      <h3>
-                      <a href="blog_single.html">
-                        8 Secrets for Your successful Business Mentor Won't Tell
-                        You
-                      </a>
-                      </h3>
-                      <p class="news-meta">
-                      Posted By: <span>Mick Steven</span> // On
-                      <span>12th June, 2017</span>
-                      </p>
-                      <div class="project-btn text-center">
-                        <a href="blog.html" class="service-view">read more </a>
-                        </div>
-                      <!-- <a href="#" class="learn-btn">
-                                    learn more
-                                  </a> -->
-                    </div>
-                    <!--/.news-box-inner-->
-                    </div>
-                    <!--/.single-news-box-->
-                  </div>
-                  <!--.col-->
-                  <div class="col-md-4 col-sm-6">
-                    <div class="single-news-box">
-                    <div class="news-box-bg">
-                      <img src="assets/images/blog/bl3.jpg" alt="blog image" />
-                      <div class="isotope-overlay">
-                      <a href="blog_single.html">
-                        <span class="lnr lnr-link"></span>
-                      </a>
-                      </div>
-                    </div>
-                    <!--/.team-box-bg-->
-                    <div class="news-box-inner">
-                      <h3>
-                      <a href="blog_single.html">
-                        Hire a Branding Consultant With a Similar Aesthetic to
-                        Your Own
-                      </a>
-                      </h3>
-                      <p class="news-meta">
-                      Posted By: <span>Mick Steven</span> // On
-                      <span>12th June, 2017</span>
-                      </p>
-                      <div class="project-btn text-center">
-                        <a href="blog.html" class="service-view">read more </a>
-                        </div>
-                      <!-- <a href="#" class="learn-btn">
-                                    learn more
-                                  </a> -->
-                    </div>
-                    <!--/.news-box-inner-->
-                    </div>
-                    <!--/.single-news-box-->
-                  </div>
-                  <!--.col-->
-                </div>
-             
-              </div>
-              <!--/.row-->
-              <div class="project-btn text-center">
-              <a href="blog.html" class="project-view">read more </a>
-              </div>
-              <!--/.project-btn-->
-            </div>
-            <!--/.news-card-->
-            </div>
-            <!--/news-details-->
+       <!--we-do start -->
+    <section class="we-do">
+      <div class="container">
+        <div class="we-do-details">
+          <div class="section-header text-center">
+            <p>Pallamco laboris nisi ut aliquip</p>
+            <h2>Available Products</h2>
           </div>
-          <!--/.container-->
-          </section>
-          <!--/news-->
-          <!--news end-->
+          <!--/.section-header-->
+        <div class="news-card news-card-pb-25">
+          <div class="row">
+            <div  class="col-md-4 col-sm-6">
+
+            </div>
+            <div class="col-md-8 col-sm-6">
+              <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="we-do-box">
+                  <div class="news-box-bg">
+                    <div class="row">                    
+                        <div class="we-do-img img">
+                          <img src="assets/images/dtegku1i@2x.png" alt="blog image" />
+                          <div class="isotope-overlay">
+                            <a href="blog_single.html">
+                                <span class="lnr lnr-link"></span>
+                              </a>
+                            </div>
+                          </div>    
+                        <div id="info">
+                          <div id="p">Registered 2016</div>
+                            <div id="h3">Volkswagen</div>
+                            <div id="row_">
+                              <div id="btn">
+                                <div id="price">$50/Day</div>
+                              </div>
+                            </div>
+                            <div id="row">
+                              <span> 2.3K CC</span>
+                              <span> Petrol</span>
+                              <span> Mannual</span>
+                            </div>
+                          </div>
+                        
+                    </div>
+                        <!--/.news-box-inner-->
+                  </div>            
+                </div>
+                <!--/.single-news-box-->
+              </div>
+              <!--.col-->
+              <div class="col-md-4 col-sm-6">
+                <div class="we-do-box">
+                    <div class="news-box-bg">
+                      <div class="row">
+                          <div class="we-do-img img">
+                            <img src="assets/images/d5c8ps0u@2x.png" alt="blog image" />
+                            <div class="isotope-overlay">
+                             <a href="blog_single.html">
+                                <span class="lnr lnr-link"></span>
+                              </a>
+                            </div>
+                          </div>
+                        
+                            
+                       
+                          <div id="info">
+                          <div id="p">Registered 2016</div>
+                            <div id="h3">Volkswagen</div>
+                            <div id="row_">
+                              <div id="btn">
+                                <div id="price">$50/Day</div>
+                              </div>
+                            </div>
+                            <div id="row">
+                              <span> 2.3K CC</span>
+                              <span> Petrol</span>
+                              <span> Mannual</span>
+                            </div>
+                          </div>
+                          
+                          <!--/.news-box-inner-->
+                      </div>
+                    </div>            
+                  </div>
+                  <!--/.single-news-box-->
+                </div>
+                <!--.col-->
+            </div>
+              <!--.col-->
+              </div>
+             
+             
+          </div>
+          <!--/.row-->
+			</div>
+        </div>
+        <div class="project-btn text-center">
+          <a href="project.html" class="project-view">view all </a>
+        </div>    
+        <!--/.we-do-details-->
+      </div>
+      <!--/.container-->
+    </section>
+    <!--/.we-do-->
+    <!--we-do end-->
         
       
 
