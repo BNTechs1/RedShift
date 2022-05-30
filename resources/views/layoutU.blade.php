@@ -110,6 +110,21 @@
             id="bs-example-navbar-collapse-1"
             >
             <ul class="nav navbar-nav navbar-right">
+              @auth
+              <li><a> Welcome {{auth()->user()->name}}</a></li>
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/service">Manage Service</a></li>
+              <li><a href="/portfolio">Manage Portfolio</a></li>
+              <li><a href="/products">Manage Products</a></li>
+              <li>
+                <a>
+                  <form action="/logout" method="POST"> 
+                  @csrf
+                  <button type="submit">Logout</button>
+                  </form>
+                </a>
+              </li>
+              @else
               <li class="active"><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/service">Service</a></li>
@@ -118,8 +133,9 @@
               <li><a href="/contact">Contact</a></li>
               <li><a href="/register">Register</a></li>
               <li><a href="/login">Login</a></li>
+              @endauth
               <!-- <li>
-              <a href="#">
+              <a href="#"> 
                 <span class="lnr lnr-cart"></span>
               </a>
               </li> -->
