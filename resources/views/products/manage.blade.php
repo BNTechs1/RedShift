@@ -37,7 +37,8 @@
                             <td>{{$value->tag}}</td>
                             <td> 
                             <div>
-                                <a href="/products/edit/{{$value->id}}" type="button" class="btn btn-secondary"><i class="bi bi-collection"></i></a>
+                            {{-- products/{{$value->id}}/edit --}}
+                                <a href="/products/{{$value->id}}/edit"  class="btn btn-secondary"><i class="bi bi-collection"></i></a>
                                 <a href="/products/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
                                 <a href="/products/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
                             </div>

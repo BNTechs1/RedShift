@@ -79,11 +79,13 @@ Route::get('/product', [ProductController::class, 'index']);
 //Route to post new products to the DB
 Route::post('/products', [ProductController::class, 'store'])->middleware('auth');
 
-//Route to edit product page
-Route::get('/products/edit/{product}',function(Product $product){
-    return view('products.create')->with(['product'=>$product]);
+// /products/{product}/edit
+//Route to edit product pag
+Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->middleware('auth');
+// Route::get('/products/{product}/edit',function(Product $product){
+//     return view('products.create')->with(['product'=>$product]);
     
-})->name('editproduct');
+// })->name('editproduct');
 
 //Route to update product
 Route::put('/products/update/{product}', [ProductController::class, 'update'])->middleware('auth');

@@ -23,9 +23,10 @@ class ProductController extends Controller
         return view('products.create');
     } 
 
-     public function edit(Product $product)
-    {
-        return view('products.edit');
+     public function edit($id)
+    {   
+        $product = Product::find($id);
+        return view('products.edit', ['product'=>$product]);
     }
 
     /**
