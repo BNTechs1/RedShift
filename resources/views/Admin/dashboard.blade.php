@@ -2,7 +2,7 @@
 
 @section('content')
 
-     <main id="main" class="main">
+  <main id="main" class="main">
 
     <div class="pagetitle">
       <h1>Blank Page</h1>

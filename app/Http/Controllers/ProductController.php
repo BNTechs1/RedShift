@@ -21,7 +21,12 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return Product::latest()->filter(request(['tag','search']))->paginate(5);
+        return (['products' => Product::latest()->filter(request(['tag','search']))->paginate(5)]);
+    }
+
+    public function adminindex()
+    {
+        return redirect('/manageProduct')->with(['products' => Product::latest()->filter(request(['tag','search']))->paginate(5)]);   
     }
 
     public function show(Product $product)
@@ -29,7 +34,7 @@ class ProductController extends Controller
         return Product::find($product);
     }
    
-    //show create form 
+    // show create form 
     // public function create()
     // {
     //     return view('products.create');

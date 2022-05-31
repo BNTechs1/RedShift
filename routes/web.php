@@ -54,6 +54,19 @@ Route::get('/dashborad',function(){
 });
 
 
+Route::get('/createProduct',function(){
+    return view('products.create');
+});
+
+
+Route::get('/manageProduct',function(){
+    return view('products.manage');
+});
+
+
+
+
+
 //route to submit registration 
 Route::post('/users', [UserController::Class, 'store']);
 
@@ -72,7 +85,7 @@ Route::get('/login', [UserController::class, 'login'])->name('login')->middlewar
 
 
 // To be moved to api.php or api endpoint for testing 
-Route::get('/product', [ProductController::class, 'index']);
+Route::get('/product', [ProductController::class, 'adminindex']);
 // Route::get('/products/create', [ProductController::class, 'create']);
 Route::post('/products', [ProductController::class, 'store'])->middleware('auth');
 Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->middleware('auth');;
