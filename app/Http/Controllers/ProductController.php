@@ -39,23 +39,10 @@ class ProductController extends Controller
         return (['products' => Product::latest()->filter(request(['tag','search']))->paginate(5)]);
     }
 
-    public function adminindex()
-    {
-        $products  = Product::latest()->filter(request(['tag','search']))->paginate(5);  
-        
-        View::share('products', $products);
-
-        return  $products;
-    }
-
     public function show(Product $product)
     {
         return Product::find($product);
-    }
-   
-    
-
-   
+    }   
     public function store(Request $request)
     {
         $formFields = $request->validate([
@@ -71,7 +58,7 @@ class ProductController extends Controller
         Product::create($formFields);
 
         // session::flash('message', 'Product created Successfully');
-        return redirect('/')->with('message', 'Product created Successfully'); 
+        return redirect('/manageProduct')->with('message', 'Product created Successfully'); 
     }
    
 
@@ -91,13 +78,13 @@ class ProductController extends Controller
 
         $product->update($formFields);
 
-        return 'Product updated successfully'; 
+        return redirect('/manageProduct')->with('message', 'Product Updated Successfully'); 
     }
 
     
     public function destroy(Product $product)
     {
         $product->delete();
-        return 'Deleted succsfully';
+        return redirect('/manageProduct')->with('message','Product Deleted succssfully');
     }
 }
