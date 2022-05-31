@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $products = Product::get();
+        $products = Product::latest()->filter(request(['tag','search']))->paginate(10);
 
         View::composer('*', function($view) use($products){
             $view->with('products', $products);

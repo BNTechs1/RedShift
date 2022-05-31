@@ -19,7 +19,7 @@
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        {{-- <th scope="col">#</th> --}}
                         <th scope="col">Image</th>
                         <th scope="col">Name</th>
                         <th scope="col">Price</th>
@@ -30,8 +30,8 @@
                     <tbody>
                     @foreach ($products as $product=>$value)
                         <tr>
-                            <th scope="row">{{$value['id']}}</th>
-                            <td>{{$value->id}}</td>
+                            {{-- <th scope="row">{{$value['id']}}</th> --}}
+                            <td>{{$value->name}}</td>
                             <td>{{$value->name}}</td>
                             <td>{{$value->price}}</td>
                             <td>{{$value->tag}}</td>
@@ -48,9 +48,32 @@
                     </tbody>
                 </table>
                 <!-- End Table with stripped rows -->
-
+                  <!-- Pagination with icons -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="/product?page=1">1</a></li>
+                  <li class="page-item"><a class="page-link" href="/product?page=2">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav><!-- End Pagination with icons -->
                 </div>
+                
             </div>
+        </div>
+         <div class="col-lg-6">
+
+         
+            
         </div>
     </div>
     </section>
