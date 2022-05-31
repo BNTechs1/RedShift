@@ -29,6 +29,11 @@ class ProductController extends Controller
         return view('products.edit', ['product'=>$product]);
     }
 
+    
+    public function manage()
+    {
+        return view('products.manage');
+    } 
     /**
      * Display a listing of the resource.
      *

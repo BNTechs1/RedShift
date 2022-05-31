@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Product;
 
@@ -56,19 +57,33 @@ Route::get('/contact',function(){
 
 /*
 |--------------------------------------------------------------------------
-|Products Routes
+|Admin Routes
 |--------------------------------------------------------------------------
 */
 
 //Route to Admin Dashboard
-Route::get('/dashborad',function(){
-    return view('Admin.dashboard');
-});
+Route::get('/dashborad', [RouteController::class, 'dashboard'])->middleware('auth');
+
+// Route::get('/dashborad',function(){
+//     return view('Admin.dashboard');
+// });
+
+
+/*
+|--------------------------------------------------------------------------
+|Products Routes
+|--------------------------------------------------------------------------
+*/
+
+
 
 //Route to  Manage products Page
-Route::get('/manageProduct',function(){
-    return view('products.manage');
-});
+Route::get('/manageProduct',  [ProductController::class, 'manage'])->middleware('auth');
+
+// Route::get('/manageProduct',function(){
+//     return view('products.manage');
+// });
+
 
 //Route to Create Products page
 Route::get('/createproducts', [ProductController::class, 'create'])->middleware('auth');
