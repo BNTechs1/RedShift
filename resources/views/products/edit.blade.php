@@ -9,10 +9,10 @@
            <div class="card">
             <div class="card-body">
               <h5 class="card-title">Edit Product</h5>
-
               <!-- Floating Labels Form -->
               <form action="/products" method="POST" class="row g-3">
               @csrf
+              {{-- {{$product}} --}}
                 <div class="col-md-12">
                   <div class="form-floating">
                     <input type="text" name="name" value="{{old('name')}}" class="form-control" id="floatingName" placeholder="Your Name">

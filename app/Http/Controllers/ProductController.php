@@ -15,6 +15,19 @@ use Illuminate\Support\Facades\View;
 //destroy - delete product
 class ProductController extends Controller
 {
+
+
+    //show create form 
+    public function create()
+    {
+        return view('products.create');
+    } 
+
+     public function edit(Product $product)
+    {
+        return view('products.edit');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -39,11 +52,7 @@ class ProductController extends Controller
         return Product::find($product);
     }
    
-    // show create form 
-    // public function create()
-    // {
-    //     return view('products.create');
-    // } 
+    
 
    
     public function store(Request $request)
@@ -63,10 +72,7 @@ class ProductController extends Controller
         // session::flash('message', 'Product created Successfully');
         return redirect('/')->with('message', 'Product created Successfully'); 
     }
-    // public function edit(Product $product)
-    // {
-    //     return view('products.edit');
-    // }
+   
 
   
     public function update(Request $request, Product $product)

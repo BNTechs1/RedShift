@@ -4,7 +4,7 @@
 
   <main id="main" class="main">
     <div>
-    <a type="button" href="/creatproduct" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add product</a>
+    <a type="button" href="/createproducts" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add product</a>
     </div>
     {{-- {{ $products['name']}} --}}
     <section class="section">
@@ -37,7 +37,7 @@
                             <td>{{$value->tag}}</td>
                             <td> 
                             <div>
-                                <a href="/product/{{$value->id}}/edit" type="button" class="btn btn-secondary"><i class="bi bi-collection"></i></a>
+                                <a href="/products/edit/{{$value->id}}" type="button" class="btn btn-secondary"><i class="bi bi-collection"></i></a>
                                 <a href="/products/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
                                 <a href="/products/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
                             </div>
