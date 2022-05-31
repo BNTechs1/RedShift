@@ -146,9 +146,9 @@
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
-
+{{-- {{ url('/product') }} --}}
       <li class="nav-item">
-        <a class="nav-link collapsed"  href="{{ url('/product') }}"   type="button">
+        <a class="nav-link collapsed"  href="/manageProduct"   type="button">
           <i class="bi bi-menu-button-wide"></i><span>Manage Products</span>
         </a>
       </li><!-- End Components Nav -->

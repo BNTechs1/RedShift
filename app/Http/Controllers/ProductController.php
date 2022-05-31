@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 //Common Resource Routes 
 //index - show all products 
 //show - show single product
@@ -26,7 +27,11 @@ class ProductController extends Controller
 
     public function adminindex()
     {
-        return redirect('/manageProduct')->with(['products' => Product::latest()->filter(request(['tag','search']))->paginate(5)]);   
+        $products  = Product::latest()->filter(request(['tag','search']))->paginate(5);  
+        
+        View::share('products', $products);
+
+        return  $products;
     }
 
     public function show(Product $product)
@@ -58,10 +63,10 @@ class ProductController extends Controller
         // session::flash('message', 'Product created Successfully');
         return redirect('/')->with('message', 'Product created Successfully'); 
     }
-    public function edit(Product $product)
-    {
-        //
-    }
+    // public function edit(Product $product)
+    // {
+    //     return view('products.edit');
+    // }
 
   
     public function update(Request $request, Product $product)

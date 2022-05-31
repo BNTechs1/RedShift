@@ -63,6 +63,10 @@ Route::get('/manageProduct',function(){
     return view('products.manage');
 });
 
+Route::get('/product/{product}/edit',function(){
+    return view('products.edit');
+});
+
 
 
 
@@ -88,9 +92,9 @@ Route::get('/login', [UserController::class, 'login'])->name('login')->middlewar
 Route::get('/product', [ProductController::class, 'adminindex']);
 // Route::get('/products/create', [ProductController::class, 'create']);
 Route::post('/products', [ProductController::class, 'store'])->middleware('auth');
-Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->middleware('auth');;
-Route::put('/products/{product}', [ProductController::class, 'update'])->middleware('auth');;
+// Route::get('/products/edit/{product}', [ProductController::class, 'edit'])->middleware('auth');;
+Route::put('/products/update/{product}', [ProductController::class, 'update'])->middleware('auth');;
 Route::get('/products/{product}', [ProductController::class, 'show']);
-Route::get('/products/{product}', [ProductController::class, 'destroy'])->middleware('auth');;
+Route::get('/products/delete/{product}', [ProductController::class, 'destroy'])->middleware('auth');;
 
 

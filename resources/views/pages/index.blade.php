@@ -106,9 +106,9 @@
     </section>
     <!-- /.header-slider-area-->
     <!-- header-slider-area end -->
-
     <!--about-us start -->
     <section class="about-us">
+
       <div class="container">
         <div class="about-us-content">
           <div class="row">
@@ -301,6 +301,9 @@
           <!--/.section-header-->
         <div class="news-card news-card-pb-25">
           <div class="row">
+          <?php $count = 0; ?>
+          @foreach ($products as $product=>$value)
+          <?php if($count == 4) break; ?>
             <div class="col-md-6 col-sm-6">
               <div class="we-do-box">
                 <div class="news-box-bg">
@@ -318,14 +321,14 @@
                     <div class="col-sm-6 col-md-6" >
                       <div id="info">
                       <div id="p">Registered 2016</div>
-                        <div id="h3">Volkswagen</div>
+                        <div id="h3">{{$value->name}}</div>
                         <div id="row_">
                           <div id="btn">
-                            <div id="price">$50/Day</div>
+                            <div id="price">{{$value->price}}</div>
                           </div>
                         </div>
                         <div id="row">
-                          <span> 2.3K CC</span>
+                          <span> {{$value->tag}}</span>
                           <span> Petrol</span>
                           <span> Mannual</span>
                         </div>
@@ -338,8 +341,10 @@
               </div>
               <!--/.single-news-box-->
             </div>
+            <?php $count++; ?>
+          @endforeach
             <!--.col-->
-            <div class="col-md-6 col-sm-6">
+            {{-- <div class="col-md-6 col-sm-6">
              <div class="we-do-box">
                 <div class="news-box-bg">
                   <div class="row">
@@ -377,9 +382,9 @@
                 </div>            
               </div>
               <!--/.single-news-box-->
-            </div>
+            </div> --}}
             <!--.col-->
-            <div class="col-md-6 col-sm-6">
+            {{-- <div class="col-md-6 col-sm-6">
               <div class="we-do-box">
                 <div class="news-box-bg">
                   <div class="row">
@@ -417,9 +422,9 @@
                 </div>            
               </div>
               <!--/.single-news-box-->
-            </div>
+            </div> --}}
             <!--.col-->
-            <div class="col-md-6 col-sm-6">
+            {{-- <div class="col-md-6 col-sm-6">
               <div class="we-do-box">
                 <div class="news-box-bg">
                   <div class="row">
@@ -457,7 +462,7 @@
                 </div>            
               </div>
               <!--/.single-news-box-->
-            </div>
+            </div> --}}
             <!--.col-->
           </div>
           <!--/.row-->

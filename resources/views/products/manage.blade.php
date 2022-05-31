@@ -1,4 +1,4 @@
- @extends('dashboard_layout')
+@extends('dashboard_layout')
 
 @section('content')
 
@@ -6,6 +6,7 @@
     <div>
     <a type="button" href="/creatproduct" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add product</a>
     </div>
+    {{-- {{ $products['name']}} --}}
     <section class="section">
       <div class="row">
         <div class="col-lg-12">
@@ -27,27 +28,22 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($products as $product)
+                    @foreach ($products as $product=>$value)
                         <tr>
-                            {{-- <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td> --}}
-                            
-                            <th scope="row">{{$product['id']}}</th>
-                            <td>{{$product['id']}}</td>
-                            <td>{{$product['name']}}</td>
-                            <td>{{$product['price']}}</td>
-                            <td>{{$product['tag']}}</td>
+                            <th scope="row">{{$value['id']}}</th>
+                            <td>{{$value->id}}</td>
+                            <td>{{$value->name}}</td>
+                            <td>{{$value->price}}</td>
+                            <td>{{$value->tag}}</td>
                             <td> 
                             <div>
-                                <button type="button" class="btn btn-secondary"><i class="bi bi-collection"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button>
-                                <button type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></button>
+                                <a href="/product/{{$value->id}}/edit" type="button" class="btn btn-secondary"><i class="bi bi-collection"></i></a>
+                                <a href="/products/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
+                                <a href="/products/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
                             </div>
                             </td>
                         </tr>
+                        
                     @endforeach
                     </tbody>
                 </table>
