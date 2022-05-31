@@ -310,7 +310,8 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-6">
                       <div class="we-do-img img">
-                        <img src="assets/images/dtegku1i@2x.png" alt="blog image" />
+                        <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+                        {{-- <img src="assets/images/dtegku1i@2x.png" alt="blog image" /> --}}
                         <div class="isotope-overlay">
                         <a href="blog_single.html">
                               <span class="lnr lnr-link"></span>
