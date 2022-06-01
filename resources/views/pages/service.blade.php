@@ -26,120 +26,33 @@
 						</div><!--/.section-header-->
 						<div class="service-content-one">
 							<div class="row">
+							  <?php $count = 0; ?>
+								@foreach ($services as $service=>$value)
+								<?php if($count == 4) break; ?>
 								<div class="col-sm-4 col-xs-12">
 									<div class="service-single text-center">
 										<div class="service-img">
+								            {{-- <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
 											<img src="assets/images/service/service1.png" alt="image of service" />
 										</div><!--/.service-img-->
 										<div class="service-txt">
 											<h2>
-												<a href="#">busisness planning</a>
+												<a href="#">{{$value->name}}</a>
 											</h2>
 											<p>
-												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
+												{{$value->description}}
 											</p>
-											<a href="#" class="service-btn">
+											<a href="/services/{{$value->id}}/detail" class="service-btn">
 												learn more
 											</a>
 										</div><!--/.service-txt-->
 									</div><!--/.service-single-->
 								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="assets/images/service/service2.png" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">busisness consultency</a>
-											</h2>
-											<p>
-												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
-											</p>
-											<a href="#" class="service-btn">
-												learn more
-											</a>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="assets/images/service/service3.png" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">financial services</a>
-											</h2>
-											<p>
-												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
-											</p>
-											<a href="#" class="service-btn">
-												learn more
-											</a>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
+								  <?php $count++; ?>
+          							@endforeach
+				
 							</div><!--/.row-->
 						</div><!--/.service-content-one-->
-						<div class="service-content-two">
-							<div class="row">
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="assets/images/service/service4.png" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">risk management</a>
-											</h2>
-											<p>
-												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
-											</p>
-											<a href="#" class="service-btn">
-												learn more
-											</a>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="assets/images/service/service5.png" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">expert advisers</a>
-											</h2>
-											<p>
-												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
-											</p>
-											<a href="#" class="service-btn">
-												learn more
-											</a>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="assets/images/service/service6.png" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">24/7 customer support</a>
-											</h2>
-											<p>
-												Lorem ipsum dolo dolor in  in voluptate velit esse cillum dolore. epteur sint oat cupidatat 
-											</p>
-											<a href="#" class="service-btn">
-												learn more
-											</a>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-							</div><!--/.row-->
-						</div><!--/.service-content-two-->
 					</div><!--/.service-details-->
 				</div><!--/.container-->
 
@@ -147,7 +60,7 @@
 		<!--service end-->
 
 			<!--about-history start-->
-			<div class="about-history">
+			{{-- <div class="about-history">
 				<div class="container">
 					<div class="about-history-content">
 	
@@ -410,7 +323,7 @@
 					</div><!--/.about-history-content-->
 				</div><!--/.container-->
 	
-			</div><!--/.about-history-->
+			</div><!--/.about-history--> --}}
 			<!--about-history end-->
 		
 	

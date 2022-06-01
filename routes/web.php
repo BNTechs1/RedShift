@@ -36,7 +36,7 @@ Route::get('/about',function(){
 });
 
 //Route for Service
-Route::get('/service',function(){
+Route::get('/services',function(){
     return view('pages.service');
 });
 
@@ -93,6 +93,7 @@ Route::post('/products', [ProductController::class, 'store'])->middleware('auth'
 //Route to edit product pag
 Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->middleware('auth');
 
+
 //Route to update product
 Route::put('/products/update/{product}', [ProductController::class, 'update'])->middleware('auth');
 
@@ -148,9 +149,11 @@ Route::get('/service', [ServiceController::class, 'index']);
 Route::post('/services', [ServiceController::class, 'store'])->middleware('auth');
 
 
-//Route to edit service pag
+//Route to edit service page
 Route::get('/services/{service}/edit', [ServiceController::class, 'edit'])->middleware('auth');
 
+// Route to detail service page
+Route::get('/services/{service}/detail', [ServiceController::class, 'detail']);
 //Route to update service
 Route::put('/services/update/{service}', [ServiceController::class, 'update'])->middleware('auth');
 

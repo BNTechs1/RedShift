@@ -23,8 +23,10 @@
       rel="stylesheet"
     />
 
+
     <!-- TITLE OF SITE -->
     <title>Red Shift</title>
+
 
 
     <!-- for title img -->
@@ -57,16 +59,16 @@
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
 
     <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
 
     <!-- bootsnav -->
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
 
     <!--style.css-->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
     <!--responsive.css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

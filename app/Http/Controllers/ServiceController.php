@@ -24,6 +24,11 @@ class ServiceController extends Controller
     {
         return view('services.manage');
     } 
+    public function detail($id)
+    {   
+        $service = Service::find($id);
+        return view('pages.detailservice',['service'=>$service]);
+    } 
     /**
      * Display a listing of the resource.
      *
@@ -31,7 +36,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return (['services' => Service::all()->paginate(5)]);
+        return (['services' => Service::all()]);
     }
 
       /**
