@@ -371,11 +371,15 @@
 						<div class="container">
 							<div class="row">
 								<div class="owl-carousel  team-carousel">
+								 	<?php $count = 0; ?>
+									@foreach ($teams as $team=>$value)
+									<?php if($count == 4) break; ?>
 									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-1">
+										<div class="single-team-box single-team-card">
+                        						<img class="team-box-bg-1" src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
 											<div class="team-box-inner">
-												<h3>tom hanks</h3>
-												<p class="team-meta">Founder &  CEO</p>
+												<h3>{{$value->name}}</h3>
+												<p class="team-meta">{{$value->description}}/p>
 												<a href="team.html" class="learn-btn">
 													learn more
 												</a>
@@ -383,104 +387,8 @@
 
 										</div><!--/.single-team-box-->
 									</div><!--.col-->
-									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-2">
-											<div class="team-box-inner">
-												<h3>alex browne</h3>
-												<p class="team-meta">
-													Director, Management & Research
-												</p>
-												<a href="team.html" class="learn-btn">
-													learn more
-												</a>
-											</div><!--/.team-box-inner-->
-										</div><!--/.single-team-box-->
-									</div><!--.col-->
-									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-3">
-											<div class="team-box-inner">
-												<h3>darren j. stevens</h3>
-												<p class="team-meta">
-													Director, Finance Solution
-												</p>
-												<a href="team.html" class="learn-btn">
-													learn more
-												</a>
-											</div><!--/.team-box-inner-->
-										</div><!--/.single-team-box-->
-									</div><!--.col-->
-									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-4">
-											<div class="team-box-inner">
-												<h3>kevin thomson</h3>
-												<p class="team-meta">
-													Head, Legal Advising
-												</p>
-												<a href="team.html" class="learn-btn">
-													learn more
-												</a>
-											</div><!--/.team-box-inner-->
-										</div><!--/.single-team-box-->
-									</div><!--.col-->
-								</div><!--/.team-carousel-->
-							</div><!--/.row-->
-						</div><!--/.container-->
-					</div><!--/.team-card-->
-					<div class="team-card team-mrt-70">
-						<div class="container">
-							<div class="row">
-								<div class="owl-carousel  team-carousel">
-									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-4">
-											<div class="team-box-inner">
-												<h3>tom hanks</h3>
-												<p class="team-meta">Founder &  CEO</p>
-												<a href="team.html" class="learn-btn">
-													learn more
-												</a>
-											</div><!--/.team-box-inner-->
-
-										</div><!--/.single-team-box-->
-									</div><!--.col-->
-									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-3">
-											<div class="team-box-inner">
-												<h3>alex browne</h3>
-												<p class="team-meta">
-													Director, Management & Research
-												</p>
-												<a href="team.html" class="learn-btn">
-													learn more
-												</a>
-											</div><!--/.team-box-inner-->
-										</div><!--/.single-team-box-->
-									</div><!--.col-->
-									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-2">
-											<div class="team-box-inner">
-												<h3>darren j. stevens</h3>
-												<p class="team-meta">
-													Director, Finance Solution
-												</p>
-												<a href="team.html" class="learn-btn">
-													learn more
-												</a>
-											</div><!--/.team-box-inner-->
-										</div><!--/.single-team-box-->
-									</div><!--.col-->
-									<div class="col-sm-3 col-xs-12">
-										<div class="single-team-box single-team-card team-box-bg-1">
-											<div class="team-box-inner">
-												<h3>kevin thomson</h3>
-												<p class="team-meta">
-													Head, Legal Advising
-												</p>
-												<a href="team.html" class="learn-btn">
-													learn more
-												</a>
-											</div><!--/.team-box-inner-->
-										</div><!--/.single-team-box-->
-									</div><!--.col-->
+									<?php $count++; ?>
+          							@endforeach
 								</div><!--/.team-carousel-->
 							</div><!--/.row-->
 						</div><!--/.container-->

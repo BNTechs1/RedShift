@@ -47,9 +47,9 @@ Route::get('/products',function(){
     return view('pages.products');
 });
 
-//Route for Portfolio
-Route::get('/portfolio',function(){
-    return view('pages.portfolio'); 
+//Route for Portfolios
+Route::get('/portfolios',function(){
+    return view('pages.portfolios'); 
 });
 
 //Route for Contact
