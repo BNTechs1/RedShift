@@ -4,7 +4,7 @@
 
   <main id="main" class="main">
     <div>
-    <a type="button" href="/createservices" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add Service</a>
+    <a type="button" href="/createportfolios" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add Portfolios</a>
     </div>
     {{-- {{ $services['name']}} --}}
     <section class="section">
@@ -26,7 +26,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($services as $service=>$value)
+                    @foreach ($portfolios as $portfolio=>$value)
                         <tr>
                             {{-- <th scope="row">{{$value['id']}}</th> --}}
                             {{-- <td><img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /></td> --}}
@@ -35,9 +35,9 @@
                             <td> 
                             <div>
                             {{-- services/{{$value->id}}/edit --}}
-                                <a href="/services/{{$value->id}}/edit"  class="btn btn-secondary"><i class="bi bi-collection"></i></a>
-                                <a href="/services/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
-                                <a href="/services/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
+                                <a href="/portfolios/{{$value->id}}/edit"  class="btn btn-secondary"><i class="bi bi-collection"></i></a>
+                                <a href="/portfolios/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
+                                <a href="/portfolios/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
                             </div>
                             </td>
                         </tr>
@@ -54,8 +54,8 @@
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="/service?page=1">1</a></li>
-                  <li class="page-item"><a class="page-link" href="/service?page=2">2</a></li>
+                  <li class="page-item"><a class="page-link" href="/portfolio?page=1">1</a></li>
+                  <li class="page-item"><a class="page-link" href="/portfolio?page=2">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Next">

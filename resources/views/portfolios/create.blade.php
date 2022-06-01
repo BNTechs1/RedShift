@@ -11,7 +11,7 @@
               <h5 class="card-title">Add Portfolio</h5>
 
               <!-- Floating Labels Form -->
-              <form action="/services" method="POST"  enctype="multipart/form-data" class="row g-3">
+              <form action="/portfolios" method="POST"  enctype="multipart/form-data" class="row g-3">
               @csrf
                 <div class="col-md-12">
                   <div class="form-floating">

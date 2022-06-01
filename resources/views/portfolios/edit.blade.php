@@ -8,15 +8,15 @@
         <div class="col-lg-6">
            <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Edit services</h5>
+              <h5 class="card-title">Edit Portfolio</h5>
               <!-- Floating Labels Form -->
-              <form action="/services/update/{{$service->id}}" method="POST" class="row g-3">
+              <form action="/portfolios/update/{{$portfolio->id}}" method="POST" class="row g-3">
               @csrf
               @method('PUT')
               {{-- {{$service}} --}}
                 <div class="col-md-12">
                   <div class="form-floating">
-                    <input type="text" name="name" value="{{$service->name}}" class="form-control" id="floatingName" placeholder="Your Name">
+                    <input type="text" name="name" value="{{$portfolio->name}}" class="form-control" id="floatingName" placeholder="Your Name">
                     <label for="floatingName">service Name</label>
                   </div>
                   @error('name')
@@ -25,7 +25,7 @@
                 </div>                
                 <div class="col-md-12">
                   <div class="form-floating">
-                    <input class="form-control"  name="image" value="{{$service->image}}" type="file" id="fileUpload">
+                    <input class="form-control"  name="image" value="{{$portfolio->image}}" type="file" id="fileUpload">
                 </div>
                     @error('image')
                     <p>{{$message}}</p>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea class="form-control" name="description" value="{{$service->description}}"  placeholder="Description" id="floatingDescription" style="height: 100px;"></textarea>
+                    <textarea class="form-control" name="description" value="{{$portfolio->description}}"  placeholder="Description" id="floatingDescription" style="height: 100px;"></textarea>
                     <label for="floatingDescription">Description</label>
                   </div>
                       @error('description')
