@@ -3,6 +3,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Product;
@@ -165,6 +166,43 @@ Route::get('/services/delete/{service}', [ServiceController::class, 'destroy'])-
 //Route to Show single service
 Route::get('/services/{service}', [ServiceController::class, 'show']);
 
+
+
+
+/*
+|Portfolios Routes
+|--------------------------------------------------------------------------
+*/
+
+
+
+//Route to  Manage portfolios Page
+Route::get('/managePortfolio',  [PortfolioController::class, 'manage'])->middleware('auth');
+
+//Route to Create portfolios page
+Route::get('/createportfolios', [PortfolioController::class, 'create'])->middleware('auth');
+
+//Route to get all portfolios 
+Route::get('/portfolio', [PortfolioController::class, 'index']);
+
+//Route to post new portfolios to the DB
+Route::post('/portfolios', [PortfolioController::class, 'store'])->middleware('auth');
+
+
+//Route to edit portfolio page
+Route::get('/portfolios/{portfolio}/edit', [PortfolioController::class, 'edit'])->middleware('auth');
+
+// Route to detail portfolio page
+Route::get('/portfolios/{portfolio}/detail', [PortfolioController::class, 'detail']);
+//Route to update portfolio
+Route::put('/portfolios/update/{portfolio}', [PortfolioController::class, 'update'])->middleware('auth');
+
+//Route to Delete portfolio
+Route::get('/portfolios/delete/{portfolio}', [PortfolioController::class, 'destroy'])->middleware('auth');
+
+
+//Route to Show single portfolio
+Route::get('/portfolios/{portfolio}', [PortfolioController::class, 'show']);
 
 /*
 |--------------------------------------------------------------------------
