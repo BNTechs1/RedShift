@@ -114,7 +114,7 @@
       </li><!-- End Forms Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed">
+        <a class="nav-link collapsed"  href="/managePortfolio"  type="button">
           <i class="bi bi-layout-text-window-reverse"></i><span>Manage Portfolio</span>
         </a>
       </li><!-- End Tables Nav -->
