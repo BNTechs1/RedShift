@@ -120,7 +120,7 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed">
+        <a class="nav-link collapsed"  href="/manageTeam"  type="button"  >
           <i class="bi bi-layout-text-window-reverse"></i><span>Manage Team</span>
         </a>
       </li><!-- End Tables Nav -->
