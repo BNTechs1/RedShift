@@ -949,7 +949,7 @@ a:focus.service-btn{
 	position:absolute;
 	height:100%;
 	width:100%;
-	background:rgba(115,112,216,.75);
+	background:whitesmoke transparent;
 	display:flex;
 	align-items:center;
 	text-transform: capitalize;
@@ -1027,7 +1027,7 @@ a:focus.service-btn{
     transition: 0.5s ease-in-out;
 }
 .project-view:hover {
-	color: #7370d8;
+	color: rgb(255, 255, 255);
 	background: transparent;
 }/*project-btn*/
 
