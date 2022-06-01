@@ -172,10 +172,14 @@
 			<!--/.section-header-->
 			<div class="news-card news-card-pb-25">
 			  <div class="row">
+         <?php $count = 0; ?>
+          @foreach ($services as $service=>$value)
+          <?php if($count == 4) break; ?>
 				<div class="col-md-4 col-sm-6">
 				  <div class="single-news-box">
 					<div class="news-box-bg">
-					  <img src="assets/images/p36kj8dg@2x.png" alt="blog image" />
+            <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+					  {{-- <img src="assets/images/p36kj8dg@2x.png" alt="blog image" /> --}}
 					  <div class="isotope-overlay">
 						<a href="blog_single.html">
 						  <span class="lnr lnr-link"></span>
@@ -184,10 +188,10 @@
 					</div>
 					<!--/.team-box-bg-->
 					<div class="news-box-inner">
+             <div id="h3">{{$value->name}}</div>
 					  <h3>
 						<a href="blog_single.html">
-						  The Pros and Cons of Starting an Online Consulting
-						  Business
+						  {{$value->description}}
 						</a>
 					  </h3>
 					  <p class="news-meta">
@@ -206,75 +210,9 @@
 				  <!--/.single-news-box-->
 				</div>
 				<!--.col-->
-				<div class="col-md-4 col-sm-6">
-				  <div class="single-news-box">
-					<div class="news-box-bg">
-					  <img src="assets/images/n_j7stqti@2x.png" alt="blog image" />
-					  <div class="isotope-overlay">
-						<a href="blog_single.html">
-						  <span class="lnr lnr-link"></span>
-						</a>
-					  </div>
-					</div>
-					<!--/.team-box-bg-->
-					<div class="news-box-inner">
-					  <h3>
-						<a href="blog_single.html">
-						  8 Secrets for Your successful Business Mentor Won't Tell
-						  You
-						</a>
-					  </h3>
-					  <p class="news-meta">
-						Posted By: <span>Mick Steven</span> // On
-						<span>12th June, 2017</span>
-					  </p>
-            <div class="project-btn text-center">
-              <a href="blog.html" class="service-view">read more </a>
-              </div>
-					  <!-- <a href="#" class="learn-btn">
-												  learn more
-											  </a> -->
-					</div>
-					<!--/.news-box-inner-->
-				  </div>
-				  <!--/.single-news-box-->
-				</div>
-				<!--.col-->
-				<div class="col-md-4 col-sm-6">
-				  <div class="single-news-box">
-					<div class="news-box-bg">
-					  <img src="assets/images/u34c91zc_ol@2x.png" alt="blog image" />
-					  <div class="isotope-overlay">
-						<a href="blog_single.html">
-						  <span class="lnr lnr-link"></span>
-						</a>
-					  </div>
-					</div>
-					<!--/.team-box-bg-->
-					<div class="news-box-inner">
-					  <h3>
-						<a href="blog_single.html">
-						  Hire a Branding Consultant With a Similar Aesthetic to
-						  Your Own
-						</a>
-					  </h3>
-					  <p class="news-meta">
-						Posted By: <span>Mick Steven</span> // On
-						<span>12th June, 2017</span>
-					  </p>
-            <div class="project-btn text-center">
-              <a href="blog.html" class="service-view">read more </a>
-              </div>
-					  <!-- <a href="#" class="learn-btn">
-												  learn more
-											  </a> -->
-					</div>
-					<!--/.news-box-inner-->
-				  </div>
-				  <!--/.single-news-box-->
-				</div>
-				<!--.col-->
-			  </div>
+         <?php $count++; ?>
+          @endforeach
+				
 			  <!--/.row-->
 			  <div class="project-btn text-center">
 				<a href="blog.html" class="project-view">read more </a>
