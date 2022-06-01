@@ -3,6 +3,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Product;
 
@@ -165,7 +166,39 @@ Route::get('/services/delete/{service}', [ServiceController::class, 'destroy'])-
 Route::get('/services/{service}', [ServiceController::class, 'show']);
 
 
+/*
+|--------------------------------------------------------------------------
+|Team Routes
+|--------------------------------------------------------------------------
+*/
 
+//Route to  Manage services Page
+Route::get('/manageTeam',  [TeamController::class, 'manage'])->middleware('auth');
+
+//Route to Create services page
+Route::get('/createteams', [TeamController::class, 'create'])->middleware('auth');
+
+//Route to get all services 
+Route::get('/team', [TeamController::class, 'index']);
+
+//Route to post new services to the DB
+Route::post('/teams', [TeamController::class, 'store'])->middleware('auth');
+
+
+//Route to edit service page
+Route::get('/teams/{service}/edit', [TeamController::class, 'edit'])->middleware('auth');
+
+// Route to detail service page
+Route::get('/teams/{service}/detail', [TeamController::class, 'detail']);
+//Route to update service
+Route::put('/teams/update/{team}', [TeamController::class, 'update'])->middleware('auth');
+
+//Route to Delete service
+Route::get('/teams/delete/{team}', [TeamController::class, 'destroy'])->middleware('auth');
+
+
+//Route to Show single service
+Route::get('/teams/{team}', [TeamController::class, 'show']);
 
 
 
