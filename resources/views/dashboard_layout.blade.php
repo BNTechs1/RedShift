@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Components / Accordion - NiceAdmin Bootstrap Template</title>
+  <title>Red Shift</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -73,53 +73,7 @@
             <span class="d-none d-md-block">Welcome {{auth()->user()->name}}</span>
           </a><!-- End Profile Iamge Icon -->
 
-          {{-- <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-
-          </ul><!-- End Profile Dropdown Items --> --}}
+      
         </li><!-- End Profile Nav -->
         <li class="nav-item dropdown pe-3">
                 <a>
@@ -162,6 +116,34 @@
       <li class="nav-item">
         <a class="nav-link collapsed">
           <i class="bi bi-layout-text-window-reverse"></i><span>Manage Portfolio</span>
+        </a>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Manage Team</span>
+        </a>
+      </li><!-- End Tables Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Manage Advert</span>
+        </a>
+      </li><!-- End Tables Nav -->
+       <li class="nav-item">
+        <a class="nav-link collapsed">
+        {{-- user handling --}}
+        {{-- user pasword change and email,name --}}
+        {{-- manage user to super admin --}}
+          <i class="bi bi-layout-text-window-reverse"></i><span>Settings</span>
+        </a>
+      </li><!-- End Tables Nav -->
+       <li class="nav-item">
+        <a class="nav-link collapsed">
+          <i class="bi bi-layout-text-window-reverse"></i><span>logout</span>
+           {{-- <form action="/logout" method="POST"> 
+                  @csrf
+                  <button type="submit">Logout</button>
+                  </form> --}}
         </a>
       </li><!-- End Tables Nav -->
     </ul>

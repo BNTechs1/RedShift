@@ -214,12 +214,12 @@
           @endforeach
 				
 			  <!--/.row-->
-			  <div class="project-btn text-center">
-				<a href="blog.html" class="project-view">read more </a>
-			  </div>
 			  <!--/.project-btn-->
 			</div>
 			<!--/.news-card-->
+       <div class="project-btn text-center">
+				<a href="blog.html" class="project-view">read more </a>
+			  </div>
 		  </div>
 		  <!--/news-details-->
 		</div>

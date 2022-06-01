@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 //Common Resource Routes 
@@ -13,13 +15,11 @@ use Illuminate\Support\Facades\View;
 //destroy - delete product
 class RouteController extends Controller
 {
-    //show dashboard page form 
+
+
+    //show create form 
     public function dashboard()
     {
         return view('Admin.dashboard');
     } 
-
-  
-
-   
 }

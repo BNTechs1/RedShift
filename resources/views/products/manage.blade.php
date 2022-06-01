@@ -31,6 +31,7 @@
                     @foreach ($products as $product=>$value)
                         <tr>
                             {{-- <th scope="row">{{$value['id']}}</th> --}}
+                            {{-- <td><img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /></td> --}}
                             <td>{{$value->name}}</td>
                             <td>{{$value->name}}</td>
                             <td>{{$value->price}}</td>
