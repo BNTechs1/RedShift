@@ -35,9 +35,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
 
-<body>
+</head>
+<body >
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -146,7 +146,7 @@
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
-{{-- {{ url('/product') }} --}}
+      {{-- {{ url('/product') }} --}}
       <li class="nav-item">
         <a class="nav-link collapsed"  href="/manageProduct"   type="button">
           <i class="bi bi-menu-button-wide"></i><span>Manage Products</span>

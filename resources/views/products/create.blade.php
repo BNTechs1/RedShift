@@ -11,7 +11,7 @@
               <h5 class="card-title">Add Product</h5>
 
               <!-- Floating Labels Form -->
-              <form action="/products" method="POST" class="row g-3">
+              <form action="/products" method="POST"  enctype="multipart/form-data" class="row g-3">
               @csrf
                 <div class="col-md-12">
                   <div class="form-floating">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-md-12">
                   <div class="form-floating">
-                    <input class="form-control"  name="image" value="{{old('image')}}" type="file" id="fileUpload">
+                    <input class="form-control" name="image"  type="file" id="fileUpload">
                 </div>
                     @error('image')
                     <p>{{$message}}</p>

@@ -48,8 +48,10 @@ class ProductController extends Controller
     {
         return Product::find($product);
     }   
+
     public function store(Request $request)
-    {
+    {    
+        // dd($request->image);
         $formFields = $request->validate([
             'name' => 'required',
             'description' => 'required',
@@ -58,7 +60,16 @@ class ProductController extends Controller
         ]);
 
         if($request->hasFile('image')){
+            // $width = 600; // your max width
+            // $height = 600; // your max height
+            // $img = IMG::make($uploaded_file);
+            // $img->height() > $img->width() ? $width=null : $height=null;
+            // $img->resize($width, $height, function ($constraint) {
+            //     $constraint->aspectRatio();
+            // });
             $formFields['image'] = $request->file('image')->store('images','public');
+        }else{
+            return 'no image';
         }
         Product::create($formFields);
 
