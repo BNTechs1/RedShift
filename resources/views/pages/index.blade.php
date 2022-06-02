@@ -433,9 +433,13 @@
 								<div class="row">
 									<div class="col-md-12 col-sm-12">
 										<div class="row">
+                        <?php $count = 0; ?>
+                        @foreach ($products as $product=>$value)
+                        <?php if($count == 4) break; ?>
 											<div class="col-sm-3 col-xs-12">
 												<div class="item">
-													<img src="assets/images/1.jpg" alt="portfolio image"/>
+                        <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+													{{-- <img src="assets/images/1.jpg" alt="portfolio image"/> --}}
 													<div class="isotope-overlay">
 														<a href="project.html">
 															<span class="lnr lnr-link"></span>
@@ -450,132 +454,10 @@
 													</div><!-- /.isotope-overlay -->
 												</div><!-- /.item -->
 											</div><!-- /.col -->
-											<div class="col-sm-3 col-xs-12">
-												<div class="item">
-													<img src="assets/images/2.jpg" alt="portfolio image"/>
-													<div class="isotope-overlay">
-														<a href="project.html">
-															<span class="lnr lnr-link"></span>
-															
-														</a>
-														<h3>
-															<a href="project.html">
-																aquisition plan
-															</a>
-														</h3>
-														<p>busisness planning</p>
-													</div><!-- /.isotope-overlay -->
-												</div><!-- /.item -->
-											</div><!-- /.col -->
-                      <div class="col-sm-3 col-xs-12">
-												<div class="item">
-													<img src="assets/images/3.jpg" alt="portfolio image"/>
-													<div class="isotope-overlay">
-														<a href="project.html">
-															<span class="lnr lnr-link"></span>
-															
-														</a>
-														<h3>
-															<a href="project.html">
-																aquisition plan
-															</a>
-														</h3>
-														<p>busisness planning</p>
-													</div><!-- /.isotope-overlay -->
-												</div><!-- /.item -->
-											</div><!-- /.col -->
-                      <div class="col-sm-3 col-xs-12">
-												<div class="item">
-													<img src="assets/images/4.jpg" alt="portfolio image"/>
-													<div class="isotope-overlay">
-														<a href="project.html">
-															<span class="lnr lnr-link"></span>
-															
-														</a>
-														<h3>
-															<a href="project.html">
-																aquisition plan
-															</a>
-														</h3>
-														<p>busisness planning</p>
-													</div><!-- /.isotope-overlay -->
-												</div><!-- /.item -->
-											</div><!-- /.col -->
+                      <?php $count++; ?>
+                              @endforeach
 										</div><!-- /.row-->
-										<div class="row">
-											<div class="col-sm-3 col-xs-12">
-												<div class="item">
-													<img src="assets/images/5.jpg" alt="portfolio image"/>
-													<div class="isotope-overlay">
-														<a href="project.html">
-															<span class="lnr lnr-link"></span>
-															
-														</a>
-														<h3>
-															<a href="project.html">
-																aquisition plan
-															</a>
-														</h3>
-														<p>busisness planning
-														</p>
-													</div><!-- /.isotope-overlay -->
-												</div><!-- /.item -->
-											</div><!-- /.col -->
-											<div class="col-sm-3 col-xs-12">
-												<div class="item">
-													<img src="assets/images/2.jpg" alt="portfolio image"/>
-													<div class="isotope-overlay">
-														<a href="project.html">
-															<span class="lnr lnr-link"></span>
-															
-														</a>
-														<h3>
-															<a href="project.html">
-																aquisition plan
-															</a>
-														</h3>
-														<p>busisness planning
-														</p>
-													</div><!-- /.isotope-overlay -->
-												</div><!--/.item -->
-											</div><!-- /.col -->
-                      <div class="col-sm-3 col-xs-12">
-												<div class="item">
-													<img src="assets/images/7.jpg" alt="portfolio image"/>
-													<div class="isotope-overlay">
-														<a href="project.html">
-															<span class="lnr lnr-link"></span>
-															
-														</a>
-														<h3>
-															<a href="project.html">
-																aquisition plan
-															</a>
-														</h3>
-														<p>busisness planning
-														</p>
-													</div><!-- /.isotope-overlay -->
-												</div><!--/.item -->
-											</div><!-- /.col -->
-                      <div class="col-sm-3 col-xs-12">
-												<div class="item">
-													<img src="assets/images/2.jpg" alt="portfolio image"/>
-													<div class="isotope-overlay">
-														<a href="project.html">
-															<span class="lnr lnr-link"></span>
-															
-														</a>
-														<h3>
-															<a href="project.html">
-																aquisition plan
-															</a>
-														</h3>
-														<p>busisness planning
-														</p>
-													</div><!-- /.isotope-overlay -->
-												</div><!--/.item -->
-											</div><!-- /.col -->
-										</div><!-- /.row-->
+										
 
 									</div><!-- /.col -->
 								</div><!-- /.row -->
@@ -589,105 +471,71 @@
 		</section><!--/.project-->
 		<!--project end-->
 
-	  <!--project start-->
-	<section id="project" class="project">
-		<div class="container">
-		  <div class="project-details">
-			<div class="project-header text-center">
-			   <h2>Our Finished Projects</h2> 
-			  <!-- <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p> --> 
+  <!--project start-->
+		<section id="project" class="project">
+			<div class="container">
+				<div class="project-details">
+				<div class="project-header text-center">
+					<h2>Our Finished Projects</h2> 
+					<!-- <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p> --> 
+				</div>
+				<!--/.project-header-->
+				<div class="project-content">
+					<div class="gallery-content">
+						<div class="isotope">
+							<div class="row">
+								<!-- /.col -->
+								<div class="col-md-12 col-sm-12">
+									<div class="row">
+										 <?php $count = 0; ?>
+										@foreach ($portfolios as $portfolio=>$value)
+										<?php if($count == 4) break; ?>
+										<div class="col-sm-6 col-xs-12">
+											<div class="item">
+                        					<img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+
+											{{-- <img
+											src="assets/images/project/project2.jpg"
+											alt="portfolio image"
+											/> --}}
+											<div class="isotope-overlay">
+											<a href="project.html">
+											<span class="lnr lnr-link"></span>
+											</a>
+											<h3>
+											<a href="project.html"> {{$value->name}}</a>
+											</h3>
+											<p>{{$value->description}}</p>
+											</div>
+											<!-- /.isotope-overlay -->
+											</div>
+											<!-- /.item -->
+										</div>
+										<!-- /.col -->
+										<?php $count++; ?>
+         								 @endforeach
+									</div>
+								</div>		
+								<!-- /.col -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!--/.isotope-->
+					</div>
+					<!--/.gallery-content-->
+				</div>
+				<!--/.project-content-->
+				</div>
+				<!--/.project-details-->
+				<div class="project-btn text-center">
+				<a href="project.html" class="project-view">view all </a>
+				</div>
+				<!--/.project-btn-->
 			</div>
-			<!--/.project-header-->
-			<div class="project-content">
-			  <div class="gallery-content">
-          <div class="isotope">
-            <div class="row">
-              <!-- /.col -->
-              <div class="col-md-12 col-sm-12">
-                <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                 
-                  <div class="item">
-                    <img
-                      src="assets/images/project/project2.jpg"
-                      alt="portfolio image"
-                    />
-                    <div class="isotope-overlay">
-                      <a href="project.html">
-                      <span class="lnr lnr-link"></span>
-                      </a>
-                      <h3>
-                      <a href="project.html"> aquisition plan </a>
-                      </h3>
-                      <p>busisness planning</p>
-                    </div>
-                  <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-6 col-xs-12">
-                  <div class="item">
-                  <img
-                    src="assets/images/project/project3.jpg"
-                    alt="portfolio image"
-                  />
-                  <div class="isotope-overlay">
-                    <a href="project.html">
-                    <span class="lnr lnr-link"></span>
-                    </a>
-                    <h3>
-                    <a href="project.html"> aquisition plan </a>
-                    </h3>
-                    <p>busisness planning</p>
-                  </div>
-                  <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-6 col-xs-12">
-                  <div class="item">
-                  <img
-                    src="assets/images/project/project3.jpg"
-                    alt="portfolio image"
-                  />
-                  <div class="isotope-overlay">
-                    <a href="project.html">
-                    <span class="lnr lnr-link"></span>
-                    </a>
-                    <h3>
-                    <a href="project.html"> aquisition plan </a>
-                    </h3>
-                    <p>busisness planning</p>
-                  </div>
-                  <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-                </div>
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!--/.isotope-->
-			  </div>
-			  <!--/.gallery-content-->
-			</div>
-			<!--/.project-content-->
-		  </div>
-		  <!--/.project-details-->
-		  <div class="project-btn text-center">
-			<a href="project.html" class="project-view">view all </a>
-		  </div>
-		  <!--/.project-btn-->
-		</div>
 		<!--/.container-->
-	</section>
-	  <!--/.project-->
-	  <!--project end-->
+		</section>
+		<!--/.project-->
+		<!--project end-->
 
 	<!--clients start-->
 	<section class="clients">

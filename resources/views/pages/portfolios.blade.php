@@ -54,7 +54,7 @@
 										</div>
 										<!-- /.col -->
 										<?php $count++; ?>
-         								@endforeach
+         								 @endforeach
 									</div>
 								</div>		
 								<!-- /.col -->
