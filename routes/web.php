@@ -52,6 +52,12 @@ Route::get('/portfolios',function(){
     return view('pages.portfolios'); 
 });
 
+    //ROUTE TO NEWS
+Route::get('/news',function(){
+    return view('pages.news');
+});
+
+
 //Route for Contact
 Route::get('/contact',function(){
     return view('pages.contact');

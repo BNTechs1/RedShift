@@ -417,6 +417,32 @@
     <!--/.we-do-->
     <!--we-do end-->
 
+    <!-- new-project start -->
+		<section  id="new-project" class="new-project">
+				<div class="container">
+					<div class="new-project-details">
+						<div class="row">
+							<div class="col-md-10 col-sm-8">
+								<div class="single-new-project">
+									<h3>
+                    checkout our latest news and blogs
+									</h3>
+								</div><!-- /.single-new-project-->	
+							</div><!-- /.col-->	
+							<div class="col-md-2 col-sm-4">
+								<div class="single-new-project">
+									<a href="/news" class="slide-btn">
+										Blogs
+									</a>
+								</div><!-- /.single-new-project-->	
+							</div><!-- /.col-->	
+						</div><!-- /.row-->	
+					</div><!-- /.new-project-details-->	
+				</div><!-- /.container-->	
+
+		</section><!-- /.new-project-->	
+		<!-- new-project end -->
+
    	<!--project start-->
 		<section id="project"  class="project">
 			<div class="container">
