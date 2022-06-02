@@ -17,81 +17,58 @@
 			<div class="container">
 				<div class="pricing-details">
 					<div class="section-header text-center">
-						<h2 class="price-head">our pricing table</h2>
+						<h2 class="price-head">Available Products</h2>
 						<p>
-							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							olore eu fugiat nulla pariatur. 
 						</p>
 					</div><!--/.section-header-->
 					<div class="pricing-content">
                         <div class="row">
-                            <div  class="col-md-4 col-sm-6">
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        First checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Second checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Third checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Fourth checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Fifth checkbox
-                                    </li>
-                                    </ul>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        First checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Second checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Third checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Fourth checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Fifth checkbox
-                                    </li>
-                                </ul>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        First checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Second checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Third checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Fourth checkbox
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Fifth checkbox
-                                    </li>
-                                </ul>
-                             </div>
+                            <div class="col-md-4">
+								<div class="blog-right">
+									<div class="blogs-widget">
+										<form>
+											<input type="text" class="form-control" placeholder="Search">
+										</form><!--/.form-->
+										<div class="blog-search-icon">
+											<a href="#">
+												<span class="lnr lnr-magnifier">
+													
+												</span>
+											</a>
+										</div><!--/.blog-search-icon-->
+									</div><!--/.blog-widget-->
+
+									<div class="blogs-widget">
+										<h2>categories</h2>
+										<div class="blog-categories-list">
+											<ul>
+												<li><a href="#">all</a></li>
+												<li><a href="#">busisness</a></li>
+												<li><a href="#">consultency</a></li>
+												<li><a href="#">corporate</a></li>
+												<li><a href="#">politics</a></li>
+												<li><a href="#">marketing</a></li>
+												<li><a href="#">lifestyle</a></li>
+											</ul>
+										</div><!--/.blog-categories-list-->
+									</div><!--/.blog-widget-->
+
+									<div class="blogs-widget">
+										<h2>popular tags</h2>
+										<div class="blog-tags">
+											<button type="button" class="btn btn-default">busisness</button>
+											<button type="button" class="btn btn-default">consultency</button>
+											<button type="button" class="btn btn-default">market</button><br />
+											<button type="button" class="btn btn-default">sales</button>
+											<button type="button" class="btn btn-default">corporate</button>
+											<button type="button" class="btn btn-default">politics</button>
+										</div><!--/.blog-tags-->
+									</div><!--/.blog-widget-->
+
+								</div><!--/.blog-right-->
+
+							</div><!--/.col-->
                             <div class="col-md-8 col-sm-6">
                                 <div class="row">
                                     <?php $count = 0; ?>
@@ -103,7 +80,7 @@
                                                 <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
                                             
                                             </div><!--/.pricing-header-->
-                                             <div id="info">
+                                                <div id="info">
                                                     <div id="p">Registered 2016</div>
                                                     <div id="h3">{{$value->name}}</div>
                                                     <div id="row_">
