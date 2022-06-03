@@ -74,7 +74,8 @@
                                     <?php $count = 0; ?>
                                     @foreach ($products as $product=>$value)
                                     <?php if($count == 6) break; ?>
-                                    <div class="col-md-4 col-sm-6">
+                                    <a class="col-md-4 col-sm-6"  href="/products/{{$value->id}}/detail">
+                                    {{-- <div class="col-md-4 col-sm-6" > --}}
                                         <div class="pricing-box">
                                             <div class="pricing-header">
                                                 <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
@@ -96,7 +97,8 @@
                                                 </div>
                                                 
                                         </div><!--/.pricing-box-->
-                                    </div><!--/.col-->
+                                    {{-- </div><!--/.col--> --}}
+                                    </a>
                                     <?php $count++; ?>
                                     @endforeach
                                     

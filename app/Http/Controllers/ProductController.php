@@ -32,7 +32,7 @@ class ProductController extends Controller
     public function detail($id)
     {   
         $product = Product::find($id);
-        return view('pages.detailservice',['product'=>$product]);
+        return view('pages.detailproduct',['product'=>$product]);
     } 
     
     public function manage()

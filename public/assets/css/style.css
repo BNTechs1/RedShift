@@ -1699,7 +1699,7 @@ a:active.learn-btn{
 --------------------------------------*/
 .hm-footer{
     padding-bottom:68px;
-    background: #212135;
+    background: whitesmoke;
 }
 .hm-footer-details {
     margin-top: 120px;
@@ -1760,7 +1760,7 @@ a:active.learn-btn{
 /* footer-menu  */
 .footer-menu ul {display: grid;}
 .footer-menu li a{
-	font-size:14px;
+	font-size:20px;
 	color:#aaa;
 	padding-bottom: 20px;
 	text-transform:capitalize;
