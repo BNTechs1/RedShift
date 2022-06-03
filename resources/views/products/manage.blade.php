@@ -6,7 +6,7 @@
     <div>
     <!-- Vertically centered Modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createmodal">
-     Add product
+     Add Product
     </button>
     {{-- <a type="button" href="/createproducts" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add product</a> --}}
     </div>

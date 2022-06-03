@@ -12,7 +12,7 @@
 
               <!-- Floating Labels Form -->
               <form action="/portfolios" method="POST"  enctype="multipart/form-data" class="row g-3">
-              @csrf
+                @csrf
                 <div class="col-md-12">
                   <div class="form-floating">
                     <input type="text" name="name" value="{{old('name')}}" class="form-control" id="floatingName" placeholder="Your Name">

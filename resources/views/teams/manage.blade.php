@@ -4,7 +4,11 @@
 
   <main id="main" class="main">
     <div>
-    <a type="button" href="/createteams" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add Teams</a>
+     <!-- Vertically centered Modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createmodal">
+     Add Team
+    </button>
+    {{-- <a type="button" href="/createteams" class="btn btn-primary"><i class="bi bi-star me-1"></i>Add Teams</a> --}}
     </div>
     {{-- {{ $services['name']}} --}}
     <section class="section">
@@ -74,5 +78,71 @@
             
         </div>
     </div>
-    </section>
+    </section> 
+
+     <div class="modal fade" id="createmodal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Create Team</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Floating Labels Form -->
+                <form action="/products" method="POST"  enctype="multipart/form-data" class="row g-3">
+                  @csrf
+                  <div class="col-md-12">
+                    <div class="form-floating">
+                      <input type="text" name="name" value="{{old('name')}}" class="form-control" id="floatingName" placeholder="Your Name">
+                      <label for="floatingName">Product Name</label>
+                    </div>
+                    @error('name')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" name="tag" value="{{old('tag')}}"  class="form-control" id="floatingTags" placeholder="Tags(Comma Separated)">
+                      <label for="floatingTags">Tags</label>
+                    </div>
+                        @error('tag')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" name="price" value="{{old('price')}}"  class="form-control" id="floatingPrice" placeholder="Price">
+                      <label for="floatingPrice">Price</label>
+                    </div>
+                        @error('price')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-floating">
+                      <input class="form-control" name="image"  type="file" id="fileUpload">
+                  </div>
+                      @error('image')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" name="description" value="{{old('description')}}"  placeholder="Description" id="floatingDescription" style="height: 100px;"></textarea>
+                      <label for="floatingDescription">Description</label>
+                    </div>
+                        @error('description')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+                
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                  </div>
+                </form><!-- End floating Labels Form -->
+            </div>
+          </div>
+        </div>
+      </div><!-- End Vertically centered Modal-->
 </main>
