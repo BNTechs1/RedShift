@@ -39,10 +39,14 @@
 
 							<div class="col-md-8">
 								<div class="blog-left">
+									 <?php $count = 0; ?>
+									@foreach ($newss as $news=>$value)
+									<?php if($count == 4) break; ?>
 									<div class="col-sm-6">
 										<div class="single-news-box news-mb-20">
 											<div class="news-box-bg">
-												<img src="assets/images/blog/bl2.jpg" alt="blog image">
+									            <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+												{{-- <img src="assets/images/blog/bl2.jpg" alt="blog image"> --}}
 												<div class="isotope-overlay">
 													<a href="blog_single.html">
 														<span class="lnr lnr-link"></span>
@@ -53,144 +57,17 @@
 											<div class="news-box-inner">
 												<h3>
 													<a href="blog_single.html">
-														The Pros and Cons of Starting an Online Consulting Business
+														{{$value->name}}
 													</a>
 												</h3>
-												<p class="news-meta">
-													Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
-												</p>
-												<!-- <a href="#" class="learn-btn">
-													learn more
-												</a> -->
-											</div><!--/.news-box-inner-->
-										</div><!--/.single-news-box-->
-										<div class="single-news-box news-mb-20">
-											<div class="news-box-bg">
-												<img src="assets/images/blog/bl1.jpg" alt="blog image">
-												<div class="isotope-overlay">
-													<a href="blog_single.html">
-														<span class="lnr lnr-link"></span>
-														
-													</a>
-												</div>
-
-											</div><!--/.team-box-bg-->
-											<div class="news-box-inner">
-												<h3>
-													<a href="blog_single.html">
-														The Pros and Cons of Starting an Online Consulting Business
-													</a>
-												</h3>
-												<p class="news-meta">
-													Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
-												</p>
-												<!-- <a href="#" class="learn-btn">
-													learn more
-												</a> -->
-											</div><!--/.news-box-inner-->
-										</div><!--/.single-news-box-->
-										<div class="single-news-box news-mb-20">
-											<div class="news-box-bg">
-												<img src="assets/images/blog/bl4.jpg" alt="blog image">
-												<div class="isotope-overlay">
-													<a href="https://www.youtube.com/watch?v=kr2aGgcrQjc&t=1s" class="vedio-play-icon mfp-iframe">
-														<img src="assets/images/blog/play-icon.png" alt="play-icon">
-													</a>
-												</div>
-
-											</div><!--/.news-box-bg-->
-											<div class="news-box-inner">
-												<h3>
-													<a href="#">
-														The Pros and Cons of Starting an Online Consulting Business
-													</a>
-												</h3>
-												<p class="news-meta">
-													Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
-												</p>
 												<!-- <a href="#" class="learn-btn">
 													learn more
 												</a> -->
 											</div><!--/.news-box-inner-->
 										</div><!--/.single-news-box-->
 									</div><!--.col-->
-									<div class=" col-sm-6">
-										<div class="single-news-box news-mb-20">
-											<div class="news-box-bg">
-												<img src="assets/images/blog/bl3.jpg" alt="blog image">
-												<div class="isotope-overlay">
-													<a href="blog_single.html">
-														<span class="lnr lnr-link"></span>
-														
-													</a>
-												</div>
-
-											</div><!--/.team-box-bg-->
-											<div class="news-box-inner">
-												<h3>
-													<a href="blog_single.html">
-														The Pros and Cons of Starting an Online Consulting Business
-													</a>
-												</h3>
-												<p class="news-meta">
-													Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
-												</p>
-												<!-- <a href="#" class="learn-btn">
-													learn more
-												</a> -->
-											</div><!--/.news-box-inner-->
-										</div><!--/.single-news-box-->
-										<div class="single-news-box news-mb-20">
-											<div class="news-box-bg">
-												<img src="assets/images/blog/bl5.jpg" alt="blog image">
-												<div class="isotope-overlay">
-													<a href="blog_single.html">
-														<span class="lnr lnr-link"></span>
-														
-													</a>
-												</div>
-
-											</div><!--/.team-box-bg-->
-											<div class="news-box-inner">
-												<h3>
-													<a href="blog_single.html">
-														The Pros and Cons of Starting an Online Consulting Business
-													</a>
-												</h3>
-												<p class="news-meta">
-													Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
-												</p>
-												<!-- <a href="#" class="learn-btn">
-													learn more
-												</a> -->
-											</div><!--/.news-box-inner-->
-										</div><!--/.single-news-box-->
-										<div class="single-news-box news-mb-20">
-											<div class="news-box-bg">
-												<img src="assets/images/blog/bl6.jpg" alt="blog image">
-												<div class="isotope-overlay">
-													<a href="blog_single.html">
-														<span class="lnr lnr-link"></span>
-														
-													</a>
-												</div>
-
-											</div><!--/.team-box-bg-->
-											<div class="news-box-inner">
-												<h3>
-													<a href="blog_single.html">
-														The Pros and Cons of Starting an Online Consulting Business
-													</a>
-												</h3>
-												<p class="news-meta">
-													Posted By:  <span>Mick Steven</span>  //  On <span>12th June, 2017</span>
-												</p>
-												<!-- <a href="#" class="learn-btn">
-													learn more
-												</a> -->
-											</div><!--/.news-box-inner-->
-										</div><!--/.single-news-box-->
-									</div><!--.col-->
+									<?php $count++; ?>
+         							 @endforeach
 									<div class="pagination-part text-center">
 										<ul class="pagination">
 											<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
@@ -246,107 +123,7 @@
 										</div><!--/.blog-categories-list-->
 									</div><!--/.blog-widget-->
 
-									<div class="blogs-widget">
-										<h2>related news</h2>
-										<div class="blog-related-news">
-											<div class="bl-txt wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".7s">
-												<div class="bl-img">
-													<a href="#">
-														<img src="assets/images/blog/rp1.jpg" alt="image" />
-													</a>
-												</div><!--/.bl-img-->
-												<p>
-													<a href="#">
-														CFOs focused on retaining key talent
-													</a>
-													<span>25th Feb, 2017</span>
-												</p>
-											</div><!--/.bl-txt-->
-											<div class="bl-txt">
-												<div class="bl-img">
-													<a href="#">
-														<img src="assets/images/blog/rp2.jpg" alt="image" />
-													</a>
-												</div><!--/.bl-img-->
-												<p>
-													<a href="#">
-														Accenture acquires for the undisclosed sum
-													</a>
-													<span>25th Feb, 2017</span>
-												</p>
-											</div><!--/.bl-txt-->
-											<div class="bl-txt">
-												<div class="bl-img">
-													<a href="#">
-														<img src="assets/images/blog/rp3.jpg" alt="image" />
-													</a>
-												</div><!--/.bl-img-->
-												<p>
-													<a href="#">
-														Startup investments drop on venturing rises
-													</a>
-													<span>25th Feb, 2017</span>
-												</p>
-											</div><!--/.bl-txt-->
-										</div><!--/.blog-related-news-->
-									</div><!--/.blog-widget-->
-
-									<div class="blogs-widget">
-										<h2>Archives</h2>
-										<div class="blog-categories-list">
-											<ul>
-												<li>
-													<a href="#">
-														<i class="fa fa-angle-right" aria-hidden="true">
-															
-														</i>
-														November 2017
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<i class="fa fa-angle-right" aria-hidden="true">
-															
-														</i>
-														October 2017
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<i class="fa fa-angle-right" aria-hidden="true">
-															
-														</i>
-														September 2017
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<i class="fa fa-angle-right" aria-hidden="true">
-													
-														</i>
-														August 2017
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<i class="fa fa-angle-right" aria-hidden="true">
-													
-														</i>
-														July 2017
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<i class="fa fa-angle-right" aria-hidden="true">
-													
-														</i>
-														June 2017
-													</a>
-												</li>
-												
-											</ul>
-										</div>
-									</div><!--/.blog-widget-->
+									
 
 									<div class="blogs-widget
 									">

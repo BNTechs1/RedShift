@@ -30,7 +30,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($teams as $team=>$value)
+                    @foreach ($newss as $news=>$value)
                         <tr>
                             {{-- <th scope="row">{{$value['id']}}</th> --}}
                             {{-- <td><img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /></td> --}}
@@ -89,12 +89,12 @@
             </div>
             <div class="modal-body">
                 <!-- Floating Labels Form -->
-              <form action="/teams" method="POST"  enctype="multipart/form-data" class="row g-3">
-                 @csrf
+              <form action="/blogs" method="POST"  enctype="multipart/form-data" class="row g-3">
+                @csrf
                 <div class="col-md-12">
                   <div class="form-floating">
                     <input type="text" name="name" value="{{old('name')}}" class="form-control" id="floatingName" placeholder="Your Name">
-                    <label for="floatingName">Name</label>
+                    <label for="floatingName">News Title</label>
                   </div>
                   @error('name')
                     <p>{{$message}}</p>

@@ -8,6 +8,7 @@ use App\Models\Product;
 use App\Models\Service;
 use App\Models\Team;
 use App\Models\Portfolio;
+use App\Models\Blog;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -30,14 +31,17 @@ class AppServiceProvider extends ServiceProvider
     {
         $products = Product::latest()->filter(request(['tag','search']))->paginate(10);
         $services = Service::latest()->paginate(3);
-        $teams = Team::all();
-        $portfolios = Portfolio::all();
+        $teams = Team::latest()->paginate(4);
+        $portfolios = Portfolio::latest()->paginate(3);
+        $newss = Blog::latest()->paginate(4);;
 
-        View::composer('*', function($view) use($products,$services,$teams,$portfolios){
+        View::composer('*', function($view) use($products,$services,$teams,$portfolios,$newss){
             $view->with('products', $products);
             $view->with('services', $services);
             $view->with('teams', $teams);
             $view->with('portfolios', $portfolios);
+            $view->with('newss', $newss);
+
 
           });
     }

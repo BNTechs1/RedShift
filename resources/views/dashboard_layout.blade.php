@@ -128,15 +128,33 @@
         <a class="nav-link collapsed" href="/manageBlog"  type="button" >
           <i class="bi bi-layout-text-window-reverse"></i><span>Manage News</span>
         </a>
-      </li><!-- End Tables Nav -->
-       <li class="nav-item">
-        <a class="nav-link collapsed">
-        {{-- user handling --}}
+      </li><!-- End Settings Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-menu-button-wide"></i><span>Settings</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="components-alerts.html">
+                <i class="bi bi-circle"></i><span>Profile</span>
+              </a>
+            </li>
+              <li>
+              <a href="components-badges.html">
+                <i class="bi bi-circle"></i><span>Manage User</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-accordion.html">
+                <i class="bi bi-circle"></i><span>Register User</span>
+              </a>
+            </li>
+          
+              {{-- user handling --}}
         {{-- user pasword change and email,name --}}
         {{-- manage user to super admin --}}
-          <i class="bi bi-layout-text-window-reverse"></i><span>Settings</span>
-        </a>
-      </li><!-- End Tables Nav -->
+          </ul>
+      </li><!-- End Settings Nav -->
        <li class="nav-item">
         <a class="nav-link collapsed">
           <i class="bi bi-layout-text-window-reverse"></i><span>logout</span>

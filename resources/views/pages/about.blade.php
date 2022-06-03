@@ -62,105 +62,50 @@
 		<!--/.about-us-->
 		<!--about-us end -->
 
-		<!--project start-->
-	<section id="project" class="project">
-		<div class="container">
-		  <div class="project-details">
-			<div class="project-header text-center">
-			   <h2>What we do</h2> 
-			  <!-- <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p> --> 
-			</div>
-			<!--/.project-header-->
-			<div class="project-content">
-			  <div class="gallery-content">
-          <div class="isotope">
-            <div class="row">
-              <!-- /.col -->
-              <div class="col-md-12 col-sm-12">
-                <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                  <div class="item">
-                  <img
-                    src="assets/images/project/project2.jpg"
-                    alt="portfolio image"
-                  />
-                  <div class="isotope-overlay">
-                    <a href="project.html">
-                    <span class="lnr lnr-link"></span>
-                    </a>
-                    <h3>
-                    <a href="project.html"> aquisition plan </a>
-                    </h3>
-                    <p>busisness planning</p>
-                  </div>
-                  <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-6 col-xs-12">
-                  <div class="item">
-                  <img
-                    src="assets/images/project/project3.jpg"
-                    alt="portfolio image"
-                  />
-                  <div class="isotope-overlay">
-                    <a href="project.html">
-                    <span class="lnr lnr-link"></span>
-                    </a>
-                    <h3>
-                    <a href="project.html"> aquisition plan </a>
-                    </h3>
-                    <p>busisness planning</p>
-                  </div>
-                  <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-6 col-xs-12">
-                  <div class="item">
-                  <img
-                    src="assets/images/project/project3.jpg"
-                    alt="portfolio image"
-                  />
-                  <div class="isotope-overlay">
-                    <a href="project.html">
-                    <span class="lnr lnr-link"></span>
-                    </a>
-                    <h3>
-                    <a href="project.html"> aquisition plan </a>
-                    </h3>
-                    <p>busisness planning</p>
-                  </div>
-                  <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-                </div>
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!--/.isotope-->
-			  </div>
-			  <!--/.gallery-content-->
-			</div>
-			<!--/.project-content-->
-		  </div>
-		  <!--/.project-details-->
-		  <div class="project-btn text-center">
-			<a href="project.html" class="project-view">view all </a>
-		  </div>
-		  <!--/.project-btn-->
-		</div>
-		<!--/.container-->
-	</section>
-	  <!--/.project-->
-	  <!--project end-->
+			<!--service start-->
+		<section  class="service">
+				<div class="container">
+					<div class="service-details">
+						<div class="section-header text-center">
+							<h2>What We offer</h2>
+							<p>
+								Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							</p>
+						</div><!--/.section-header-->
+						<div class="service-content-one">
+							<div class="row">
+							  <?php $count = 0; ?>
+								@foreach ($services as $service=>$value)
+								<?php if($count == 4) break; ?>
+								<div class="col-sm-4 col-xs-12">
+									<div class="service-single text-center">
+										<div class="service-img">
+								            {{-- <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
+											<img src="assets/images/service/service1.png" alt="image of service" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">{{$value->name}}</a>
+											</h2>
+											<p>
+												{{$value->description}}
+											</p>
+											<a href="/services/{{$value->id}}/detail" class="service-btn">
+												learn more
+											</a>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
+								</div><!--/.col-->
+								  <?php $count++; ?>
+          							@endforeach
+				
+							</div><!--/.row-->
+						</div><!--/.service-content-one-->
+					</div><!--/.service-details-->
+				</div><!--/.container-->
 
+		</section><!--/.service-->
+		<!--service end-->
 			
 		<!--about-history start-->
 		<div class="about-history">
