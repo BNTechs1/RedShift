@@ -29,6 +29,11 @@ class ProductController extends Controller
         return view('products.edit', ['product'=>$product]);
     }
 
+    public function detail($id)
+    {   
+        $product = Product::find($id);
+        return view('pages.detailservice',['product'=>$product]);
+    } 
     
     public function manage()
     {

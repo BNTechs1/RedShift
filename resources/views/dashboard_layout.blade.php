@@ -125,8 +125,8 @@
         </a>
       </li><!-- End Tables Nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Manage Advert</span>
+        <a class="nav-link collapsed" href="/manageBlog"  type="button" >
+          <i class="bi bi-layout-text-window-reverse"></i><span>Manage News</span>
         </a>
       </li><!-- End Tables Nav -->
        <li class="nav-item">

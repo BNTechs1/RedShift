@@ -5,6 +5,7 @@ use App\Http\Controllers\RouteController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Product;
 
@@ -100,6 +101,9 @@ Route::post('/products', [ProductController::class, 'store'])->middleware('auth'
 
 //Route to edit product pag
 Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->middleware('auth');
+
+// Route to detail service page
+Route::get('/products/{product}/detail', [ProductController::class, 'detail']);
 
 
 //Route to update product
@@ -244,6 +248,41 @@ Route::get('/teams/delete/{team}', [TeamController::class, 'destroy'])->middlewa
 //Route to Show single service
 Route::get('/teams/{team}', [TeamController::class, 'show']);
 
+
+/*
+|--------------------------------------------------------------------------
+|News Routes
+|--------------------------------------------------------------------------
+*/
+
+
+//Route to  Manage services Page
+Route::get('/manageBlog',  [BlogController::class, 'manage'])->middleware('auth');
+
+//Route to Create services page
+Route::get('/createblogs', [BlogController::class, 'create'])->middleware('auth');
+
+//Route to get all services 
+Route::get('/blogs', [BlogController::class, 'index']);
+
+//Route to post new services to the DB
+Route::post('/blogs', [BlogController::class, 'store'])->middleware('auth');
+
+
+//Route to edit service page
+Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->middleware('auth');
+
+// Route to detail service page
+Route::get('/blogs/{blog}/detail', [BlogController::class, 'detail']);
+//Route to update service
+Route::put('/blogs/update/{blog}', [BlogController::class, 'update'])->middleware('auth');
+
+//Route to Delete service
+Route::get('/blogs/delete/{blog}', [BlogController::class, 'destroy'])->middleware('auth');
+
+
+//Route to Show single service
+Route::get('/blogs/{blog}', [BlogController::class, 'show']);
 
 
 
