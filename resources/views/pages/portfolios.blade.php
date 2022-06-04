@@ -31,7 +31,7 @@
 										 <?php $count = 0; ?>
 										@foreach ($portfolios as $portfolio=>$value)
 										<?php if($count == 4) break; ?>
-										<div class="col-sm-6 col-xs-12">
+										<div class="col-sm-4 col-xs-12">
 											<div class="item">
                         					<img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
 
