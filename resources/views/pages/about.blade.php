@@ -31,25 +31,18 @@
 					</div>
 					<!--/.col-->
 					<div class="col-sm-6">
-					<div class="single-about-us">
-						<div class="about-us-txt">
-						<h2>about us</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-							sed do eiusmod tempor incididunt ut labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							Duis aute irure dolor in reprehenderit in voluptate velit
-							esse.
-						</p>
-						<div class="project-btn">
-							<a href="#" class="project-view">learn more </a>
+						<div class="single-about-us">
+							<div class="about-us-txt">
+							<h2>about us</h2>
+							<p>Redshift corp is a company that operates in different sectors. With over seven years of combined experience, we thrive to bring quality and value to the different sectors we are involved in. Currently, our focus areas are construction, manufacturing, and consultancy.
+								We have upcoming projects varying from restaurants to startup hubs where we help you transform your ideas into a real product.</p>
+					
+							<!--/.project-btn-->
+							</div>
+							<!--/.about-us-txt-->
 						</div>
-						<!--/.project-btn-->
-						</div>
-						<!--/.about-us-txt-->
-					</div>
-					<!--/.single-about-us-->
+						<!--/.single-about-us-->
+						
 					</div>
 					
 				</div>
@@ -62,50 +55,6 @@
 		<!--/.about-us-->
 		<!--about-us end -->
 
-			<!--service start-->
-		<section  class="service">
-				<div class="container">
-					<div class="service-details">
-						<div class="section-header text-center">
-							<h2>What We offer</h2>
-							<p>
-								Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-							</p>
-						</div><!--/.section-header-->
-						<div class="service-content-one">
-							<div class="row">
-							  <?php $count = 0; ?>
-								@foreach ($services as $service=>$value)
-								<?php if($count == 4) break; ?>
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-								            {{-- <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
-											<img src="assets/images/service/service1.png" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">{{$value->name}}</a>
-											</h2>
-											<p>
-												{{$value->description}}
-											</p>
-											<a href="/services/{{$value->id}}/detail" class="service-btn">
-												learn more
-											</a>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								  <?php $count++; ?>
-          							@endforeach
-				
-							</div><!--/.row-->
-						</div><!--/.service-content-one-->
-					</div><!--/.service-details-->
-				</div><!--/.container-->
-
-		</section><!--/.service-->
-		<!--service end-->
 			
 		<!--about-history start-->
 		<div class="about-history">
@@ -125,12 +74,38 @@
 						<div class="col-md-offset-1 col-md-6 col-sm-12">
 							<div class="single-about-history">
 								<div class="about-history-txt">
-									<h2>our history</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adiping elit, sed do eiusmod tempor incidd ut labore rhei  et dolore magna aliqua. Ut enim ad  veniam, quis laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in repre voluptate in the velit esse.
-									</p>
+									<p> We have been a leading company in the construction business and contributed to the fast growth of our country by...</p>
+										<div class="timeline">			
+											<div class="timeline-content">
+												<div class="description">
+												<h2 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span>Construction</h2>
 
-									<div class="main-timeline">
+														<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+
+													<p class="description">Recently we’ve partnered with a well-known American paving and Road construction company called Landlock.</p>
+													</div>
+												</div>
+											</div><!--/.timeline-content-->
+										</div><!--/.timeline-->
+										<div class="timeline">	
+											<div class="timeline-content">
+												<h2 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span>Import and Export</h2>
+												<div class="description">
+													<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+													<p class="description">Importing and exporting goods in and out of the country</p>
+													</div>
+												</div>
+											</div><!--/.timeline-content-->
+										</div><!--/.timeline-->
+										<div class="timeline">	
+											<div class="timeline-content">
+												<h2 class="title"><span><i class="fa fa-circle-o" aria-hidden="true"></i></span>Selling Cars</h2>
+												<div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+												<p class="description">Designing and building, iconic buildings in different cities.</p>
+												</div>
+											</div><!--/.timeline-content-->
+										</div><!--/.timeline-->
+									 {{-- <div class="main-timeline">
 
 										<div class="row">
 											<div class="col-md-2 col-sm-2">
@@ -213,86 +188,11 @@
 												</div><!--/.timeline-->
 											</div><!--/.col-->
 										</div><!--/.row-->
-									</div><!--.main-timeline-->
+									</div><!--.main-timeline-->  --}}
 								</div><!--/.about-history-txt-->
 							</div><!--/.single-about-history-->
 						</div><!--/.col-->
 
-					</div><!--/.row-->
-					<div class="row">
-
-						<div class="about-vission-content">
-
-							<div class="col-md-6 col-sm-12">
-								<div class="single-about-history">
-									<div class="about-history-txt">
-										<h2>vision and mission</h2>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adiping elit, sed do eiusmod tempor incidd ut labore rhei  et dolore magna aliqua. Ut enim ad  veniam, quis laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in repre voluptate in the velit esse.
-										</p>
-
-										<div class="main-timeline  xtra-timeline">
-
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="timeline timeline-ml-20">
-														
-														<div class="timeline-content">
-															<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-															
-															<ul class="description">
-																<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-
-															</ul>
-														</div><!--/.timeline-content-->
-													</div><!--/.timeline-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="timeline timeline-ml-20">
-														
-														<div class="timeline-content">
-															<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-															
-															<ul class="description">
-																<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-
-															</ul>
-														</div><!--/.timeline-content-->
-													</div><!--/.timeline-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="timeline timeline-ml-20">
-														
-														<div class="timeline-content">
-															<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-															
-															<ul class="description">
-																<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-
-															</ul>
-														</div><!--/.timeline-content-->
-													</div><!--/.timeline-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-										</div><!--.main-timeline-->
-									</div><!--/.about-history-txt-->
-								</div><!--/.single-about-history-->
-							</div><!--/.col-->
-
-							<div class="col-md-offset-1 col-md-5 col-sm-12">
-								<div class="single-about-history">
-									<div class="about-history-img">
-										<img src="assets/images/about/ab2.jpg" alt="about">
-									</div><!--/.about-history-img-->
-								</div><!--/.single-about-history-->
-							</div><!--/.col-->
-						</div><!--/.about-vission-content-->
 					</div><!--/.row-->
 				</div><!--/.about-history-content-->
 			</div><!--/.container-->
@@ -351,31 +251,19 @@
 				<div class="owl-carousel owl-theme" id="client">
 					<div class="item">
 					<a href="#">
-						<img src="assets/images/client/client1.png" alt="brand-image" />
+						 <img src="assets/images/img/landlock.png" class="img-fluid" alt="">
 					</a>
 					</div>
 					<!--/.item-->
 					<div class="item">
 					<a href="#">
-						<img src="assets/images/client/client2.png" alt="brand-image" />
+						<img src="assets/images/img/bn-logo1.png" class="img-fluid" alt="">
 					</a>
 					</div>
 					<!--/.item-->
 					<div class="item">
 					<a href="#">
-						<img src="assets/images/client/client3.png" alt="brand-image" />
-					</a>
-					</div>
-					<!--/.item-->
-					<div class="item">
-					<a href="#">
-						<img src="assets/images/client/client4.png" alt="brand-image" />
-					</a>
-					</div>
-					<!--/.item-->
-					<div class="item">
-					<a href="#">
-						<img src="assets/images/client/client5.png" alt="brand-image" />
+						 <img src="assets/images/img/tolo.png" class="img-fluid" alt="">
 					</a>
 					</div>
 					<!--/.item-->
@@ -385,8 +273,8 @@
 				<!--/.clients-area-->
 			</div>
 			<!--/.container-->
-			</section>
-			<!--/.clients-->
-			<!--clients end-->
+		</section>
+		<!--/.clients-->
+		<!--clients end-->
 
  @endsection

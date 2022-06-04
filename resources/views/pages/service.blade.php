@@ -327,50 +327,36 @@
 			<!--about-history end-->
 		
 	
-		
 	<!--clients start-->
-	<section class="clients">
-		<div class="container">
-			<div class="clients-area">
-			<div class="owl-carousel owl-theme" id="client">
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client1.png" alt="brand-image" />
-				</a>
+		<section class="clients">
+			<div class="container">
+				<div class="clients-area">
+				<div class="owl-carousel owl-theme" id="client">
+					<div class="item">
+					<a href="#">
+						 <img src="assets/images/img/landlock.png" class="img-fluid" alt="">
+					</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+					<a href="#">
+						<img src="assets/images/img/bn-logo1.png" class="img-fluid" alt="">
+					</a>
+					</div>
+					<!--/.item-->
+					<div class="item">
+					<a href="#">
+						 <img src="assets/images/img/tolo.png" class="img-fluid" alt="">
+					</a>
+					</div>
+					<!--/.item-->
 				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client2.png" alt="brand-image" />
-				</a>
+				<!--/.owl-carousel-->
 				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client3.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client4.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/client/client5.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
+				<!--/.clients-area-->
 			</div>
-			<!--/.owl-carousel-->
-			</div>
-			<!--/.clients-area-->
-		</div>
-		<!--/.container-->
+			<!--/.container-->
 		</section>
 		<!--/.clients-->
 		<!--clients end-->
-
  @endsection
