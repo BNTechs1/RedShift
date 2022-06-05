@@ -403,16 +403,21 @@ html,body{
 	 border: 1px solid #fff;
 }
 .single-slide-item.slide-1 {
-	background-image:url(../../assets/images/banner/banner1.jpg);
+	background-image:url(../../assets/images/banner/aa.jpg);
 	position:relative;
 	z-index:1;
 }
 .single-slide-item.slide-2 {
-	background-image:url(../../assets/images/banner/banner2.jpg);
+	background-image:url(../../assets/images/banner/coffie.jpg);
 	position:relative;
 	z-index:1;
 }
-.single-slide-item.slide-1:before,.single-slide-item.slide-2:before{
+.single-slide-item.slide-3 {
+	background-image:url(../../assets/images/banner/red.jfif);
+	position:relative;
+	z-index:1;
+}
+.single-slide-item.slide-1:before,.single-slide-item.slide-2:before,.single-slide-item.slide-3:before{
 	background:#23232370;
 	position:absolute;
 	left:0;
@@ -622,7 +627,7 @@ html,body{
   }
 
 /* section-header */
-.section-header h2{
+.section-header h1{
 	color: #44454f;
 	font-size: 30px;
 	font-family: 'Playfair Display', serif;
@@ -687,7 +692,7 @@ html,body{
 }
 .we-do-img {
 	margin-right: 5px;
-	height: 100%;
+	/* height: 100%; */
 
 	/* border-radius:50%;
 	-webkit-transition: .5s; 
@@ -702,10 +707,10 @@ html,body{
 	object-fit: contain;
 }
 .we-do-img img {
-	/* width: 100%; */
-	height: 100%;
+	width: 100%; 
+	height: 250px;
 	/* min-height:200px; */
-	object-fit: contain;
+	object-fit: fill;
 }
 .we-do-topics h2 a{
 	color:#44454f;
@@ -807,6 +812,7 @@ html,body{
 	-ms-transition:.5s; 
 	-o-transition:.5s;
     transition: .5s;
+	height: 300px;
 }
 .service-txt h2 a{
 	color:#44454f;	
@@ -1195,7 +1201,7 @@ a:active.learn-btn{
 
 /*pricing-header */
 .pricing-header{
-	background:whitesmoke;
+	background:#fcfcff;
 	padding-top: 25px;
     padding-bottom: 28px;
     -webkit-transition:all 0.3s linear;
@@ -1204,6 +1210,14 @@ a:active.learn-btn{
 	-o-transition:all 0.3s linear;
     transition: all 0.3s linear;
 }
+
+.pricing-header img{
+	border: none;
+    max-width: 100%;
+    height: 250px;
+    object-fit: fill;
+}
+
 .pricing-header h2{
     font-size:24px;
     color: #fff;
@@ -1423,11 +1437,14 @@ a:active.learn-btn{
     -o-transition: .5s;
     transition: .5s;
 	background-color: whitesmoke;
+	height:200%;
 }
 .single-news-box img{
 	width: 100%;
-	max-height: 200px;
+	height:250px;
+	/* max-height: 200px; */
 	/* margin-top: 30px; */
+	object-fit: fill;
 }
 .news-box-inner h3 a{
 	color: #4d4e54;
@@ -1645,7 +1662,7 @@ a:active.learn-btn{
 }
 .contact-icon ul li{float:left;}
 .contact-icon ul li>a {
-	color: #fff;
+	color: rgb(228, 15, 15);
 	margin-right:13px;
 	padding: 0px 12px 0px 0px;
 	-webkit-transition: .3s; 
@@ -1910,7 +1927,7 @@ a:active.learn-btn{
 
 .about-part{
 	position:relative;
-	background:url(../../assets/images/about/about-banner.jpg)no-repeat;
+	background:url(../../assets/images/img/manufacturing.jpg)no-repeat;
 	background-position:center;
 	background-size:cover;
 	padding: 124px 0 144px;

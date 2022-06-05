@@ -19,10 +19,8 @@
 				<div class="container">
 					<div class="service-details">
 						<div class="section-header text-center">
-							<h2>our services</h2>
-							<p>
-								Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-							</p>
+							<h1>our services</h1>
+							
 						</div><!--/.section-header-->
 						<div class="service-content-one">
 							<div class="row">
@@ -48,10 +46,12 @@
 										</div><!--/.service-txt-->
 									</div><!--/.service-single-->
 								</div><!--/.col-->
+								
 								  <?php $count++; ?>
           							@endforeach
 				
 							</div><!--/.row-->
+							
 						</div><!--/.service-content-one-->
 					</div><!--/.service-details-->
 				</div><!--/.container-->

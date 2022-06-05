@@ -17,7 +17,7 @@
 			<div class="container">
 				<div class="project-details">
 				<div class="project-header text-center">
-					<h2>Our Finished Projects</h2> 
+					<h2>Our Latest Projects</h2> 
 					<!-- <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p> --> 
 				</div>
 				<!--/.project-header-->
@@ -30,7 +30,6 @@
 									<div class="row">
 										 <?php $count = 0; ?>
 										@foreach ($portfolios as $portfolio=>$value)
-										<?php if($count == 4) break; ?>
 										<div class="col-sm-4 col-xs-12">
 											<div class="item">
                         					<img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
@@ -68,9 +67,9 @@
 				<!--/.project-content-->
 				</div>
 				<!--/.project-details-->
-				<div class="project-btn text-center">
+				{{-- <div class="project-btn text-center">
 				<a href="project.html" class="project-view">view all </a>
-				</div>
+				</div> --}}
 				<!--/.project-btn-->
 			</div>
 		<!--/.container-->

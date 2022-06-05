@@ -168,11 +168,7 @@
         <div class="contact-details">
           <div class="section-header contact-head text-center">
             <h2>contact us</h2>
-            <p>
-              Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.
-            </p>
+           
           </div>
           <!--/.section-header-->
           <div class="contact-content">
@@ -183,17 +179,17 @@
                     <div class="contact-adress">
                       <div class="contact-office-address">
                         <h3>contact info</h3>
-                        <p>125, Park street avenue, Brocklyn, Newyork.</p>
+                        <p>Town Square Building, <br>Ethiopia, Addis Ababa , Bole Subcity</p>
                         <div class="contact-online-address">
                           <div class="single-online-address">
                             <i class="fa fa-phone"></i>
-                            +11253678958
+                            +251 910599719
                           </div>
                           <!--/.single-online-address-->
 
                           <div class="single-online-address">
                             <i class="fa fa-envelope-o"></i>
-                            <span>info@mail.com</span>
+                            <span>info@redshiftcorp.com</span>
                           </div>
                           <!--/.single-online-address-->
                         </div>

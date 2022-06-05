@@ -21,7 +21,7 @@
 					<div class="single-about-us">
 						<div class="about-us-img">
 						<img
-							src="assets/images/about/about-part.jpg"
+							src="assets/images/about/7.jpg"
 							alt="about images"
 						/>
 						</div>
@@ -66,7 +66,7 @@
 						<div class="col-md-5 col-sm-12">
 							<div class="single-about-history">
 								<div class="about-history-img">
-									<img src="assets/images/about/ab1.jpg" alt="about">
+									<img src="assets/images/logo.jpg" alt="about">
 								</div><!--/.about-history-img-->
 							</div><!--/.single-about-history-->
 						</div><!--/.col-->
