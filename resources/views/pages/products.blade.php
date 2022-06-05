@@ -1,6 +1,7 @@
 @extends("layoutU")
 
 @section("content")
+
     <!--about-part start-->
 		<section class="about-part service-part">
 			<div class="container">
@@ -40,28 +41,19 @@
 										<h2>categories</h2>
 										<div class="blog-categories-list">
 											<ul>
-												<li><a href="#">all</a></li>
-												<li><a href="#">busisness</a></li>
-												<li><a href="#">consultency</a></li>
-												<li><a href="#">corporate</a></li>
-												<li><a href="#">politics</a></li>
-												<li><a href="#">marketing</a></li>
-												<li><a href="#">lifestyle</a></li>
+												@foreach ($products as $product)
+													@php 
+													$tags = explode(',',$product->tag)
+													@endphp
+													@foreach ($tags as $tag)
+														<li><a href="/products/?tag={{$tag}}">{{$tag}}</a></li>													
+													@endforeach
+												@endforeach
 											</ul>
 										</div><!--/.blog-categories-list-->
 									</div><!--/.blog-widget-->
 
-									<div class="blogs-widget">
-										<h2>popular tags</h2>
-										<div class="blog-tags">
-											<button type="button" class="btn btn-default">busisness</button>
-											<button type="button" class="btn btn-default">consultency</button>
-											<button type="button" class="btn btn-default">market</button><br />
-											<button type="button" class="btn btn-default">sales</button>
-											<button type="button" class="btn btn-default">corporate</button>
-											<button type="button" class="btn btn-default">politics</button>
-										</div><!--/.blog-tags-->
-									</div><!--/.blog-widget-->
+									
 
 								</div><!--/.blog-right-->
 
