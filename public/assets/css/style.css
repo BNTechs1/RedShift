@@ -582,14 +582,14 @@ html,body{
     overflow: visible;
     padding: 10px;
   }
-  #info span {
+  #info a{
     line-height: 15.714300155639648px;
     text-align: left;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    color: rgba(170,170,170,1);
+    color: rgb(185, 7, 7);
     letter-spacing: 0.727272720336914px;
     text-transform: uppercase;
   }

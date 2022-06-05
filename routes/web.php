@@ -44,9 +44,9 @@ Route::get('/services',function(){
 });
 
 //Route for Products
-Route::get('/products',function(){
-    return view('pages.products');
-});
+// Route::get('/products',function(){
+//     return view('pages.products');
+// });
 
 //Route for Portfolios
 Route::get('/portfolios',function(){
@@ -94,7 +94,7 @@ Route::get('/manageProduct',  [ProductController::class, 'manage'])->middleware(
 Route::get('/createproducts', [ProductController::class, 'create'])->middleware('auth');
 
 //Route to get all Products 
-Route::get('/product', [ProductController::class, 'index']);
+Route::get('/products', [ProductController::class, 'index']);
 
 //Route to post new products to the DB
 Route::post('/products', [ProductController::class, 'store'])->middleware('auth');

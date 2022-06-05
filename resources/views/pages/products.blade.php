@@ -24,8 +24,8 @@
                             <div class="col-md-4">
 								<div class="blog-right">
 									<div class="blogs-widget">
-										<form>
-											<input type="text" class="form-control" placeholder="Search">
+										<form action="/products">
+											<input type="text" name="search" class="form-control" placeholder="Search">
 										</form><!--/.form-->
 										<div class="blog-search-icon">
 											<a href="#">
@@ -69,37 +69,38 @@
                             <div class="col-md-8 col-sm-6">
                                 <div class="row">
                                     <?php $count = 0; ?>
-                                    @foreach ($products as $product=>$value)
+                                    @foreach ($products as $product)
                                     <?php if($count == 6) break; ?>
-                                    <a class="col-md-4 col-sm-6"  href="/products/{{$value->id}}/detail">
+                                    <div class="col-md-4 col-sm-6"  >
                                     {{-- <div class="col-md-4 col-sm-6" > --}}
                                         <div class="pricing-box">
                                             <div class="pricing-header">
-                                                <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+                                                <img src="{{$product->image ? asset('storage/' . $product->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
                                             
                                             </div><!--/.pricing-header-->
                                                 <div id="info">
                                                     <div id="p">Registered 2016</div>
-                                                    <div id="h3">{{$value->name}}</div>
+                                                    <div id="h3">{{$product->name}}</div>
                                                     <div id="row_">
                                                         <div id="btn">
-                                                            <div id="price">{{$value->price}}</div>
+                                                            <div id="price">{{$product->price}}</div>
                                                         </div>
                                                     </div>
-                                                    <div id="row">
-                                                        <span> {{$value->tag}}</span>
-                                                        <span> Petrol</span>
-                                                        <span> Mannual</span>
-                                                    </div>
-                                                </div>
-                                                
+													<div id=row>
+                                                    <x-products-tags :tagsCsv="$product->tag" />
+													</div>
+												
+	                                            </div>
+									<a href="/products/{{$product->id}}/detail">Details</a>
+											
                                         </div><!--/.pricing-box-->
                                     {{-- </div><!--/.col--> --}}
-                                    </a>
+
+                                    </div>
                                     <?php $count++; ?>
                                     @endforeach
                                     
-
+									
                                 </div><!--/.row-->
                             </div>
                         </div>
