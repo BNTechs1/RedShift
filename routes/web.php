@@ -303,9 +303,11 @@ Route::post('/contact-us', [ContactController::class, 'save'])->name('contact.st
 
 Route::get('/user', [UserController::class, 'index'])->middleware('auth');
 Route::get('/manageUser', [UserController::class, 'create'])->middleware('auth');
-
+Route::get('/profile', [UserController::class, 'profile'])->middleware('auth');
 //Route to Delete User
 Route::get('/users/delete/{product}', [UserController::class, 'destroy'])->middleware('auth');
+Route::get('/change-password', [UserController::class, 'changePassword'])->middleware('auth');
+Route::post('/change-password', [UserController::class, 'updatePassword'])->middleware('auth');
 
 
 

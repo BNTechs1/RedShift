@@ -140,7 +140,7 @@
           </a>
           <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-              <a href="components-alerts.html">
+              <a href="/profile">
                 <i class="bi bi-circle"></i><span>Profile</span>
               </a>
             </li>
@@ -148,13 +148,7 @@
               <a href="/manageUser">
                 <i class="bi bi-circle"></i><span>Manage User</span>
               </a>
-            </li>
-            <li>
-              <a href="components-accordion.html">
-                <i class="bi bi-circle"></i><span>Register User</span>
-              </a>
-            </li>
-          
+            </li>    
               {{-- user handling --}}
         {{-- user pasword change and email,name --}}
         {{-- manage user to super admin --}}
