@@ -182,7 +182,7 @@
 		<div class="container">
 		  <div class="news-details">
 			<div class="section-header text-center">
-			  <h2>Our Services</h2>
+			  <h1>Our Services</h1>
 			  {{-- <p>
 				Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
 				aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -341,15 +341,132 @@
     </section><!-- /.new-project-->	
     <!-- new-project end -->
 
+
+     <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="clearfix">
+      <div class="container" data-aos="fade-up">
+
+         <div class="project-header text-left">
+                    <h2>Gallery Of Products</h2>
+                  
+                </div><!--/.project-header-->
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/tricycle.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p>Model- GAS 101RA CA/21</p>
+                <div>
+                  <a href="assets/images/img/tricycle.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/tricycle1.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p>Model- GAS 101RA CA/21</p>
+                <div>
+                  <a href="assets/images/img/tricycle1.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/tricycle2.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p>Model- GAS 101RA CA/21</p>
+                <div>
+                  <a href="assets/images/img/tricycle2.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/bluecar1.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p>Model -GAS 102RA CA /21</p>
+                <div>
+                  <a href="assets/images/img/bluecar1.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/bluecar2.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p>Model -GAS 102RA CA /21</p>
+                <div>
+                  <a href="assets/images/img/bluecar2.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/redcar.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p></p>
+                <div>
+                  <a href="assets/images/img/redcar.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/bluecar2.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p>Model -GAS 102RA CA /21</p>
+                <div>
+                  <a href="assets/images/img/bluecar2.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/images/img/redcar.jpg" class="img-fluid zoom-in-zoom-out" alt="">
+              <div class="portfolio-info">
+                <h4><a href="manufacturing.html">Manufacturing</a></h4>
+                <p></p>
+                <div>
+                  <a href="assets/images/img/redcar.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="manufacturing.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
     <!--project start-->
-    <section id="project"  class="project">
+     {{-- <section id="project"  class="project">
         <div class="container">
             <div class="project-details">
                 <div class="project-header text-left">
                     <h2>Gallery Of Products</h2>
-                    {{-- <p>
-                        Pallamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </p> --}}
+                  
                 </div><!--/.project-header-->
                 <div class="project-content">
                     <div class="gallery-content">
@@ -363,7 +480,6 @@
                                         <div class="col-sm-3 col-xs-12">
                                             <div class="item">
                     <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
-                                                {{-- <img src="assets/images/1.jpg" alt="portfolio image"/> --}}
                                                 <div class="isotope-overlay">
                                                     <a href="project.html">
                                                         <span class="lnr lnr-link"></span>
@@ -392,7 +508,7 @@
             </div><!--/.project-details-->
         </div><!--/.container-->
 
-    </section><!--/.project-->
+    </section><!--/.project-->  --}}
     <!--project end-->
 
     <!--project start-->

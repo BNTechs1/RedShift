@@ -18,9 +18,6 @@
 				<div class="pricing-details">
 					<div class="section-header text-center">
 						<h2 class="price-head">Available Products</h2>
-						<p>
-							olore eu fugiat nulla pariatur. 
-						</p>
 					</div><!--/.section-header-->
 					<div class="pricing-content">
                         <div class="row">
