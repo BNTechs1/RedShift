@@ -130,6 +130,11 @@
         </a>
       </li><!-- End Settings Nav -->
         <li class="nav-item">
+        <a class="nav-link collapsed" href="/contact-us"  type="button" >
+          <i class="bi bi-layout-text-window-reverse"></i><span>Manage Contacts</span>
+        </a>
+      </li><!-- End Settings Nav -->
+        <li class="nav-item">
           <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-menu-button-wide"></i><span>Settings</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
@@ -140,7 +145,7 @@
               </a>
             </li>
               <li>
-              <a href="components-badges.html">
+              <a href="/manageUser">
                 <i class="bi bi-circle"></i><span>Manage User</span>
               </a>
             </li>

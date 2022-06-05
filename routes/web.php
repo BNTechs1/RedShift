@@ -124,7 +124,7 @@ Route::get('/products/{product}', [ProductController::class, 'show']);
 */
 
 //Route for user registration 
-Route::get('/register', [UserController::class, 'create'])->middleware('guest');
+Route::get('/register', [UserController::class, 'create'])->middleware('auth');
 
 //Route for user login 
 Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
@@ -287,12 +287,28 @@ Route::get('/blogs/{blog}', [BlogController::class, 'show']);
 
 /*
 |--------------------------------------------------------------------------
-|Authentication Routes
+|Contact US Routes
 |--------------------------------------------------------------------------
 */
 
-Route::get('/contact-us', [ContactController::class, 'index']);
+Route::get('/contact-us', [ContactController::class, 'index'])->middleware('auth');
 Route::post('/contact-us', [ContactController::class, 'save'])->name('contact.store');
+
+
+/*
+|--------------------------------------------------------------------------
+|User Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/user', [UserController::class, 'index'])->middleware('auth');
+Route::get('/manageUser', [UserController::class, 'create'])->middleware('auth');
+
+//Route to Delete User
+Route::get('/users/delete/{product}', [UserController::class, 'destroy'])->middleware('auth');
+
+
+
 
 
 

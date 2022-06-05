@@ -9,7 +9,10 @@ class UserController extends Controller
 {
     //Show Register form 
     public function create(){
-        return view('Auth.register');
+        // return view('user.manage');
+
+        return view('user.manage',
+        ['users' => User::latest()->paginate(5)]);
     }
 
     //Create New User
@@ -63,5 +66,11 @@ class UserController extends Controller
             return redirect('/')->with('message','You are logged in!');
         }
         return back()->withErrors(['email' => 'Innvalid Credentials'])->onlyInput('email');
+    }
+
+    public function destroy(User $user)
+    {
+        $user->delete();
+        return redirect('/manageUser')->with('message','User Deleted succssfully');
     }
 }

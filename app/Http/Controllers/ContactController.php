@@ -13,7 +13,8 @@ class ContactController extends Controller
      */
     public function index() { 
 
-        // return view('contact-us'); 
+        return view('contacts.manage',
+        ['contacts' => Contact::latest()->paginate(10)]);
     } 
 
     /**
@@ -52,18 +53,18 @@ class ContactController extends Controller
 
         $contact->save();
 
-        \Mail::send('contact_email',
-                array(
-                    'name' => $request->get('name'),
-                    'email' => $request->get('email'),
-                    'subject' => $request->get('subject'),
-                    'phone_number' => $request->get('phone_number'),
-                    'user_message' => $request->get('message'),
-                ), function($message) use ($request)
-                {
-                   $message->from($request->email);
-                   $message->to('it.ermias.asmare@gmail.com');
-                });
+        // \Mail::send('contact_email',
+        //         array(
+        //             'name' => $request->get('name'),
+        //             'email' => $request->get('email'),
+        //             'subject' => $request->get('subject'),
+        //             'phone_number' => $request->get('phone_number'),
+        //             'user_message' => $request->get('message'),
+        //         ), function($message) use ($request)
+        //         {
+        //            $message->from($request->email);
+        //            $message->to('it.ermias.asmare@gmail.com');
+        //         });
             
         
         return back()->with('success', 'Thank you for contact us!');

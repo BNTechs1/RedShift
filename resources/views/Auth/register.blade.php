@@ -27,7 +27,7 @@
 
                   <form action="/users" method="POST" class="row g-3 needs-validation" novalidate>
                     @csrf 
-                  <div class="col-12">
+                    <div class="col-12">
                       <label for="yourName" class="form-label">Your Name</label>
                       <input value="{{old('name')}}" type="text" name="name" class="form-control" id="yourName" required>
 
