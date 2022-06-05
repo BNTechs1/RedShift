@@ -71,7 +71,6 @@
                                             
                                             </div><!--/.pricing-header-->
                                                 <div id="info">
-                                                    <div id="p">Registered 2016</div>
                                                     <div id="h3">{{$product->name}}</div>
                                                     <div id="row_">
                                                         <div id="btn">
