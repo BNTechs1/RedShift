@@ -6,6 +6,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Product;
 
@@ -284,8 +285,14 @@ Route::get('/blogs/delete/{blog}', [BlogController::class, 'destroy'])->middlewa
 //Route to Show single service
 Route::get('/blogs/{blog}', [BlogController::class, 'show']);
 
+/*
+|--------------------------------------------------------------------------
+|Authentication Routes
+|--------------------------------------------------------------------------
+*/
 
-
+Route::get('/contact-us', [ContactController::class, 'index']);
+Route::post('/contact-us', [ContactController::class, 'save'])->name('contact.store');
 
 
 

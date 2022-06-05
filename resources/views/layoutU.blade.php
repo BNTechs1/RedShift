@@ -251,34 +251,23 @@
                 <div class="single-contact-box">
                   <div class="contact-form">
                     <h3>Leave us a Massage Here</h3>
-                    <form>
+                    <form method="POST" action="/contact-us">
+                    @csrf
                       <div class="row">
                         <div class="col-sm-6 col-xs-12">
                           <div class="form-group">
                             <input
                               type="text"
                               class="form-control"
-                              id="firstname"
-                              placeholder="First Name"
-                              name="firstname"
+                              id="name"
+                              placeholder="Name"
+                              name="name"
                             />
                           </div>
                           <!--/.form-group-->
                         </div>
                         <!--/.col-->
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastname"
-                              placeholder="Last Name"
-                              name="laststname"
-                            />
-                          </div>
-                          <!--/.form-group-->
-                        </div>
-                        <!--/.col-->
+                     
                       </div>
                       <!--/.row-->
                       <div class="row">
@@ -302,7 +291,7 @@
                               class="form-control"
                               id="phone"
                               placeholder="Phone"
-                              name="phone"
+                              name="phone_number"
                             />
                           </div>
                           <!--/.form-group-->
@@ -311,6 +300,19 @@
                       </div>
                       <!--/.row-->
                       <div class="row">
+                         <div class="col-sm-12 col-xs-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="subject"
+                              placeholder="Subject"
+                              name="subject"
+                            />
+                          </div>
+                          <!--/.form-group-->
+                        </div>
+                        <!--/.col-->
                         <div class="col-sm-12">
                           <div class="form-group">
                             <textarea
@@ -318,6 +320,7 @@
                               rows="7"
                               id="comment"
                               placeholder="Message"
+                              name="message"
                             ></textarea>
                           </div>
                           <!--/.form-group-->
@@ -328,7 +331,7 @@
                       <div class="row">
                         <div class="col-sm-12">
                           <div class="single-contact-btn pull-right">
-                            <button class="contact-btn" type="button">
+                            <button class="contact-btn" type="submit">
                               send message
                             </button>
                           </div>
