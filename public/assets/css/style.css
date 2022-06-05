@@ -1800,7 +1800,31 @@ a:active.learn-btn{
 	-o-transform:translateX(5px);
 	-ms-transform:translateX(5px);
 	transform:translateX(5px);
-}/* footer-menu  */
+}
+.footer-menu-key li a{
+	font-size:20px;
+	color:rgb(218, 40, 40);
+	padding-bottom: 20px;
+	text-transform:capitalize;
+	
+
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	-ms-transition:all 0.2s linear;
+	-o-transition:all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.footer-menu-key li a:hover,
+.footer-menu-key  li a:focus{
+	color: rgb(235, 31, 31);
+	font-weight: 700;
+	-webkit-transform:translateX(5px);
+	-moz-transform:translateX(5px);
+	-o-transform:translateX(5px);
+	-ms-transform:translateX(5px);
+	transform:translateX(5px);
+}
+/* footer-menu  */
 
 
 
