@@ -131,8 +131,7 @@
               <li><a href="/portfolios">Portfolio</a></li>
               <li><a href="/products">Products</a></li>
               <li><a href="/contact">Contact</a></li>
-              <li><a href="/register">Register</a></li>
-              <li><a href="/login">Login</a></li>
+              
               @endauth
               <!-- <li>
               <a href="#"> 

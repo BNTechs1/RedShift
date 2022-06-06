@@ -66,14 +66,8 @@ class ProductController extends Controller
         ]);
 
         if($request->hasFile('image')){
-            // $width = 600; // your max width
-            // $height = 600; // your max height
-            // $img = IMG::make($uploaded_file);
-            // $img->height() > $img->width() ? $width=null : $height=null;
-            // $img->resize($width, $height, function ($constraint) {
-            //     $constraint->aspectRatio();
-            // });
-            $formFields['image'] = $request->file('image')->store('images','public');
+            $formFields['image'] = cloudinary()->upload($request->file('image')->getRealPath())->getSecurePath();
+            // $formFields['image'] = $request->file('image')->store('images','public');
         }else{
             return 'no image';
         }

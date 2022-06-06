@@ -221,7 +221,9 @@
 									<?php if($count == 4) break; ?>
 									<div class="col-sm-3 col-xs-12">
 										<div class="single-team-box single-team-card">
-                        						<img class="team-box-bg-1" src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+											  <img src="{{ $value->image}}" alt="blog image" />
+
+                        						{{-- <img class="team-box-bg-1" src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
 											<div class="team-box-inner">
 												<h3>{{$value->name}}</h3>
 												<p class="team-meta">{{$value->description}}/p>

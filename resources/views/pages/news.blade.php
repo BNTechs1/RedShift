@@ -45,7 +45,9 @@
 									<div class="col-sm-6">
 										<div class="single-news-box news-mb-20">
 											<div class="news-box-bg">
-									            <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+											  <img src="{{ $value->image}}" alt="blog image" />
+
+									            {{-- <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
 												{{-- <img src="assets/images/blog/bl2.jpg" alt="blog image"> --}}
 												<div class="isotope-overlay">
 													<a href="blog_single.html">

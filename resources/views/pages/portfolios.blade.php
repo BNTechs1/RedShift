@@ -32,7 +32,9 @@
 										@foreach ($portfolios as $portfolio=>$value)
 										<div class="col-sm-4 col-xs-12">
 											<div class="item">
-                        					<img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+											  <img src="{{ $value->image}}" alt="blog image" />
+
+                        					{{-- <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
 
 											{{-- <img
 											src="assets/images/project/project2.jpg"

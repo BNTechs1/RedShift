@@ -67,7 +67,8 @@
                                     {{-- <div class="col-md-4 col-sm-6" > --}}
                                         <div class="pricing-box">
                                             <div class="pricing-header">
-                                                <img src="{{$product->image ? asset('storage/' . $product->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+											  <img src="{{ $product->image}}" alt="blog image" />
+                                                {{-- <img src="{{$product->image ? asset('storage/' . $product->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
                                             
                                             </div><!--/.pricing-header-->
                                                 <div id="info">

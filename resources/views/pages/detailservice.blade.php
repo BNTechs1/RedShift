@@ -25,7 +25,8 @@
                     <div class="col-md-5 col-sm-12">
                         <div class="single-about-history">
                             <div class="about-history-img">
-							 <img src="{{$service->image ? asset('storage/' . $service->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+							<img src="{{ $service->image}}" alt="blog image" />
+							 {{-- <img src="{{$service->image ? asset('storage/' . $service->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
                                 {{-- <img src="assets/images/about/ab1.jpg" alt="about"> --}}
                             </div><!--/.about-history-img-->
                         </div><!--/.single-about-history-->
@@ -39,90 +40,7 @@
                                     {{$service->description}}
                                 </p>
 
-                                <div class="main-timeline">
-
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2">
-                                            <div class="experience-time">
-                                                <h3>2002</h3>
-                                            </div><!--/.experience-time-->
-                                        </div><!--/.col-->
-                                        <div class="col-md-10 col-sm-10">
-                                            <div class="timeline">
-                                                
-                                                <div class="timeline-content">
-                                                    <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                    
-                                                    <ul class="description">
-                                                        <li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-
-                                                    </ul>
-                                                </div><!--/.timeline-content-->
-                                            </div><!--/.timeline-->
-                                        </div><!--/.col-->
-                                    </div><!--/.row-->
-
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2">
-                                            <div class="experience-time">
-                                                <h3>2007</h3>
-                                            </div><!--/.experience-time-->
-                                        </div><!--/.col-->
-                                        <div class="col-md-10 col-sm-10">
-                                            <div class="timeline">
-                                                
-                                                <div class="timeline-content">
-                                                    <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                    
-                                                    <ul class="description">
-                                                        <li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-                                                    </ul>
-                                                </div><!--/.timeline-content-->
-                                            </div><!--/.timeline-->
-                                        </div><!--/.col-->
-                                    </div><!--/.row-->
-
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2">
-                                            <div class="experience-time">
-                                                <h3>2012</h3>
-                                            </div><!--/.experience-time-->
-                                        </div><!--/.col-->
-                                        <div class="col-md-10 col-sm-10">
-                                            <div class="timeline">
-                                                
-                                                <div class="timeline-content">
-                                                    <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                    
-                                                    <ul class="description">
-                                                        <li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-
-                                                    </ul>
-                                                </div><!--/.timeline-content-->
-                                            </div><!--/.timeline-->
-                                        </div><!--/.col-->
-                                    </div><!--/.row-->
-
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2">
-                                            <div class="experience-time">
-                                                <h3>2016</h3>
-                                            </div><!--/.experience-time-->
-                                        </div><!--/.col-->
-                                        <div class="col-md-10 col-sm-10">
-                                            <div class="timeline">
-                                                
-                                                <div class="timeline-content">
-                                                    <h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-                                                    
-                                                    <ul class="description">
-                                                        <li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-                                                    </ul>
-                                                </div><!--/.timeline-content-->
-                                            </div><!--/.timeline-->
-                                        </div><!--/.col-->
-                                    </div><!--/.row-->
-                                </div><!--.main-timeline-->
+                               
                             </div><!--/.about-history-txt-->
                         </div><!--/.single-about-history-->
                     </div><!--/.col-->

@@ -30,8 +30,10 @@
 								<div class="col-sm-4 col-xs-12">
 									<div class="service-single text-center">
 										<div class="service-img">
+											  <img src="{{ $value->image}}" alt="blog image" />
+
 								            {{-- <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
-											<img src="assets/images/service/service1.png" alt="image of service" />
+											{{-- <img src="assets/images/service/service1.png" alt="image of service" /> --}}
 										</div><!--/.service-img-->
 										<div class="service-txt">
 											<h2>

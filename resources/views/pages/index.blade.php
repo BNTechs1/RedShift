@@ -198,7 +198,8 @@
 				<div class="col-md-4 col-sm-6">
 				  <div class="single-news-box">
 					<div class="news-box-bg">
-            <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+                        <img src="{{ $value->image}}" alt="blog image" />
+            
 					  {{-- <img src="assets/images/p36kj8dg@2x.png" alt="blog image" /> --}}
 					  <div class="isotope-overlay">
 						<a href="blog_single.html">
@@ -264,7 +265,8 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-6">
                       <div class="we-do-img img">
-                        <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+                      {{-- {{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}} --}}
+                        <img src="{{ $value->image}}" alt="blog image" />
                         {{-- <img src="assets/images/dtegku1i@2x.png" alt="blog image" /> --}}
                         <div class="isotope-overlay">
                         <a href="blog_single.html">
@@ -283,14 +285,10 @@
                             </div>
                           </div>
                           <div id="row">
-                            <span> {{$value->tag}}</span>
-                            <span> Petrol</span>
-                            <span> Mannual</span>
+                          <x-products-tags :tagsCsv="$value->tag" />
                           </div>
                         </div> 
-                        <a  href="/products/{{$value->id}}/detail" class=" service-btn ">
-												Details
-											</a>    
+                       
                         <!--/.news-box-inner-->
                       </div>
                   </div>
@@ -533,7 +531,8 @@
                                     <?php if($count == 4) break; ?>
                                     <div class="col-sm-4 col-xs-12">
                                         <div class="item">
-                                        <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+                        <img src="{{ $value->image}}" alt="blog image" />
+
 
                                         {{-- <img
                                         src="assets/images/project/project2.jpg"

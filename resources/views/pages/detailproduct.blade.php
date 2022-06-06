@@ -23,7 +23,9 @@
                     <div class="col-md-8 col-sm-12">
                         <div class="single-about-history">
                             <div class="about-history-img">
-							 <img src="{{$product->image ? asset('storage/' . $product->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
+											  <img src="{{ $product->image}}" alt="blog image" />
+
+							 {{-- <img src="{{$product->image ? asset('storage/' . $product->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
                                 {{-- <img src="assets/images/about/ab1.jpg" alt="about"> --}}
                             </div><!--/.about-history-img-->
                         </div><!--/.single-about-history-->
