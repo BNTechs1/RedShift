@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 
-class blogController extends Controller
+class BlogController extends Controller
 {
     //show create form 
     public function create()
