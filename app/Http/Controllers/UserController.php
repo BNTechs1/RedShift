@@ -8,13 +8,19 @@ use Illuminate\Validation\Rule;
 class UserController extends Controller
 {
     //Show Register form 
+    // public function create(){
+    //     // return view('user.manage');
+
+    //     return view('user.manage',
+    //     ['users' => User::latest()->paginate(5)]);
+    // }
+
     public function create(){
         // return view('user.manage');
 
-        return view('user.manage',
-        ['users' => User::latest()->paginate(5)]);
+        return view('Auth.register');
+        // ['users' => User::latest()->paginate(5)]);
     }
-
     public function profile(){
         // return view('user.manage');
 

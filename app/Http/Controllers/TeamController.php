@@ -62,6 +62,7 @@ class TeamController extends Controller
         $formFields = $request->validate([
             'name' => 'required',
             'description' => 'required',
+            'title' => 'required'
         ]);
 
         if($request->hasFile('image')){

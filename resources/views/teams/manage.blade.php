@@ -83,6 +83,15 @@
                     <p>{{$message}}</p>
                   @enderror
                 </div>
+                 <div class="col-md-12">
+                  <div class="form-floating">
+                    <input type="text" name="title" value="{{old('name')}}" class="form-control" id="floatingName" placeholder="Your Name">
+                    <label for="floatingName">Title</label>
+                  </div>
+                  @error('name')
+                    <p>{{$message}}</p>
+                  @enderror
+                </div>
                 <div class="col-md-12">
                   <div class="form-floating">
                     <input class="form-control" name="image"  type="file" id="fileUpload">

@@ -124,7 +124,7 @@ Route::get('/products/{product}', [ProductController::class, 'show']);
 */
 
 //Route for user registration 
-Route::get('/register', [UserController::class, 'create'])->middleware('auth');
+Route::get('/register', [UserController::class, 'create'])->middleware('guest');
 
 //Route for user login 
 Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
@@ -140,7 +140,11 @@ Route::post('/user/login', [UserController::class, 'authenticate']);
 Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 
 
+Route::post('/password/email', [UserController::class,'forgot'])->middleware('guest');
 
+Route::view('/forgot_password', 'Auth.reset_password')->name('password.reset');
+
+Route::post('/password/reset', [UserController::class,'reset'])->middleware('guest');
 /*
 |--------------------------------------------------------------------------
 |Services Routes
@@ -228,7 +232,7 @@ Route::get('/manageTeam',  [TeamController::class, 'manage'])->middleware('auth'
 Route::get('/createteams', [TeamController::class, 'create'])->middleware('auth');
 
 //Route to get all services 
-Route::get('/team', [TeamController::class, 'index']);
+// Route::get('/team', [TeamController::class, 'index']);
 
 //Route to post new services to the DB
 Route::post('/teams', [TeamController::class, 'store'])->middleware('auth');
@@ -291,8 +295,8 @@ Route::get('/blogs/{blog}', [BlogController::class, 'show']);
 |--------------------------------------------------------------------------
 */
 
+Route::post('/contact-us', [ContactController::class, 'save']);
 Route::get('/contact-us', [ContactController::class, 'index'])->middleware('auth');
-Route::post('/contact-us', [ContactController::class, 'save'])->name('contact.store');
 
 
 /*
