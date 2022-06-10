@@ -79,7 +79,10 @@
                                                         </div>
                                                     </div>
 													<div id=row>
-                                                    <x-products-tags :tagsCsv="$product->tag" />
+                                                    <x-products-model :tagsCsv="$product->model" />
+                                                    <x-products-transmission :tagsCsv="$product->transmission" />
+                                                    <x-products-type-wheels :tagsCsv="$product->wheels" />
+												
 													</div>
 												
 	                                            </div>
