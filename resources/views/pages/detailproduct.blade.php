@@ -32,16 +32,30 @@
                     </div><!--/.col-->
                     <div class="col-md-4">
                             <div class=row>
-                             <div class=" col-md-4 col-sm-6 col-xs-12">
+                             <div class=" px-4">
                                 <div class="hm-footer-widget">
-                                    <div class="footer-menu ">	  
+                                    <div class="product-data">	  
                                         <ul class="">
-                                            <li><a href="index.html" >Millgae:  {{$product->name}}</a></li>
-                                            <li><a href="about.html">CC:{{$product->tag}}</a></li>
-                                            <li><a href="services.html">Model:{{$product->price}}</a></li>
-                                            <li><a href="portfolio.html">Engine:</a></li>
-                                            <li><a href="blog.html">wheel:</a></li>
-                                            <li><a href="contact.html">type:</a></li> 
+                                            <li>
+                                                <h6>Brand</h6>
+                                                <h3>Toyota</h3>
+                                                {{-- <a  >Millgae:  {{$product->name}}</a> --}}
+                                            </li>
+                                            <li>
+                                                <h6>Brand</h6>
+                                                <h3>Toyota</h3>
+                                                {{-- <a  >Millgae:  {{$product->name}}</a> --}}
+                                            </li>
+                                            <li>
+                                                <h6>Brand</h6>
+                                                <h3>Toyota</h3>
+                                                {{-- <a  >Millgae:  {{$product->name}}</a> --}}
+                                            </li>
+                                            <li>
+                                                <h6>Brand</h6>
+                                                <h3>Toyota</h3>
+                                                {{-- <a  >Millgae:  {{$product->name}}</a> --}}
+                                            </li>
                                         </ul>
                                     </div><!-- /.footer-menu-->
                                 </div><!--/.hm-footer-widget-->

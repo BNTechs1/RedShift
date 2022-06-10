@@ -45,7 +45,6 @@
                             {{-- products/{{$value->id}}/edit --}}
                                 <a href="/products/{{$value->id}}/edit" class="btn btn-secondary"><i class="bi bi-collection"></i></a>
                                 <a href="/products/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
-                                <a href="/products/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
                             </div>
                             </td>
                         </tr>
@@ -55,23 +54,7 @@
                 </table>
                 <!-- End Table with stripped rows -->
                   <!-- Pagination with icons -->
-              <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="/product?page=1">1</a></li>
-                  <li class="page-item"><a class="page-link" href="/product?page=2">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav><!-- End Pagination with icons -->
+            
                 </div>
                 
             </div>
@@ -95,10 +78,10 @@
                 <!-- Floating Labels Form -->
                 <form action="/products" method="POST"  enctype="multipart/form-data" class="row g-3">
                   @csrf
-                  <div class="col-md-12">
+                  <div class="col-md-6">
                     <div class="form-floating">
                       <input type="text" name="name" value="{{old('name')}}" class="form-control" id="floatingName" placeholder="Your Name">
-                      <label for="floatingName">Product Name</label>
+                      <label for="floatingName">Product Brand</label>
                     </div>
                     @error('name')
                       <p>{{$message}}</p>
@@ -106,8 +89,8 @@
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="text" name="tag" value="{{old('tag')}}"  class="form-control" id="floatingTags" placeholder="Tags(Comma Separated)">
-                      <label for="floatingTags">Tags</label>
+                      <input type="text" name="model" value="{{old('model')}}"  class="form-control" id="floatingTags" placeholder="Tags(Comma Separated)">
+                      <label for="floatingTags">Model</label>
                     </div>
                         @error('tag')
                       <p>{{$message}}</p>
@@ -122,6 +105,48 @@
                       <p>{{$message}}</p>
                     @enderror
                   </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select" name="wheels" aria-label="Default select example">
+                        <option selected></option>
+                        <option active value="2">One</option>
+                        <option value="3">Two</option>
+                        <option value="4">Three</option>
+                      </select>
+                      <label class="col-sm-2 col-form-label">Wheels</label>
+                    </div>
+                      @error('wheels')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+                   <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select" name ="transmission" aria-label="Default select example">
+                        <option selected></option>
+                        <option active value="Manual">Manual</option>
+                        <option value="Automatic">Automatic</option>
+                      </select>
+                      <label class="col-sm-2 col-form-label">Transmission</label>
+                    </div>
+                       @error('transmission')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+                     <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select" name="type" aria-label="Default select example">
+                        <option selected></option>
+                        <option active value="Gasoline">Gasoline</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Hybrid">Hybrid</option>      
+                      </select>
+                      <label class="col-sm-2 col-form-label">Type</label>
+                    </div>
+                      @error('type')
+                      <p>{{$message}}</p>
+                    @enderror
+                  </div>
+
                   <div class="col-md-12">
                     <div class="form-floating">
                       <input class="form-control" name="image"  type="file" id="fileUpload">

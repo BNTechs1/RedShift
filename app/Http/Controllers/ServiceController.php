@@ -64,8 +64,9 @@ class ServiceController extends Controller
         ]);
 
         if($request->hasFile('image')){
+            $formFields['image'] = $request->file('image')->store('images','public');
            
-            $formFields['image'] = cloudinary()->upload($request->file('image')->getRealPath())->getSecurePath();
+            // $formFields['image'] = cloudinary()->upload($request->file('image')->getRealPath())->getSecurePath();
         }else{
             return 'no image';
         }

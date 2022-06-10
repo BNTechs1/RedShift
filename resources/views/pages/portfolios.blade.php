@@ -12,72 +12,47 @@
 		</section><!--/.about-part-->
 		<!--about-part end-->
 		
-		<!--project start-->
-		<section id="project" class="project">
-			<div class="container">
-				<div class="project-details">
-				<div class="project-header text-center">
-					<h2>Our Latest Projects</h2> 
-					<!-- <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p> --> 
-				</div>
-				<!--/.project-header-->
-				<div class="project-content">
-					<div class="gallery-content">
-						<div class="isotope">
+		<!--service start-->
+		<section  class="service">
+				<div class="container">
+					<div class="service-details">
+						<div class="section-header text-center">
+							<h1>our Latest projects</h1>
+							
+						</div><!--/.section-header-->
+						<div class="service-content-one">
 							<div class="row">
-								<!-- /.col -->
-								<div class="col-md-12 col-sm-12">
-									<div class="row">
-										 <?php $count = 0; ?>
-										@foreach ($portfolios as $portfolio=>$value)
-										<div class="col-sm-4 col-xs-12">
-											<div class="item">
+							  	<?php $count = 0; ?>
+								@foreach ($portfolios as $portfolio=>$value)
+								<?php if($count == 10) break; ?>
+								<div class="col-sm-4 col-xs-12">
+									<div class="service-single text-center">
+										<div class="service-img">
 											  <img src="{{ $value->image}}" alt="blog image" />
-
-                        					{{-- <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" /> --}}
-
-											{{-- <img
-											src="assets/images/project/project2.jpg"
-											alt="portfolio image"
-											/> --}}
-											<div class="isotope-overlay">
-											<a href="project.html">
-											<span class="lnr lnr-link"></span>
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">{{$value->name}}</a>
+											</h2>
+											<p>
+												{{$value->description}}
+											</p>
+											<a href="/portfolios/{{$value->id}}/detail" class="service-btn">
+												learn more
 											</a>
-											<h3>
-											<a href="project.html"> {{$value->name}}</a>
-											</h3>
-											<p>{{$value->description}}</p>
-											</div>
-											<!-- /.isotope-overlay -->
-											</div>
-											<!-- /.item -->
-										</div>
-										<!-- /.col -->
-										<?php $count++; ?>
-         								 @endforeach
-									</div>
-								</div>		
-								<!-- /.col -->
-							</div>
-							<!-- /.row -->
-						</div>
-						<!--/.isotope-->
-					</div>
-					<!--/.gallery-content-->
-				</div>
-				<!--/.project-content-->
-				</div>
-				<!--/.project-details-->
-				{{-- <div class="project-btn text-center">
-				<a href="project.html" class="project-view">view all </a>
-				</div> --}}
-				<!--/.project-btn-->
-			</div>
-		<!--/.container-->
-		</section>
-		<!--/.project-->
-		<!--project end-->
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
+								</div><!--/.col-->
+								<?php $count++; ?>
+          						@endforeach
+							</div><!--/.row-->
+						</div><!--/.service-content-one-->
+					</div><!--/.service-details-->
+				</div><!--/.container-->
+		</section><!--/.service-->
+		<!--service end-->
+		
+	
 		
 	<!--clients start-->
 		<section class="clients">

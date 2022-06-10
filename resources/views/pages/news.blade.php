@@ -29,9 +29,9 @@
 			<div class="container">
 				<div class="news-details">
 					<div class="section-header text-center">
-						<h2>our latest news</h2>
+						<h2>Our Latest news</h2>
 						<p>
-							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							
 						</p>
 					</div><!--/.section-header-->
 					<div class="news-card">
@@ -70,31 +70,12 @@
 									</div><!--.col-->
 									<?php $count++; ?>
          							 @endforeach
-									<div class="pagination-part text-center">
-										<ul class="pagination">
-											<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li>
-												<a href="#">
-													Next
-													<span class="fa fa-angle-right">
-														
-													</span>
-												</a>
-											</li>
-											<li>
-												<a href="#" aria-label="Next">
-													
-												</a>
-											</li>
-										</ul>
-									</div><!--/.pagination-part(&raquo;)-->
+								
 								</div><!--/.blog-left-->
 
 							</div><!--/.col-->
 
-							<div class="col-md-4">
+							{{-- <div class="col-md-4">
 								<div class="blog-right">
 
 									<div class="blogs-widget">
@@ -142,7 +123,7 @@
 
 								</div><!--/.blog-right-->
 
-							</div><!--/.col-->
+							</div><!--/.col--> --}}
 
 						</div><!--/.row-->
 					</div><!--/.news-card-->

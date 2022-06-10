@@ -12,57 +12,108 @@
 
 		</section><!--/.about-part-->
 		<!--about-part end-->
-		<!--about-us start -->
-		<section class="about-us">
+
+		 <!--we-do start -->
+		<section  class="we-do">
 			<div class="container">
-				<div class="about-us-content">
-				<div class="row">
-					<div class="col-sm-6">
-					<div class="single-about-us">
-						<div class="about-us-img">
-						<img
-							src="assets/images/about/7.jpg"
-							alt="about images"
-						/>
-						</div>
-						<!--/.about-us-img-->
-					</div>
-					<!--/.single-about-us-->
-					</div>
-					<!--/.col-->
-					<div class="col-sm-6">
-						<div class="single-about-us">
-							<div class="about-us-txt">
-							<h2>about us</h2>
-							<p>Redshift corp is a company that operates in different sectors. With over seven years of combined experience, we thrive to bring quality and value to the different sectors we are involved in. Currently, our focus areas are construction, manufacturing, and consultancy.
-								We have upcoming projects varying from restaurants to startup hubs where we help you transform your ideas into a real product.</p>
-					
-							<!--/.project-btn-->
-							</div>
-							<!--/.about-us-txt-->
-						</div>
-						<!--/.single-about-us-->
-						
-					</div>
-					
-				</div>
-				<!--/.row-->
-				</div>
-				<!--/.about-us-content-->
-			</div>
-			<!--/.container-->
-		</section>
-		<!--/.about-us-->
-		<!--about-us end -->
+				<div class="we-do-details">
+					<div class="section-header text-center">
+						<h2>About Us</h2>
+					 <p class="about"style="text-align : Center">
+                    Redshift corp is a company that operates in different sectors. With over seven years of combined experience, we thrive to bring quality and value to the different sectors we are involved in. Currently, our focus areas are construction, manufacturing, and consultancy.
+            	We have upcoming projects varying from restaurants to startup hubs where we help you transform your ideas into a real product.</p>
+                  </p>
+					</div><!--/.section-header-->
+					<div class="we-do-carousel">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+													  Mission
+													</a>
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment " style="text-align : Center">
+											<p>
+  											Our company's mission is to provide high-quality services to out customers.
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+										
+											<div class="we-do-topics">
+												<h2>
+                        
+													<a href="#">
+														Vision
+													</a>
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment">
+											<p>
+											Our vision is to be the top provider of these services in our region and beyond. 
+
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+										
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														Goal
+													</a>
+                          
+
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment" style="text-align : Center">
+											<p>
+												Our goal is to provide excellent customer service while maintaining a high level of quality in everything we do.
+
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.we-do-carousel-->
+				</div><!--/.we-do-details-->
+			</div><!--/.container-->
+     		 <div class="project-btn text-center">  
+              <a href="/about" class="service-view">read more </a>
+              </div>
+
+		</section><!--/.we-do-->
+		<!--we-do end-->
+			
+
+		</section><!--/.we-do-->
+		<!--we-do end-->
 
 			
 		<!--about-history start-->
 		<div class="about-history">
 			<div class="container">
 				<div class="about-history-content">
-
 					<div class="row">
-
 						<div class="col-md-5 col-sm-12">
 							<div class="single-about-history">
 								<div class="about-history-img">
@@ -105,90 +156,6 @@
 												</div>
 											</div><!--/.timeline-content-->
 										</div><!--/.timeline-->
-									 {{-- <div class="main-timeline">
-
-										<div class="row">
-											<div class="col-md-2 col-sm-2">
-												<div class="experience-time">
-													<h3>2002</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-10 col-sm-10">
-												<div class="timeline">
-													
-													<div class="timeline-content">
-														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-														
-														<ul class="description">
-															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-
-														</ul>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-
-										<div class="row">
-											<div class="col-md-2 col-sm-2">
-												<div class="experience-time">
-													<h3>2007</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-10 col-sm-10">
-												<div class="timeline">
-													
-													<div class="timeline-content">
-														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-														
-														<ul class="description">
-															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-														</ul>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-
-										<div class="row">
-											<div class="col-md-2 col-sm-2">
-												<div class="experience-time">
-													<h3>2012</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-10 col-sm-10">
-												<div class="timeline">
-													
-													<div class="timeline-content">
-														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-														
-														<ul class="description">
-															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-
-														</ul>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-
-										<div class="row">
-											<div class="col-md-2 col-sm-2">
-												<div class="experience-time">
-													<h3>2016</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-10 col-sm-10">
-												<div class="timeline">
-													
-													<div class="timeline-content">
-														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-														
-														<ul class="description">
-															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
-														</ul>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</div><!--.main-timeline-->  --}}
 								</div><!--/.about-history-txt-->
 							</div><!--/.single-about-history-->
 						</div><!--/.col-->

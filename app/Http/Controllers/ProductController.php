@@ -60,14 +60,18 @@ class ProductController extends Controller
         // dd($request->image);
         $formFields = $request->validate([
             'name' => 'required',
-            'description' => 'required',
+            'model' => 'required',   
             'price' => 'required',
-            'tag' => 'required',   
+            'wheels' => 'required',
+            'transmission' => 'required',
+            'type' => 'required',
+            'description' => 'required',
+
         ]);
 
         if($request->hasFile('image')){
-            $formFields['image'] = cloudinary()->upload($request->file('image')->getRealPath())->getSecurePath();
-            // $formFields['image'] = $request->file('image')->store('images','public');
+            // $formFields['image'] = cloudinary()->upload($request->file('image')->getRealPath())->getSecurePath();
+            $formFields['image'] = $request->file('image')->store('images','public');
         }else{
             return 'no image';
         }
@@ -83,9 +87,13 @@ class ProductController extends Controller
     {
         $formFields = $request->validate([
             'name' => 'required',
-            'description' => 'required',
+            'model' => 'required',   
             'price' => 'required',
-            'tag' => 'required',   
+            'wheels' => 'required',
+            'transmission' => 'required',
+            'type' => 'required',
+            'description' => 'required',
+
         ]);
 
         if($request->hasFile('image')){

@@ -100,8 +100,8 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-              <!-- <img src="assets/images/logo/logo.png" alt="logo" /> -->
-              <h1 style="color: red">Red Shift</h1>
+              <img src="assets/images/logo/logo1.png" alt="logo" /> 
+              {{-- <h1 style="color: red">Red Shift</h1> --}}
             </a>
             </div>
             <!--/.navbar-header -->
@@ -115,12 +115,13 @@
               @auth
               <li><a> Welcome {{auth()->user()->name}}</a></li>
               <li class="active"><a href="/">Home</a></li>
-              <li><a href="/dashborad">Dashboard</a></li>
-              <li>
+              <li><a href="/manageProduct">Dashboard</a></li>
+              {{-- <li><a  href="#" onclick="location.href='@Url.Action('/logout')'">Logout</a></li> --}}
+                <li>
                 <a>
                   <form action="/logout" method="POST"> 
                   @csrf
-                  <button type="submit">Logout</button>
+                  <li type="submit">Logout</li>
                   </form>
                 </a>
               </li>
@@ -129,6 +130,7 @@
               <li><a href="/about">About</a></li>
               <li><a href="/services">Service</a></li>
               <li><a href="/portfolios">Portfolio</a></li>
+              <li><a href="/news">Blog</a></li>
               <li><a href="/products">Products</a></li>
               <li><a href="/contact">Contact</a></li>
               
@@ -251,7 +253,7 @@
                   <div class="contact-form">
                     <h3>Leave us a Massage Here</h3>
                     <form method="POST" action="/contact-us">
-                    @csrf
+                      @csrf
                       <div class="row">
                         <div class="col-sm-6 col-xs-12">
                           <div class="form-group">

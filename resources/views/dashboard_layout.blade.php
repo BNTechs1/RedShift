@@ -70,7 +70,7 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             {{-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> --}}
-            <span class="d-none d-md-block">Welcome {{auth()->user()->name}}</span>
+            <span class="d-none d-md-block">Welcome </span>
           </a><!-- End Profile Iamge Icon -->
 
       
@@ -94,12 +94,12 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav -->
+      </li><!-- End Dashboard Nav --> --}}
       {{-- {{ url('/product') }} --}}
       <li class="nav-item">
         <a class="nav-link collapsed"  href="/manageProduct"   type="button">

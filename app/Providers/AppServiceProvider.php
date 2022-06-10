@@ -29,21 +29,21 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $products = Product::latest()->filter(request(['tag','search']))->paginate(10);
-        // $services = Service::latest()->paginate(3);
-        // $teams = Team::latest()->paginate(4);
-        // $portfolios = Portfolio::latest()->paginate(3);
-        // $newss = Blog::latest()->paginate(4);;
+        $products = Product::latest()->filter(request(['tag','search']))->paginate(10);
+        $services = Service::latest()->paginate(3);
+        $teams = Team::latest()->paginate(4);
+        $portfolios = Portfolio::latest()->paginate(3);
+        $newss = Blog::latest()->paginate(4);;
 
-        // View::composer('*', function($view) use($products,$services,$teams,$portfolios,$newss){
-        //     $view->with('products', $products);
-        //     $view->with('services', $services);
-        //     $view->with('teams', $teams);
-        //     $view->with('portfolios', $portfolios);
-        //     $view->with('newss', $newss);
+        View::composer('*', function($view) use($products,$services,$teams,$portfolios,$newss){
+            $view->with('products', $products);
+            $view->with('services', $services);
+            $view->with('teams', $teams);
+            $view->with('portfolios', $portfolios);
+            $view->with('newss', $newss);
 
 
-        //   });
+          });
 
     }
 }

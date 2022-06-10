@@ -130,121 +130,169 @@
     <!-- /.header-slider-area-->
     <!-- header-slider-area end -->
 
-    <!--about-us start -->
-    <section class="about-us">
-
-      <div class="container">
-        <div class="about-us-content">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="single-about-us">
-                <div class="about-us-img">
-                  <img
-                    src="assets/images/about/7.jpg"
-                    alt="about images"
-                  />
-                </div>
-                <!--/.about-us-img-->
-              </div>
-              <!--/.single-about-us-->
-            </div>
-            <!--/.col-->
-            <div class="col-sm-6">
-              <div class="single-about-us">
-                <div class="about-us-txt">
-                  <h2>about us</h2>
-                  <p>
+   
+  <!-- ======= About Section ======= -->
+    <!--we-do start -->
+		<section  class="we-do">
+			<div class="container">
+				<div class="we-do-details">
+					<div class="section-header text-center">
+						<h2>About Us</h2>
+					 <p class="about"style="text-align : Center">
                     Redshift corp is a company that operates in different sectors. With over seven years of combined experience, we thrive to bring quality and value to the different sectors we are involved in. Currently, our focus areas are construction, manufacturing, and consultancy.
             We have upcoming projects varying from restaurants to startup hubs where we help you transform your ideas into a real product.</p>
                   </p>
-                  <div class="project-btn">
-                    <a href="/about" class="project-view">learn more </a>
-                  </div>
-                  <!--/.project-btn-->
-                </div>
-                <!--/.about-us-txt-->
+					</div><!--/.section-header-->
+					<div class="we-do-carousel">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+													  Mission
+													</a>
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment " style="text-align : Center">
+											<p>
+  											Our company's mission is to provide high-quality services to out customers.
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+										
+											<div class="we-do-topics">
+												<h2>
+                        
+													<a href="#">
+														Vision
+													</a>
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment">
+											<p>
+											Our vision is to be the top provider of these services in our region and beyond. 
+
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+										
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														Goal
+													</a>
+                          
+
+												</h2>
+											</div><!--/.we-do-topics-->
+										</div><!--/.we-do-info-->
+										<div class="we-do-comment" style="text-align : Center">
+											<p>
+												Our goal is to provide excellent customer service while maintaining a high level of quality in everything we do.
+
+											</p>
+										</div><!--/.we-do-comment-->
+									</div><!--/.we-do-description-->
+								</div><!--/.single-we-do-box-->
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.we-do-carousel-->
+				</div><!--/.we-do-details-->
+			</div><!--/.container-->
+      <div class="project-btn text-center">  
+              <a href="/about" class="service-view">read more </a>
               </div>
-              <!--/.single-about-us-->
-            </div>
-           
-          </div>
-          <!--/.row-->
+
+		</section><!--/.we-do-->
+		<!--we-do end-->
+
+  <!-- ======= Services Section ======= -->
+    <!--news start -->
+    <section class="news">
+      <div class="container">
+        <div class="news-details">
+        <div class="section-header text-center">
+          <h1>Our Services</h1>
+          {{-- <p>
+          Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+          </p> --}}
         </div>
-        <!--/.about-us-content-->
+        <!--/.section-header-->
+        <div class="news-card news-card-pb-25">
+          <div class="row">
+          <?php $count = 0; ?>
+            @foreach ($services as $service=>$value)
+            <?php if($count == 3) break; ?>
+          <div class="col-md-4 col-sm-6">
+            <div class="single-news-box">
+            <div class="news-box-bg">
+                          <img src="{{ $value->image}}" alt="blog image" />
+              
+              {{-- <img src="assets/images/p36kj8dg@2x.png" alt="blog image" /> --}}
+              <div class="isotope-overlay">
+              <a href="blog_single.html">
+                <span class="lnr lnr-link"></span>
+              </a>
+              </div>
+            </div>
+            <!--/.team-box-bg-->
+            <div class="news-box-inner">
+              <div id="h3">{{$value->name}}</div>
+              <h3>
+              <a>
+                {{$value->description}}
+              </a>
+              </h3>
+              <div class="project-btn text-center">  
+                <a href="/services/{{$value->id}}/detail" class="service-view">read more </a>
+                </div>
+              <!-- <a href="#" class="learn-btn">
+                            learn more
+                          </a> -->
+            </div>
+            <!--/.news-box-inner-->
+            </div>
+            <!--/.single-news-box-->
+          </div>
+          <!--.col-->
+          <?php $count++; ?>
+            @endforeach
+          
+          <!--/.row-->
+          <!--/.project-btn-->
+        </div>
+        <!--/.news-card-->
+        <div class="project-btn text-center">
+          <a href="/services" class="project-view">read more </a>
+          </div>
+        </div>
+        <!--/news-details-->
       </div>
       <!--/.container-->
     </section>
-    <!--/.about-us-->
-    <!--about-us end -->
+    <!--/news-->
+    <!--news end-->
 
-	<!--news start -->
-	<section class="news">
-		<div class="container">
-		  <div class="news-details">
-			<div class="section-header text-center">
-			  <h1>Our Services</h1>
-			  {{-- <p>
-				Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-				aute irure dolor in reprehenderit in voluptate velit esse cillum
-				dolore eu fugiat nulla pariatur.
-			  </p> --}}
-			</div>
-			<!--/.section-header-->
-			<div class="news-card news-card-pb-25">
-			  <div class="row">
-         <?php $count = 0; ?>
-          @foreach ($services as $service=>$value)
-          <?php if($count == 4) break; ?>
-				<div class="col-md-4 col-sm-6">
-				  <div class="single-news-box">
-					<div class="news-box-bg">
-                        <img src="{{ $value->image}}" alt="blog image" />
-            
-					  {{-- <img src="assets/images/p36kj8dg@2x.png" alt="blog image" /> --}}
-					  <div class="isotope-overlay">
-						<a href="blog_single.html">
-						  <span class="lnr lnr-link"></span>
-						</a>
-					  </div>
-					</div>
-					<!--/.team-box-bg-->
-					<div class="news-box-inner">
-             <div id="h3">{{$value->name}}</div>
-					  <h3>
-						<a href="blog_single.html">
-						  {{$value->description}}
-						</a>
-					  </h3>
-            <div class="project-btn text-center">  
-              <a href="/services/{{$value->id}}/detail" class="service-view">read more </a>
-              </div>
-					  <!-- <a href="#" class="learn-btn">
-												  learn more
-											  </a> -->
-					</div>
-					<!--/.news-box-inner-->
-				  </div>
-				  <!--/.single-news-box-->
-				</div>
-				<!--.col-->
-         <?php $count++; ?>
-          @endforeach
-				
-			  <!--/.row-->
-			  <!--/.project-btn-->
-			</div>
-			<!--/.news-card-->
-       <div class="project-btn text-center">
-				<a href="/services" class="project-view">read more </a>
-			  </div>
-		  </div>
-		  <!--/news-details-->
-		</div>
-		<!--/.container-->
-	</section>
-	<!--/news-->
-	<!--news end-->
-
+  <!-- ======= Products Section ======= -->
     <!--we-do start -->
     <section class="we-do">
       <div class="container">
@@ -281,7 +329,7 @@
                           <div id="h3">{{$value->name}}</div>
                           <div id="row_">
                             <div id="btn">
-                              <div id="price">{{$value->price}}</div>
+                              <div id="price">{{$value->price}}ETB</div>
                             </div>
                           </div>
                           <div id="row">
@@ -313,6 +361,7 @@
     <!--/.we-do-->
     <!--we-do end-->
 
+  <!-- ======= News Section ======= -->
     <!-- new-project start -->
     <section  id="new-project" class="new-project">
             <div class="container">
@@ -340,8 +389,83 @@
     <!-- new-project end -->
 
 
+  <!-- ======= Portfolio Section ======= -->
+    	<!--service start-->
+		<section  class="service">
+				<div class="container">
+					<div class="service-details">
+						<div class="section-header text-center">
+							<h1>Portfolios</h1>
+							
+						</div><!--/.section-header-->
+						<div class="service-content-one">
+							<div class="row">
+							  	<?php $count = 0; ?>
+								@foreach ($portfolios as $portfolio=>$value)
+								<?php if($count == 3) break; ?>
+								<div class="col-sm-4 col-xs-12">
+									<div class="service-single text-center">
+										<div class="service-img">
+											  <img src="{{ $value->image}}" alt="blog image" />
+										</div><!--/.service-img-->
+										<div class="service-txt">
+											<h2>
+												<a href="#">{{$value->name}}</a>
+											</h2>
+										</div><!--/.service-txt-->
+									</div><!--/.service-single-->
+								</div><!--/.col-->
+								<?php $count++; ?>
+          						@endforeach
+							</div><!--/.row-->
+						</div><!--/.service-content-one-->
+					</div><!--/.service-details-->
+            <div class="project-btn text-center">
+          <a href="/portfolios" class="project-view">view all </a>
+        </div>    
+				</div><!--/.container-->
+		</section><!--/.service-->
+		<!--service end-->
+
+<!-- ======= Clients Section ======= -->
+	<!--clients start-->
+	<section class="clients">
+		<div class="container">
+			<div class="clients-area">
+			<div class="owl-carousel owl-theme" id="client">
+				<div class="item">
+				<a href="#">
+					<img src="assets/images/img/landlock.png" alt="brand-image" />
+				</a>
+				</div>
+				<!--/.item-->
+				<div class="item">
+				<a href="#">
+					<img src="assets/images/img/bn-logo1.png" alt="brand-image" />
+				</a>
+				</div>
+				<!--/.item-->
+				<div class="item">
+				<a href="#">
+					<img src="assets/images/img/tolo.png" alt="brand-image" />
+				</a>
+				</div>
+				<!--/.item-->
+			</div>
+			<!--/.owl-carousel-->
+			</div>
+			<!--/.clients-area-->
+		</div>
+		<!--/.container-->
+	</section>
+	<!--/.clients-->
+	<!--clients end-->
+ @endsection
+
+
+
      <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="clearfix">
+    {{-- <section id="portfolio" class="clearfix">
       <div class="container" data-aos="fade-up">
 
          <div class="project-header text-left">
@@ -457,155 +581,4 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
-    <!--project start-->
-     {{-- <section id="project"  class="project">
-        <div class="container">
-            <div class="project-details">
-                <div class="project-header text-left">
-                    <h2>Gallery Of Products</h2>
-                  
-                </div><!--/.project-header-->
-                <div class="project-content">
-                    <div class="gallery-content">
-                        <div class="isotope">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="row">
-                    <?php $count = 0; ?>
-                    @foreach ($products as $product=>$value)
-                    <?php if($count == 4) break; ?>
-                                        <div class="col-sm-3 col-xs-12">
-                                            <div class="item">
-                    <img src="{{$value->image ? asset('storage/' . $value->image) : asset('/assets/images/dtegku1i@2x.png')}}" alt="blog image" />
-                                                <div class="isotope-overlay">
-                                                    <a href="project.html">
-                                                        <span class="lnr lnr-link"></span>
-                                                        
-                                                    </a>
-                                                    <h3>
-                                                        <a href="project.html">
-                                                            aquisition plan
-                                                        </a>
-                                                    </h3>
-                                                    <p>busisness planning</p>
-                                                </div><!-- /.isotope-overlay -->
-                                            </div><!-- /.item -->
-                                        </div><!-- /.col -->
-                    <?php $count++; ?>
-                            @endforeach
-                                    </div><!-- /.row-->
-                                    
-
-                                </div><!-- /.col -->
-                            </div><!-- /.row -->
-                            
-                        </div><!--/.isotope-->
-                    </div><!--/.gallery-content-->
-                </div><!--/.project-content-->
-            </div><!--/.project-details-->
-        </div><!--/.container-->
-
-    </section><!--/.project-->  --}}
-    <!--project end-->
-
-    <!--project start-->
-    <section id="project" class="project">
-        <div class="container">
-            <div class="project-details">
-            <div class="project-header text-center">
-                {{-- <p class="text-center">out latest projects</p> --}}
-
-                <h2>Portfolios</h2> 
-            </div>
-            <!--/.project-header-->
-            <div class="project-content">
-                <div class="gallery-content">
-                    <div class="isotope">
-                        <div class="row">
-                            <!-- /.col -->
-                            <div class="col-md-12 col-sm-12">
-                                <div class="row">
-                                        <?php $count = 0; ?>
-                                    @foreach ($portfolios as $portfolio=>$value)
-                                    <?php if($count == 4) break; ?>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="item">
-                        <img src="{{ $value->image}}" alt="blog image" />
-
-
-                                        {{-- <img
-                                        src="assets/images/project/project2.jpg"
-                                        alt="portfolio image"
-                                        /> --}}
-                                        <div class="isotope-overlay">
-                                        <a href="project.html">
-                                        <span class="lnr lnr-link"></span>
-                                        </a>
-                                        <h3>
-                                        <a href="project.html"> {{$value->name}}</a>
-                                        </h3>
-                                        <p>{{$value->description}}</p>
-                                        </div>
-                                        <!-- /.isotope-overlay -->
-                                        </div>
-                                        <!-- /.item -->
-                                    </div>
-                                    <!-- /.col -->
-                                    <?php $count++; ?>
-                                        @endforeach
-                                </div>
-                            </div>		
-                            <!-- /.col -->
-                        </div>
-                        <!-- /.row -->
-                    </div>
-                    <!--/.isotope-->
-                </div>
-                <!--/.gallery-content-->
-            </div>
-            <!--/.project-content-->
-            </div>
-            <!--/.project-details-->
-            <div class="project-btn text-center">
-            <a href="/portfolios" class="project-view">view all </a>
-            </div>
-            <!--/.project-btn-->
-        </div>
-        <!--/.container-->
-    </section>
-	<!--project end-->
-
-	<!--clients start-->
-	<section class="clients">
-		<div class="container">
-			<div class="clients-area">
-			<div class="owl-carousel owl-theme" id="client">
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/img/landlock.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/img/bn-logo1.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
-				<div class="item">
-				<a href="#">
-					<img src="assets/images/img/tolo.png" alt="brand-image" />
-				</a>
-				</div>
-				<!--/.item-->
-			</div>
-			<!--/.owl-carousel-->
-			</div>
-			<!--/.clients-area-->
-		</div>
-		<!--/.container-->
-	</section>
-	<!--/.clients-->
-	<!--clients end-->
- @endsection
+    </section><!-- End Portfolio Section --> --}}

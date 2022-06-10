@@ -75,7 +75,7 @@
                                                     <div id="h3">{{$product->name}}</div>
                                                     <div id="row_">
                                                         <div id="btn">
-                                                            <div id="price">{{$product->price}}</div>
+                                                            <div id="price">{{$product->price}}ETB</div>
                                                         </div>
                                                     </div>
 													<div id=row>
@@ -83,7 +83,7 @@
 													</div>
 												
 	                                            </div>
-									<a href="/products/{{$product->id}}/detail">Details</a>
+									<a  href="/products/{{$product->id}}/detail">Details</a>
 											
                                         </div><!--/.pricing-box-->
                                     {{-- </div><!--/.col--> --}}

@@ -40,7 +40,6 @@
                               {{-- services/{{$value->id}}/edit --}}
                                   <a href="/portfolios/{{$value->id}}/edit"  class="btn btn-secondary"><i class="bi bi-collection"></i></a>
                                   <a href="/portfolios/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
-                                  <a href="/portfolios/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
                               </div>
                               </td>
                           </tr>
@@ -50,23 +49,7 @@
                   </table>
                   <!-- End Table with stripped rows -->
                     <!-- Pagination with icons -->
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="/portfolio?page=1">1</a></li>
-                    <li class="page-item"><a class="page-link" href="/portfolio?page=2">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav><!-- End Pagination with icons -->
+          
                   </div>
                   
               </div>
@@ -88,7 +71,7 @@
                   <div class="col-md-12">
                     <div class="form-floating">
                       <input type="text" name="name" value="{{old('name')}}" class="form-control" id="floatingName" placeholder="Your Name">
-                      <label for="floatingName">Name</label>
+                      <label for="floatingName">Country</label>
                     </div>
                     @error('name')
                       <p>{{$message}}</p>

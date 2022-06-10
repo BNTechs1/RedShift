@@ -40,7 +40,6 @@
                             {{-- services/{{$value->id}}/edit --}}
                                 <a href="/services/{{$value->id}}/edit"  class="btn btn-secondary"><i class="bi bi-collection"></i></a>
                                 <a href="/services/delete/{{$value->id}}" type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></a>
-                                <a href="/services/{{$value->id}}"type="button" class="btn btn-warning"><i class="bi bi-exclamation-triangle"></i></a>
                             </div>
                             </td>
                         </tr>
@@ -50,7 +49,7 @@
                 </table>
                 <!-- End Table with stripped rows -->
                   <!-- Pagination with icons -->
-              <nav aria-label="Page navigation example">
+              {{-- <nav aria-label="Page navigation example">
                 <ul class="pagination">
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Previous">
@@ -66,7 +65,7 @@
                     </a>
                   </li>
                 </ul>
-              </nav><!-- End Pagination with icons -->
+              </nav><!-- End Pagination with icons --> --}}
                 </div>
                 
             </div>
