@@ -34,7 +34,7 @@
                       <p>
                        Redshift corp is a company that operates in different sectors. With over seven years of combined experience, we thrive to bring quality and value to the different sectors we are involved in.
                       </p>
-                      <button type="button" class="slide-btn">
+                      <button type="button" href="/about" class="slide-btn">
                         View more
                       </button>
                     </div>
@@ -332,9 +332,12 @@
                               <div id="price">{{$value->price}}ETB</div>
                             </div>
                           </div>
-                          <div id="row">
-                          <x-products-tags :tagsCsv="$value->tag" />
-                          </div>
+                          	<div id=row>
+                                                    <x-products-model :modelCsv="$value->model"/>
+                                                    <x-products-transmission :transCsv="$value->transmission" />
+                                                    <x-products-wheels :wheelCsv="$value->wheels" />
+												
+													</div>
                         </div> 
                        
                         <!--/.news-box-inner-->

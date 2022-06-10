@@ -43,10 +43,10 @@
 											<ul>
 												@foreach ($products as $product)
 													@php 
-													$tags = explode(',',$product->tag)
+													$tags = explode(',',$product->model)
 													@endphp
 													@foreach ($tags as $tag)
-														<li><a href="/products/?tag={{$tag}}">{{$tag}}</a></li>													
+														<li><a href="/products/?model={{$tag}}">{{$tag}}</a></li>													
 													@endforeach
 												@endforeach
 											</ul>
@@ -79,9 +79,10 @@
                                                         </div>
                                                     </div>
 													<div id=row>
-                                                    <x-products-model :tagsCsv="$product->model" />
-                                                    <x-products-transmission :tagsCsv="$product->transmission" />
-                                                    <x-products-type-wheels :tagsCsv="$product->wheels" />
+													{{-- <li><a href="/products/?search={{$product->model}}">{{$product->model}}</a></li> --}}
+                                                    <x-products-model :modelCsv="$product->model"/>
+                                                    <x-products-transmission :transCsv="$product->transmission" />
+                                                    <x-products-wheels :wheelCsv="$product->wheels" />
 												
 													</div>
 												

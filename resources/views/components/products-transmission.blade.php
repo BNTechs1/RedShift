@@ -1,8 +1,5 @@
 @props(['transCsv'])
 @php 
-    $transs = explode($transCsv);
+    $transmission = $transCsv;
 @endphp
-
-    @foreach ($transs as $trans)
-        <a  href="/products/?tag={{$trans}}" >{{$trans}}</a>
-    @endforeach
+    <a  href="/products?search={{$transmission}}" >{{$transmission}}</a>

@@ -1,8 +1,5 @@
 @props(['wheelCsv'])
 @php 
-    $wheels = explode($wheelCsv);
+    $wheels = $wheelCsv;
 @endphp
-
-    @foreach ($wheels as $wheel)
-        <a  href="/products/?tag={{$wheel}}" >{{$wheel}}</a>
-    @endforeach
+<a  href="/products?search={{$wheels}}" >{{$wheels}}</a>

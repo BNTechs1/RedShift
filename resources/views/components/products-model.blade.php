@@ -1,8 +1,7 @@
 @props(['modelCsv'])
 @php 
-    $models = explode($modelCsv);
+    $model = $modelCsv;
 @endphp
+       <a  href="/products?search={{$model}}" >{{$model}}</a>
 
-    @foreach ($models as $model)
-        <a  href="/products/?tag={{$model}}" >{{$model}}</a>
-    @endforeach
+        {{-- <a  href="/products/?tag={{$tag}}" >{{$tag}}</a> --}}
