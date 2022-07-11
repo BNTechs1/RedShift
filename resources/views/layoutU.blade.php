@@ -135,19 +135,7 @@
               <li><a href="/contact">Contact</a></li>
               
               @endauth
-              <!-- <li>
-              <a href="#"> 
-                <span class="lnr lnr-cart"></span>
-              </a>
-              </li> -->
-              <!-- <li class="search">
-              <form action="">
-                <input type="text" name="search" placeholder="Search...." />
-                <a href="#">
-                <span class="lnr lnr-magnifier"></span>
-                </a>
-              </form>
-              </li> -->
+
             </ul>
             <!-- / ul -->
             </div>

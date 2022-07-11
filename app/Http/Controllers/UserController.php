@@ -36,7 +36,7 @@ class UserController extends Controller
 
     //Change password
     public function updatePassword(Request $request)
-{
+    {
         # Validation
         $request->validate([
             'old_password' => 'required',
@@ -56,7 +56,7 @@ class UserController extends Controller
         ]);
 
         return back()->with("status", "Password changed successfully!");
-}
+    }
 
     //Create New User
     public function store(Request $request){
